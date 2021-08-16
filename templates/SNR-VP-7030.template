@@ -1,0 +1,415 @@
+<<VOIP CONFIG FILE>>Version:2.$version                            
+
+<GLOBAL CONFIG MODULE>
+Static IP          :$static_ip
+Static NetMask     :$static_netmask
+Static GateWay     :$static_gateway
+Default Protocol   :$default_protocol
+Primary DNS        :$primary_dns
+Alter DNS          :$alter_dns
+DHCP Mode          :$dhcp_mode
+DHCP Dns           :$dhcp_dns
+Domain Name        :$domain_name
+Host Name          :$host_name
+Pppoe Mode         :$pppoe_mode
+HTL Start Port     :$htl_start_port
+HTL Port Number    :$htl_port_number
+SNTP Server        :$sntp_server
+Enable SNTP        :$enable_sntp
+Time Zone          :$time_zone
+Enable Daylight    :$enable_daylight
+SNTP Time Out      :$sntp_time_out
+DayLight Shift Min :$daylight_shift_min
+DayLight Start Mon :$daylight_start_mon
+DayLight Start Week:$daylight_start_week
+DayLight Start Wday:$daylight_start_wday
+DayLight Start Hour:$daylight_start_hour
+DayLight Start Min :$daylight_start_min
+DayLight End Mon   :$daylight_end_mon
+DayLight End Week  :$daylight_end_week
+DayLight End Wday  :$daylight_end_wday
+DayLight End Hour  :$daylight_end_hour
+DayLight End Min   :$daylight_end_min
+MMI Set            :$mmi_set
+MTU Length         :$mtu_length
+Net Traffic Timeout:$net_traffic_timeout
+Wan Port Speed     :$wan_port_speed
+Lan Port Speed     :$lan_port_speed
+Wan MDIX enable    :$wan_mdix_enable
+Lan MDIX enable    :$lan_mdix_enable
+
+<LAN CONFIG MODULE>
+Lan Ip             :$lan_ip
+Lan NetMask        :$lan_netmask
+Bridge Mode        :$bridge_mode
+
+<TELE CONFIG MODULE>
+Dial End With #    :1
+Dial Fixed Length  :$dial_fixed_length
+Fixed Length       :$fixed_length
+Dial With Timeout  :$dial_with_timeout
+Dial Timeout value :$dial_timeout_value
+Dialpeer With Line :$dialpeer_with_line
+Poll Sequence      :$poll_sequence
+Accept Any Call    :$accept_any_call
+Phone Prefix       :$phone_prefix
+Local Area Code    :$local_area_code
+IP call network    :$ip_call_network
+--Port Config--    :
+P1 No Disturb      :$p1_no_disturb
+P1 Mute            :$p1_mute
+P1 No Dial Out     :$p1_no_dial_out
+P1 No Empty Calling:$p1_no_empty_calling
+P1 Enable CallerId :$p1_enable_callerid
+P1 Forward Service :$p1_forward_service
+P1 SIP TransNum    :$p1_sip_transnum
+P1 SIP TransAddr   :$p1_sip_transaddr
+P1 SIP TransPort   :$p1_sip_transport
+P1 CallWaiting     :$p1_callwaiting
+P1 CallTransfer    :$p1_calltransfer
+P1 Call3Way        :$p1_call3way
+P1 AutoAnswer      :$p1_autoanswer
+P1 No Answer Time  :$p1_no_answer_time
+P1 Extention No.   :$p1_extention_no_
+P1 Auto HandDown   :$p1_auto_handdown
+P1 Auto Handdown Ti:$p1_auto_handdown_ti
+P1 Hotline Num     :$p1_hotline_num
+P1 Record Server   :$p1_record_server
+P1 Enable Record   :$p1_enable_record
+P1 Busy N/A Line   :0
+P1 DND Return Code :$p1_dnd_return_code
+P1 Busy Return Code:$p1_busy_return_code
+P1 Reject Return Co:$p1_reject_return_co
+
+<DSP CONFIG MODULE>
+Signal Standard    :$signal_standard
+Handdown Time      :$handdown_time
+G729 Payload Length:$g729_payload_length
+G723 Bit Rate      :$g723_bit_rate
+G722 Timestamps    :$g722_timestamps
+VAD                :$vad
+Ring Type          :$ring_type
+Dtmf Payload Type  :$dtmf_payload_type
+Disable Handfree   :$disable_handfree
+RTP PROBE          :$rtp_probe
+HD Voice           :$hd_voice
+TX AGC             :$tx_agc
+RX AGC             :$rx_agc
+--Port Config--    :
+P1 Output Vol      :$p1_output_vol
+P1 Input Vol       :$p1_input_vol
+P1 HandFree Vol    :$p1_handfree_vol
+P1 RingTone Vol    :$p1_ringtone_vol
+P1 Codec           :$p1_codec
+P1 Voice Record    :$p1_voice_record
+P1 Record Playing  :$p1_record_playing
+P1 UserDef Voice   :$p1_userdef_voice
+P1 First Codec     :$p1_first_codec
+P1 Second Codec    :$p1_second_codec
+P1 Third Codec     :$p1_third_codec
+P1 Forth Codec     :$p1_forth_codec
+P1 Fifth Codec     :$p1_fifth_codec
+P1 Sixth Codec     :$p1_sixth_codec
+P1 Seventh Codec   :$p1_seventh_codec
+
+<SIP CONFIG MODULE>
+SIP  Port          :$sip__port
+Stun Address       :$stun_address
+Stun Port          :$stun_port
+Stun Effect Time   :$stun_effect_time
+SIP Wait Stun Time :$sip_wait_stun_time
+SIP  Differv       :$sip__differv
+Extern Address     :$extern_address
+Url Convert        :$url_convert
+Reg Retry Time     :$reg_retry_time
+Strict BranchPrefix:$strict_branchprefix
+--SIP Line List--  :
+SIP1 Phone Number  :$sipname
+SIP1 Display Name  :$sipname
+SIP1 Sip Name      :$sip1_sip_name
+SIP1 Register Addr :$sip1_register_addr
+SIP1 Register Port :$sip1_register_port
+SIP1 Register User :$sipname
+SIP1 Register Pwd  :$secret
+SIP1 Register TTL  :$sip1_register_ttl
+SIP1 Enable Reg    :$sip1_enable_reg
+SIP1 Proxy Addr    :$sip1_proxy_addr
+SIP1 Proxy Port    :$sip1_proxy_port
+SIP1 Proxy User    :$sipname
+SIP1 Proxy Pwd     :$sipname
+SIP1 Signal Enc    :$sip1_signal_enc
+SIP1 Signal Key    :$sip1_signal_key
+SIP1 Media Enc     :$sip1_media_enc
+SIP1 Media Key     :$sip1_media_key
+SIP1 Local Domain  :$sip1_local_domain
+SIP1 Fwd Service   :$sip1_fwd_service
+SIP1 Ring Type     :$sip1_ring_type
+SIP1 Fwd Number    :$sip1_fwd_number
+SIP1 Hotline Number:$sip1_hotline_number
+SIP1 Enable Detect :$sip1_enable_detect
+SIP1 Detect TTL    :$sip1_detect_ttl
+SIP1 Server Type   :$sip1_server_type
+SIP1 User Agent    :$sip1_user_agent
+SIP1 PRACK         :$sip1_prack
+SIP1 KEEP AUTH     :$sip1_keep_auth
+SIP1 Session Timer :$sip1_session_timer
+SIP1 Gruu          :$sip1_gruu
+SIP1 DTMF Mode     :$sip1_dtmf_mode
+SIP1 DTMF SIP-INFO :0
+SIP1 Use Stun      :$sip1_use_stun
+SIP1 Via Port      :$sip1_via_port
+SIP1 Subscribe     :$sip1_subscribe
+SIP1 Sub Expire    :$sip1_sub_expire
+SIP1 Single Codec  :$sip1_single_codec
+SIP1 CLIR          :$sip1_clir
+SIP1 Strict Proxy  :$sip1_strict_proxy
+SIP1 Direct Contact:$sip1_direct_contact
+SIP1 History Info  :$sip1_history_info
+SIP1 DNS SRV       :$sip1_dns_srv
+SIP1 Transfer Expir:$sip1_transfer_expir
+SIP1 Ban Anonymous :$sip1_ban_anonymous
+SIP1 Dial Without R:$sip1_dial_without_r
+SIP1 DisplayName Qu:$sip1_displayname_qu
+SIP1 Presence Mode :$sip1_presence_mode
+SIP1 RFC Ver       :$sip1_rfc_ver
+SIP1 Signal Port   :$sip1_signal_port
+SIP1 Port in Reques:$sip1_port_in_reques
+SIP1 Use Mixer     :$sip1_use_mixer
+SIP1 Mixer Uri     :$sip1_mixer_uri
+SIP1 Long Contact  :$sip1_long_contact
+SIP1 Auto TCP      :$sip1_auto_tcp
+SIP1 Click to Talk :$sip1_click_to_talk
+SIP1 Mwi No.       :$sip1_mwi_no_
+SIP1 Park No.      :$sip1_park_no_
+SIP1 Help No.      :$sip1_help_no_
+SIP1 Use user=phone:0
+SIP2 Phone Number  :$sip2_phone_number
+SIP2 Display Name  :$sip2_display_name
+SIP2 Sip Name      :$sip2_sip_name
+SIP2 Register Addr :$sip2_register_addr
+SIP2 Register Port :$sip2_register_port
+SIP2 Register User :$sip2_register_user
+SIP2 Register Pwd  :$sip2_register_pwd
+SIP2 Register TTL  :$sip2_register_ttl
+SIP2 Enable Reg    :$sip2_enable_reg
+SIP2 Proxy Addr    :$sip2_proxy_addr
+SIP2 Proxy Port    :$sip2_proxy_port
+SIP2 Proxy User    :$sip2_proxy_user
+SIP2 Proxy Pwd     :$sip2_proxy_pwd
+SIP2 Signal Enc    :$sip2_signal_enc
+SIP2 Signal Key    :$sip2_signal_key
+SIP2 Media Enc     :$sip2_media_enc
+SIP2 Media Key     :$sip2_media_key
+SIP2 Local Domain  :$sip2_local_domain
+SIP2 Fwd Service   :$sip2_fwd_service
+SIP2 Ring Type     :$sip2_ring_type
+SIP2 Fwd Number    :$sip2_fwd_number
+SIP2 Hotline Number:$sip2_hotline_number
+SIP2 Enable Detect :$sip2_enable_detect
+SIP2 Detect TTL    :$sip2_detect_ttl
+SIP2 Server Type   :$sip2_server_type
+SIP2 User Agent    :$sip2_user_agent
+SIP2 PRACK         :$sip2_prack
+SIP2 KEEP AUTH     :$sip2_keep_auth
+SIP2 Session Timer :$sip2_session_timer
+SIP2 Gruu          :$sip2_gruu
+SIP2 DTMF Mode     :$sip2_dtmf_mode
+SIP2 DTMF SIP-INFO :0
+SIP2 Use Stun      :$sip2_use_stun
+SIP2 Via Port      :$sip2_via_port
+SIP2 Subscribe     :$sip2_subscribe
+SIP2 Sub Expire    :$sip2_sub_expire
+SIP2 Single Codec  :$sip2_single_codec
+SIP2 CLIR          :$sip2_clir
+SIP2 Strict Proxy  :$sip2_strict_proxy
+SIP2 Direct Contact:$sip2_direct_contact
+SIP2 History Info  :$sip2_history_info
+SIP2 DNS SRV       :$sip2_dns_srv
+SIP2 Transfer Expir:$sip2_transfer_expir
+SIP2 Ban Anonymous :$sip2_ban_anonymous
+SIP2 Dial Without R:$sip2_dial_without_r
+SIP2 DisplayName Qu:$sip2_displayname_qu
+SIP2 Presence Mode :$sip2_presence_mode
+SIP2 RFC Ver       :$sip2_rfc_ver
+SIP2 Signal Port   :$sip2_signal_port
+SIP2 Port in Reques:$sip2_port_in_reques
+SIP2 Use Mixer     :$sip2_use_mixer
+SIP2 Mixer Uri     :$sip2_mixer_uri
+SIP2 Long Contact  :$sip2_long_contact
+SIP2 Auto TCP      :$sip2_auto_tcp
+SIP2 Click to Talk :$sip2_click_to_talk
+SIP2 Mwi No.       :$sip2_mwi_no_
+SIP2 Park No.      :$sip2_park_no_
+SIP2 Help No.      :$sip2_help_no_
+SIP2 Use user=phone:0
+
+<IAX2 CONFIG MODULE>
+Server   Address   :$server___address
+Server   Port      :$server___port
+User     Name      :$user_____name
+User     Password  :$user_____password
+User     Number    :$user_____number
+Voice    Number    :$voice____number
+Voice    Text      :$voice____text
+EchoTest Number    :$echotest_number
+EchoTest Text      :$echotest_text
+Local    Port      :$local____port
+Enable   Register  :$enable___register
+Refresh  Time      :$refresh__time
+Enable   G.729     :$enable___g_729
+
+<PPPoE CONFIG MODULE>
+Pppoe User         :$pppoe_user
+Pppoe Password     :$pppoe_password
+Pppoe Service      :$pppoe_service
+Pppoe Ip Address   :$pppoe_ip_address
+
+<MMI CONFIG MODULE>
+Telnet Port        :$telnet_port
+Web Port           :$web_port
+Remote Control     :$remote_control
+Enable MMI Filter  :$enable_mmi_filter
+Telnet Prompt      :$telnet_prompt
+--MMI Account--    :
+Account1 Name      :$account1_name
+Account1 Pass      :$account1_pass
+Account1 Level     :$account1_level
+Account2 Name      :$account2_name
+Account2 Pass      :$account2_pass
+Account2 Level     :$account2_level
+
+<QOS CONFIG MODULE>
+Enable VLAN        :$enable_vlan
+Enable diffServ    :$enable_diffserv
+DiffServ Value     :$diffserv_value
+VLAN ID            :$vlan_id
+802.1P Value       :$a802_1p_value
+VLAN Recv Check    :$vlan_recv_check
+Data VLAN ID       :$data_vlan_id
+Data 802.1P Value  :$data_802_1p_value
+Diff Data Voice    :$diff_data_voice
+Enable PVID        :$enable_pvid
+PVID Value         :$pvid_value
+
+<DEBUG CONFIG MODULE>
+MGR Trace Level    :$mgr_trace_level
+SIP Trace Level    :$sip_trace_level
+IAX Trace Level    :$iax_trace_level
+Trace File Info    :$trace_file_info
+
+<AAA CONFIG MODULE>
+Enable Syslog      :$enable_syslog
+Syslog address     :$syslog_address
+Syslog port        :$syslog_port
+
+<ACCESS CONFIG MODULE>
+Enable In Access   :$enable_in_access
+Enable Out Access  :$enable_out_access
+
+<DHCP CONFIG MODULE>
+Enable DHCP Server :$enable_dhcp_server
+DHCP Relay Target  :$dhcp_relay_target
+Enable DNS Relay   :$enable_dns_relay
+DHCP Update Flag   :$dhcp_update_flag
+TFTP  Server       :$tftp__server
+--DHCP List--      :
+Item1 name         :$item1_name
+Item1 Start Ip     :$item1_start_ip
+Item1 End Ip       :$item1_end_ip
+Item1 Param        :snmk=255.255.255.0:maxl=1440:rout=192.168.10.1:dnsv=192.168.10.1
+
+<NAT CONFIG MODULE>
+Enable Nat         :$enable_nat
+Enable Ftp ALG     :$enable_ftp_alg
+Enable H323 ALG    :$enable_h323_alg
+Enable PPTP ALG    :$enable_pptp_alg
+Enable IPSec ALG   :$enable_ipsec_alg
+
+<PHONE CONFIG MODULE>
+Keypad Password    :$keypad_password
+KeyLock Password   :$keylock_password
+Enable KeyLock     :$enable_keylock
+LCD Logo           :$lcd_logo
+LCD Constrast      :$lcd_constrast
+LCD Luminance      :$lcd_luminance
+Backlight Off Time :$backlight_off_time
+Time Display Style :$time_display_style
+Display Time       :$display_time
+Resolve Address    :$resolve_address
+MWI Number         :$mwi_number
+--Function Key--   :
+Fkey1 Type         :$fkey1_type
+Fkey1 Value        :SIP1:Line1
+Fkey1 Title        :$fkey1_title
+Fkey2 Type         :$fkey2_type
+Fkey2 Value        :SIP2:Line2
+Fkey2 Title        :$fkey2_title
+Fkey3 Type         :$fkey3_type
+Fkey3 Value        :$fkey3_value
+Fkey3 Title        :$fkey3_title
+Fkey4 Type         :$fkey4_type
+Fkey4 Value        :$fkey4_value
+Fkey4 Title        :$fkey4_title
+Fkey5 Type         :$fkey5_type
+Fkey5 Value        :$fkey5_value
+Fkey5 Title        :$fkey5_title
+Fkey6 Type         :$fkey6_type
+Fkey6 Value        :$fkey6_value
+Fkey6 Title        :$fkey6_title
+Fkey7 Type         :$fkey7_type
+Fkey7 Value        :$fkey7_value
+Fkey7 Title        :$fkey7_title
+Fkey8 Type         :$fkey8_type
+Fkey8 Value        :$fkey8_value
+Fkey8 Title        :$fkey8_title
+Fkey9 Type         :$fkey9_type
+Fkey9 Value        :$fkey9_value
+Fkey9 Title        :$fkey9_title
+Fkey10 Type        :$fkey10_type
+Fkey10 Value       :$fkey10_value
+Fkey10 Title       :$fkey10_title
+Fkey11 Type        :$fkey11_type
+Fkey11 Value       :$fkey11_value
+Fkey11 Title       :$fkey11_title
+Fkey12 Type        :$fkey12_type
+Fkey12 Value       :$fkey12_value
+Fkey12 Title       :$fkey12_title
+Fkey13 Type        :$fkey13_type
+Fkey13 Value       :$fkey13_value
+Fkey13 Title       :$fkey13_title
+Fkey14 Type        :$fkey14_type
+Fkey14 Value       :$fkey14_value
+Fkey14 Title       :$fkey14_title
+Fkey15 Type        :$fkey15_type
+Fkey15 Value       :$fkey15_value
+Fkey15 Title       :$fkey15_title
+Fkey16 Type        :$fkey16_type
+Fkey16 Value       :$fkey16_value
+Fkey16 Title       :$fkey16_title
+Fkey17 Type        :$fkey17_type
+Fkey17 Value       :$fkey17_value
+Fkey17 Title       :$fkey17_title
+Memo Number        :$memo_number
+
+<AUTOUPDATE CONFIG MODULE>
+Download Username  :$download_username
+Download password  :$download_password
+Download Server IP :$download_server_ip
+Config File Name   :$config_file_name
+Config File Key    :$config_file_key
+Download Protocol  :$download_protocol
+Download Mode      :$download_mode
+Download Interval  :$download_interval
+DHCP Option 66     :$dhcp_option_66
+
+<VPN CONFIG MODULE>
+VPN mode           :$vpn_mode
+L2TP LNS IP        :$l2tp_lns_ip
+L2TP User Name     :$l2tp_user_name
+L2TP Password      :$l2tp_password
+Enable VPN Tunnel  :$enable_vpn_tunnel
+VPN Server IP      :$vpn_server_ip
+VPN Server Port    :$vpn_server_port
+Server Group ID    :$server_group_id
+Server Area Code   :$server_area_code
+<<END OF FILE>>

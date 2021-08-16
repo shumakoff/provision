@@ -1,0 +1,1712 @@
+<<VOIP CONFIG FILE>>Version:2.$version                            
+
+<GLOBAL CONFIG MODULE>
+WAN Mode           :$wan_mode
+WAN IP             :$wan_ip
+WAN Subnet Mask    :$wan_subnet_mask
+WAN Gateway        :$wan_gateway
+Default Protocol   :$default_protocol
+Primary DNS        :$primary_dns
+Secondary DNS      :$secondary_dns
+Enable DHCP        :$enable_dhcp
+Use Vendor Class ID:$use_vendor_class_id
+Vendor Class ID    :$vendor_class_id
+DHCP Auto DNS      :$dhcp_auto_dns
+DHCP Auto Time     :$dhcp_auto_time
+Domain Name        :$domain_name
+Host Name          :$host_name
+Enable PPPoE       :$enable_pppoe
+RTP Initial Port   :$rtp_initial_port
+RTP Port Quantity  :$rtp_port_quantity
+SNTP Server        :$sntp_server
+Second SNTP Server :$second_sntp_server
+Enable SNTP        :$enable_sntp
+Time Zone          :$time_zone
+Time Zone Name     :$time_zone_name
+Enable DST         :$enable_dst
+SNTP Timeout       :$sntp_timeout
+DST Min Offset     :$dst_min_offset
+DST Start Mon      :$dst_start_mon
+DST Start Week     :$dst_start_week
+DST Start Wday     :$dst_start_wday
+DST Start Hour     :$dst_start_hour
+DST Start Min      :$dst_start_min
+DST End Mon        :$dst_end_mon
+DST End Week       :$dst_end_week
+DST End Wday       :$dst_end_wday
+DST End Hour       :$dst_end_hour
+DST End Min        :$dst_end_min
+Default UI         :$default_ui
+MTU Length         :$mtu_length
+Push XML IP        :$push_xml_ip
+Enable Call History:$enable_call_history
+Active Uri IP      :$active_uri_ip
+Boot Completed Url :$boot_completed_url
+Reg On Url         :$reg_on_url
+Reg Off Url        :$reg_off_url
+Reg Failed Url     :$reg_failed_url
+Offhook Url        :$offhook_url
+Onhook Uri         :$onhook_uri
+Incmoing Call Url  :$incmoing_call_url
+Outgoing Call Url  :$outgoing_call_url
+Call Active Url    :$call_active_url
+Call Stop Url      :$call_stop_url
+DND On Url         :$dnd_on_url
+DND Off Url        :$dnd_off_url
+Always FWD On Url  :$always_fwd_on_url
+Always FWD Off Url :$always_fwd_off_url
+Busy FWD On Url    :$busy_fwd_on_url
+Busy FWD Off Url   :$busy_fwd_off_url
+No Ans FWD On Url  :$no_ans_fwd_on_url
+No Ans FWD Off Url :$no_ans_fwd_off_url
+Transfer Url       :$transfer_url
+B Transfer Url     :$b_transfer_url
+A Transfer Url     :$a_transfer_url
+Hold Url           :$hold_url
+Unhold Url         :$unhold_url
+Mute Url           :$mute_url
+Unmute Url         :$unmute_url
+Missed call Url    :$missed_call_url
+IP Change Url      :$ip_change_url
+Idle to Busy Url   :$idle_to_busy_url
+Busy to Idle Url   :$busy_to_idle_url
+
+<LAN CONFIG MODULE>
+LAN IP             :$lan_ip
+LAN SubNetMask     :$lan_subnetmask
+Enable Bridge Mode :$enable_bridge_mode
+Enable Port Mirror :$enable_port_mirror
+
+<TELE CONFIG MODULE>
+Dial by Pound      :$dial_by_pound
+BTransfer by Pound :$btransfer_by_pound
+Onhook to BXfer    :$onhook_to_bxfer
+Onhook to AXfer    :$onhook_to_axfer
+Memory Key to BXfer:$memory_key_to_bxfer
+Xfer On Conf Onhook:$xfer_on_conf_onhook
+Dial Fixed Length  :$dial_fixed_length
+Fixed Length Nums  :$fixed_length_nums
+Dial by Timeout    :$dial_by_timeout
+Dial Timeout value :$dial_timeout_value
+Dialpeer With Line :$dialpeer_with_line
+Port Sequence      :$port_sequence
+Accept Any Call    :$accept_any_call
+Main Digit Prefix  :$main_digit_prefix
+IP Dial Prefix     :$ip_dial_prefix
+--Port Config--    :
+P1 Enable DND      :$p1_enable_dnd
+P1 DND Mode        :$p1_dnd_mode
+P1 Mute Ringing    :$p1_mute_ringing
+P1 CWaiting Tone   :$p1_cwaiting_tone
+P1 Ban Dial Out    :$p1_ban_dial_out
+P1 Ban Empty CID   :$p1_ban_empty_cid
+P1 Enable CLIP     :$p1_enable_clip
+P1 CallWaiting     :$p1_callwaiting
+P1 CallTransfer    :$p1_calltransfer
+P1 CallSemiXfer    :$p1_callsemixfer
+P1 CallConference  :$p1_callconference
+P1 AutoAnswer      :$p1_autoanswer
+P1 No Answer Time  :$p1_no_answer_time
+P1 Warm Line Time  :$p1_warm_line_time
+P1 Port Ext Num    :$p1_port_ext_num
+P1 Hotline Num     :$p1_hotline_num
+P1 SRV Record Num  :$p1_srv_record_num
+P1 Use SRV Record  :$p1_use_srv_record
+P1 Auto PickupNext :$p1_auto_pickupnext
+P1 Busy No Line    :$p1_busy_no_line
+P1 Auto Onhook     :$p1_auto_onhook
+P1 Auto Onhook Time:$p1_auto_onhook_time
+P1 DND Code        :$p1_dnd_code
+P1 Busy Code       :$p1_busy_code
+P1 Reject Code     :$p1_reject_code
+P1 Enable Intercom :$p1_enable_intercom
+P1 Intercom Mute   :$p1_intercom_mute
+P1 Intercom Tone   :$p1_intercom_tone
+P1 Intercom Barge  :$p1_intercom_barge
+P1 Use Auto Redial :$p1_use_auto_redial
+P1 AutoRedial Delay:$p1_autoredial_delay
+P1 AutoRedial Times:$p1_autoredial_times
+P1 Call Complete   :$p1_call_complete
+P1 Hide DTMF Type  :$p1_hide_dtmf_type
+P1 Talk DTMF Tone  :$p1_talk_dtmf_tone
+P1 Dial DTMF Tone  :$p1_dial_dtmf_tone
+P1 Psw Dial Mode   :$p1_psw_dial_mode
+P1 Psw Dial Length :$p1_psw_dial_length
+P1 Psw Dial Prefix :$p1_psw_dial_prefix
+P1 Enable MultiLine:$p1_enable_multiline
+P1 Allow IP Call   :$p1_allow_ip_call
+P1 Update Dial Call:$p1_update_dial_call
+Default Ext line   :$default_ext_line
+Default Ans mode   :$default_ans_mode
+Default Dial mode  :$default_dial_mode
+Hold To Transfer   :$hold_to_transfer
+
+<DSP CONFIG MODULE>
+Signal Standard    :$signal_standard
+Enable MWI Tone    :$enable_mwi_tone
+Onhook Time        :$onhook_time
+G729 Payload Len   :$g729_payload_len
+G723 Bit Rate      :$g723_bit_rate
+G722 Timestamps    :$g722_timestamps
+VAD                :$vad
+Ring Type          :$ring_type
+Dtmf Payload Type  :$dtmf_payload_type
+RTP Probe          :$rtp_probe
+HD Voice           :$hd_voice
+TX AGC             :$tx_agc
+RX AGC             :$rx_agc
+Headset MIC offset :$headset_mic_offset
+Sidetone GAIN      :$sidetone_gain
+--Port Config--    :
+P1 General Spk Vol :$p1_general_spk_vol
+P1 General Mic Vol :$p1_general_mic_vol
+P1 Headset Vol     :$p1_headset_vol
+P1 Ring in Headset :$p1_ring_in_headset
+P1 Auto Headset    :$p1_auto_headset
+P1 Headset Ring Vol:$p1_headset_ring_vol
+P1 HandFree Vol    :$p1_handfree_vol
+P1 RingTone Vol    :$p1_ringtone_vol
+P1 Voice Codec1    :$p1_voice_codec1
+P1 Voice Codec2    :$p1_voice_codec2
+P1 Voice Codec3    :$p1_voice_codec3
+P1 Voice Codec4    :$p1_voice_codec4
+P1 Voice Codec5    :$p1_voice_codec5
+P1 Voice Codec6    :$p1_voice_codec6
+--Codec Config--   :
+Codec1 Format      :$codec1_format
+Codec2 Format      :$codec2_format
+Codec3 Format      :$codec3_format
+Codec4 Format      :$codec4_format
+Codec5 Format      :$codec5_format
+Codec6 Format      :$codec6_format
+Codec7 Format      :$codec7_format
+--Alert Info Ring--:
+Alert1 Text        :$alert1_text
+Alert1 Ring Type   :$alert1_ring_type
+Alert2 Text        :$alert2_text
+Alert2 Ring Type   :$alert2_ring_type
+Alert3 Text        :$alert3_text
+Alert3 Ring Type   :$alert3_ring_type
+Alert4 Text        :$alert4_text
+Alert4 Ring Type   :$alert4_ring_type
+Alert5 Text        :$alert5_text
+Alert5 Ring Type   :$alert5_ring_type
+Alert6 Text        :$alert6_text
+Alert6 Ring Type   :$alert6_ring_type
+Alert7 Text        :$alert7_text
+Alert7 Ring Type   :$alert7_ring_type
+Alert8 Text        :$alert8_text
+Alert8 Ring Type   :$alert8_ring_type
+Alert9 Text        :$alert9_text
+Alert9 Ring Type   :$alert9_ring_type
+Alert10 Text       :$alert10_text
+Alert10 Ring Type  :$alert10_ring_type
+
+<SIP CONFIG MODULE>
+SIP  Port          :$sip__port
+STUN Server        :$stun_server
+STUN Port          :$stun_port
+STUN Refresh Time  :$stun_refresh_time
+SIP Wait Stun Time :$sip_wait_stun_time
+Extern NAT Addrs   :$extern_nat_addrs
+Reg Fail Interval  :$reg_fail_interval
+SIP Pswd Encryption:$sip_pswd_encryption
+Strict BranchPrefix:$strict_branchprefix
+Video Mute Attr    :$video_mute_attr
+Enable Group Backup:$enable_group_backup
+Enable RFC4475     :$enable_rfc4475
+--SIP Line List--  :
+SIP1 Phone Number  :$sipname
+SIP1 Display Name  :$sipname
+SIP1 Sip Name      :$sip1_sip_name
+SIP1 Register Addr :$sip1_register_addr
+SIP1 Register Port :$sip1_register_port
+SIP1 Register User :$sipname
+SIP1 Register Pswd :$secret
+SIP1 Register TTL  :$sip1_register_ttl
+SIP1 Enable Reg    :$sip1_enable_reg
+SIP1 Proxy Addr    :$sip1_proxy_addr
+SIP1 Proxy Port    :$sip1_proxy_port
+SIP1 Proxy User    :$sipname
+SIP1 Proxy Pswd    :$secret
+SIP1 BakProxy Addr :$sip1_bakproxy_addr
+SIP1 BakProxy Port :$sip1_bakproxy_port
+SIP1 Enable Failbac:$sip1_enable_failbac
+SIP1 Signal Crypto :$sip1_signal_crypto
+SIP1 SigCrypto Key :$sip1_sigcrypto_key
+SIP1 Media Crypto  :$sip1_media_crypto
+SIP1 MedCrypto Key :$sip1_medcrypto_key
+SIP1 SRTP Auth-Tag :0
+SIP1 Local Domain  :$sipname
+SIP1 Always FWD    :$sip1_always_fwd
+SIP1 Busy FWD      :$sip1_busy_fwd
+SIP1 No Answer FWD :$sip1_no_answer_fwd
+SIP1 Always FWD Num:$sip1_always_fwd_num
+SIP1 Busy FWD Num  :$sip1_busy_fwd_num
+SIP1 NoAnswer FWD N:$sip1_noanswer_fwd_n
+SIP1 FWD Timer     :$sip1_fwd_timer
+SIP1 Ring Type     :$sip1_ring_type
+SIP1 Hotline Num   :$sip1_hotline_num
+SIP1 Enable Hotline:$sip1_enable_hotline
+SIP1 WarmLine Time :$sip1_warmline_time
+SIP1 Pickup Num    :$sip1_pickup_num
+SIP1 Join Num      :$sip1_join_num
+SIP1 NAT UDPUpdate :$sip1_nat_udpupdate
+SIP1 UDPUpdate TTL :$sip1_udpupdate_ttl
+SIP1 Server Type   :$sip1_server_type
+SIP1 User Agent    :$sip1_user_agent
+SIP1 PRACK         :$sip1_prack
+SIP1 Keep AUTH     :$sip1_keep_auth
+SIP1 Session Timer :$sip1_session_timer
+SIP1 S.Timer Expire:$sip1_s_timer_expire
+SIP1 Enable GRUU   :$sip1_enable_gruu
+SIP1 DTMF Mode     :$sip1_dtmf_mode
+SIP1 DTMF Info Mode:$sip1_dtmf_info_mode
+SIP1 NAT Type      :$sip1_nat_type
+SIP1 Enable Rport  :$sip1_enable_rport
+SIP1 Subscribe     :$sip1_subscribe
+SIP1 Sub Expire    :$sip1_sub_expire
+SIP1 Single Codec  :$sip1_single_codec
+SIP1 CLIR          :$sip1_clir
+SIP1 Strict Proxy  :$sip1_strict_proxy
+SIP1 Direct Contact:$sip1_direct_contact
+SIP1 History Info  :$sip1_history_info
+SIP1 DNS Mode      :$sip1_dns_mode
+SIP1 XFER Expire   :$sip1_xfer_expire
+SIP1 Ban Anonymous :$sip1_ban_anonymous
+SIP1 Dial Off Line :$sip1_dial_off_line
+SIP1 Quota Name    :$sip1_quota_name
+SIP1 Presence Mode :$sip1_presence_mode
+SIP1 RFC Ver       :$sip1_rfc_ver
+SIP1 Signal Port   :$sip1_signal_port
+SIP1 Transport     :$sip1_transport
+SIP1 Use SRV Mixer :$sip1_use_srv_mixer
+SIP1 SRV Mixer Uri :$sip1_srv_mixer_uri
+SIP1 Long Contact  :$sip1_long_contact
+SIP1 Auto TCP      :$sip1_auto_tcp
+SIP1 Uri Escaped   :$sip1_uri_escaped
+SIP1 Click to Talk :$sip1_click_to_talk
+SIP1 MWI Num       :$sip1_mwi_num
+SIP1 CallPark Num  :$sip1_callpark_num
+SIP1 Retrieve Num  :$sip1_retrieve_num
+SIP1 MSRPHelp Num  :$sip1_msrphelp_num
+SIP1 User Is Phone :$sip1_user_is_phone
+SIP1 Auto Answer   :$sip1_auto_answer
+SIP1 NoAnswerTime  :$sip1_noanswertime
+SIP1 MissedCallLog :$sip1_missedcalllog
+SIP1 SvcCode Mode  :$sip1_svccode_mode
+SIP1 DNDOn SvcCode :$sip1_dndon_svccode
+SIP1 DNDOff SvcCode:$sip1_dndoff_svccode
+SIP1 CFUOn SvcCode :$sip1_cfuon_svccode
+SIP1 CFUOff SvcCode:$sip1_cfuoff_svccode
+SIP1 CFBOn SvcCode :$sip1_cfbon_svccode
+SIP1 CFBOff SvcCode:$sip1_cfboff_svccode
+SIP1 CFNOn SvcCode :$sip1_cfnon_svccode
+SIP1 CFNOff SvcCode:$sip1_cfnoff_svccode
+SIP1 ANCOn SvcCode :$sip1_ancon_svccode
+SIP1 ANCOff SvcCode:$sip1_ancoff_svccode
+SIP1 VoiceCodecMap :$sip1_voicecodecmap
+SIP1 BLFList Uri   :$sip1_blflist_uri
+SIP1 BLF Server    :$sip1_blf_server
+SIP1 Respond 182   :$sip1_respond_182
+SIP1 Enable BLFList:$sip1_enable_blflist
+SIP1 Caller Id Type:$sip1_caller_id_type
+SIP1 Syn Clock Time:$sip1_syn_clock_time
+SIP1 Use VPN       :$sip1_use_vpn
+SIP1 Enable DND    :$sip1_enable_dnd
+SIP1 Update Reg Exp:$sip1_update_reg_exp
+SIP1 Inactive Hold :$sip1_inactive_hold
+SIP1 Enable SCA    :$sip1_enable_sca
+SIP1 Sub CallPark  :$sip1_sub_callpark
+SIP1 Hoteling Event:$sip1_hoteling_event
+SIP1 Sub CC Status :$sip1_sub_cc_status
+SIP1 Feature Sync  :$sip1_feature_sync
+SIP1 Req With Port :$sip1_req_with_port
+SIP2 Phone Number  :$sip2_phone_number
+SIP2 Display Name  :$sip2_display_name
+SIP2 Sip Name      :$sip2_sip_name
+SIP2 Register Addr :$sip2_register_addr
+SIP2 Register Port :$sip2_register_port
+SIP2 Register User :$sip2_register_user
+SIP2 Register Pswd :$sip2_register_pswd
+SIP2 Register TTL  :$sip2_register_ttl
+SIP2 Enable Reg    :$sip2_enable_reg
+SIP2 Proxy Addr    :$sip2_proxy_addr
+SIP2 Proxy Port    :$sip2_proxy_port
+SIP2 Proxy User    :$sip2_proxy_user
+SIP2 Proxy Pswd    :$sip2_proxy_pswd
+SIP2 BakProxy Addr :$sip2_bakproxy_addr
+SIP2 BakProxy Port :$sip2_bakproxy_port
+SIP2 Enable Failbac:$sip2_enable_failbac
+SIP2 Signal Crypto :$sip2_signal_crypto
+SIP2 SigCrypto Key :$sip2_sigcrypto_key
+SIP2 Media Crypto  :$sip2_media_crypto
+SIP2 MedCrypto Key :$sip2_medcrypto_key
+SIP2 SRTP Auth-Tag :0
+SIP2 Local Domain  :$sip2_local_domain
+SIP2 Always FWD    :$sip2_always_fwd
+SIP2 Busy FWD      :$sip2_busy_fwd
+SIP2 No Answer FWD :$sip2_no_answer_fwd
+SIP2 Always FWD Num:$sip2_always_fwd_num
+SIP2 Busy FWD Num  :$sip2_busy_fwd_num
+SIP2 NoAnswer FWD N:$sip2_noanswer_fwd_n
+SIP2 FWD Timer     :$sip2_fwd_timer
+SIP2 Ring Type     :$sip2_ring_type
+SIP2 Hotline Num   :$sip2_hotline_num
+SIP2 Enable Hotline:$sip2_enable_hotline
+SIP2 WarmLine Time :$sip2_warmline_time
+SIP2 Pickup Num    :$sip2_pickup_num
+SIP2 Join Num      :$sip2_join_num
+SIP2 NAT UDPUpdate :$sip2_nat_udpupdate
+SIP2 UDPUpdate TTL :$sip2_udpupdate_ttl
+SIP2 Server Type   :$sip2_server_type
+SIP2 User Agent    :$sip2_user_agent
+SIP2 PRACK         :$sip2_prack
+SIP2 Keep AUTH     :$sip2_keep_auth
+SIP2 Session Timer :$sip2_session_timer
+SIP2 S.Timer Expire:$sip2_s_timer_expire
+SIP2 Enable GRUU   :$sip2_enable_gruu
+SIP2 DTMF Mode     :$sip2_dtmf_mode
+SIP2 DTMF Info Mode:$sip2_dtmf_info_mode
+SIP2 NAT Type      :$sip2_nat_type
+SIP2 Enable Rport  :$sip2_enable_rport
+SIP2 Subscribe     :$sip2_subscribe
+SIP2 Sub Expire    :$sip2_sub_expire
+SIP2 Single Codec  :$sip2_single_codec
+SIP2 CLIR          :$sip2_clir
+SIP2 Strict Proxy  :$sip2_strict_proxy
+SIP2 Direct Contact:$sip2_direct_contact
+SIP2 History Info  :$sip2_history_info
+SIP2 DNS Mode      :$sip2_dns_mode
+SIP2 XFER Expire   :$sip2_xfer_expire
+SIP2 Ban Anonymous :$sip2_ban_anonymous
+SIP2 Dial Off Line :$sip2_dial_off_line
+SIP2 Quota Name    :$sip2_quota_name
+SIP2 Presence Mode :$sip2_presence_mode
+SIP2 RFC Ver       :$sip2_rfc_ver
+SIP2 Signal Port   :$sip2_signal_port
+SIP2 Transport     :$sip2_transport
+SIP2 Use SRV Mixer :$sip2_use_srv_mixer
+SIP2 SRV Mixer Uri :$sip2_srv_mixer_uri
+SIP2 Long Contact  :$sip2_long_contact
+SIP2 Auto TCP      :$sip2_auto_tcp
+SIP2 Uri Escaped   :$sip2_uri_escaped
+SIP2 Click to Talk :$sip2_click_to_talk
+SIP2 MWI Num       :$sip2_mwi_num
+SIP2 CallPark Num  :$sip2_callpark_num
+SIP2 Retrieve Num  :$sip2_retrieve_num
+SIP2 MSRPHelp Num  :$sip2_msrphelp_num
+SIP2 User Is Phone :$sip2_user_is_phone
+SIP2 Auto Answer   :$sip2_auto_answer
+SIP2 NoAnswerTime  :$sip2_noanswertime
+SIP2 MissedCallLog :$sip2_missedcalllog
+SIP2 SvcCode Mode  :$sip2_svccode_mode
+SIP2 DNDOn SvcCode :$sip2_dndon_svccode
+SIP2 DNDOff SvcCode:$sip2_dndoff_svccode
+SIP2 CFUOn SvcCode :$sip2_cfuon_svccode
+SIP2 CFUOff SvcCode:$sip2_cfuoff_svccode
+SIP2 CFBOn SvcCode :$sip2_cfbon_svccode
+SIP2 CFBOff SvcCode:$sip2_cfboff_svccode
+SIP2 CFNOn SvcCode :$sip2_cfnon_svccode
+SIP2 CFNOff SvcCode:$sip2_cfnoff_svccode
+SIP2 ANCOn SvcCode :$sip2_ancon_svccode
+SIP2 ANCOff SvcCode:$sip2_ancoff_svccode
+SIP2 VoiceCodecMap :$sip2_voicecodecmap
+SIP2 BLFList Uri   :$sip2_blflist_uri
+SIP2 BLF Server    :$sip2_blf_server
+SIP2 Respond 182   :$sip2_respond_182
+SIP2 Enable BLFList:$sip2_enable_blflist
+SIP2 Caller Id Type:$sip2_caller_id_type
+SIP2 Syn Clock Time:$sip2_syn_clock_time
+SIP2 Use VPN       :$sip2_use_vpn
+SIP2 Enable DND    :$sip2_enable_dnd
+SIP2 Update Reg Exp:$sip2_update_reg_exp
+SIP2 Inactive Hold :$sip2_inactive_hold
+SIP2 Enable SCA    :$sip2_enable_sca
+SIP2 Sub CallPark  :$sip2_sub_callpark
+SIP2 Hoteling Event:$sip2_hoteling_event
+SIP2 Sub CC Status :$sip2_sub_cc_status
+SIP2 Feature Sync  :$sip2_feature_sync
+SIP2 Req With Port :$sip2_req_with_port
+SIP3 Phone Number  :$sip3_phone_number
+SIP3 Display Name  :$sip3_display_name
+SIP3 Sip Name      :$sip3_sip_name
+SIP3 Register Addr :$sip3_register_addr
+SIP3 Register Port :$sip3_register_port
+SIP3 Register User :$sip3_register_user
+SIP3 Register Pswd :$sip3_register_pswd
+SIP3 Register TTL  :$sip3_register_ttl
+SIP3 Enable Reg    :$sip3_enable_reg
+SIP3 Proxy Addr    :$sip3_proxy_addr
+SIP3 Proxy Port    :$sip3_proxy_port
+SIP3 Proxy User    :$sip3_proxy_user
+SIP3 Proxy Pswd    :$sip3_proxy_pswd
+SIP3 BakProxy Addr :$sip3_bakproxy_addr
+SIP3 BakProxy Port :$sip3_bakproxy_port
+SIP3 Enable Failbac:$sip3_enable_failbac
+SIP3 Signal Crypto :$sip3_signal_crypto
+SIP3 SigCrypto Key :$sip3_sigcrypto_key
+SIP3 Media Crypto  :$sip3_media_crypto
+SIP3 MedCrypto Key :$sip3_medcrypto_key
+SIP3 SRTP Auth-Tag :0
+SIP3 Local Domain  :$sip3_local_domain
+SIP3 Always FWD    :$sip3_always_fwd
+SIP3 Busy FWD      :$sip3_busy_fwd
+SIP3 No Answer FWD :$sip3_no_answer_fwd
+SIP3 Always FWD Num:$sip3_always_fwd_num
+SIP3 Busy FWD Num  :$sip3_busy_fwd_num
+SIP3 NoAnswer FWD N:$sip3_noanswer_fwd_n
+SIP3 FWD Timer     :$sip3_fwd_timer
+SIP3 Ring Type     :$sip3_ring_type
+SIP3 Hotline Num   :$sip3_hotline_num
+SIP3 Enable Hotline:$sip3_enable_hotline
+SIP3 WarmLine Time :$sip3_warmline_time
+SIP3 Pickup Num    :$sip3_pickup_num
+SIP3 Join Num      :$sip3_join_num
+SIP3 NAT UDPUpdate :$sip3_nat_udpupdate
+SIP3 UDPUpdate TTL :$sip3_udpupdate_ttl
+SIP3 Server Type   :$sip3_server_type
+SIP3 User Agent    :$sip3_user_agent
+SIP3 PRACK         :$sip3_prack
+SIP3 Keep AUTH     :$sip3_keep_auth
+SIP3 Session Timer :$sip3_session_timer
+SIP3 S.Timer Expire:$sip3_s_timer_expire
+SIP3 Enable GRUU   :$sip3_enable_gruu
+SIP3 DTMF Mode     :$sip3_dtmf_mode
+SIP3 DTMF Info Mode:$sip3_dtmf_info_mode
+SIP3 NAT Type      :$sip3_nat_type
+SIP3 Enable Rport  :$sip3_enable_rport
+SIP3 Subscribe     :$sip3_subscribe
+SIP3 Sub Expire    :$sip3_sub_expire
+SIP3 Single Codec  :$sip3_single_codec
+SIP3 CLIR          :$sip3_clir
+SIP3 Strict Proxy  :$sip3_strict_proxy
+SIP3 Direct Contact:$sip3_direct_contact
+SIP3 History Info  :$sip3_history_info
+SIP3 DNS Mode      :$sip3_dns_mode
+SIP3 XFER Expire   :$sip3_xfer_expire
+SIP3 Ban Anonymous :$sip3_ban_anonymous
+SIP3 Dial Off Line :$sip3_dial_off_line
+SIP3 Quota Name    :$sip3_quota_name
+SIP3 Presence Mode :$sip3_presence_mode
+SIP3 RFC Ver       :$sip3_rfc_ver
+SIP3 Signal Port   :$sip3_signal_port
+SIP3 Transport     :$sip3_transport
+SIP3 Use SRV Mixer :$sip3_use_srv_mixer
+SIP3 SRV Mixer Uri :$sip3_srv_mixer_uri
+SIP3 Long Contact  :$sip3_long_contact
+SIP3 Auto TCP      :$sip3_auto_tcp
+SIP3 Uri Escaped   :$sip3_uri_escaped
+SIP3 Click to Talk :$sip3_click_to_talk
+SIP3 MWI Num       :$sip3_mwi_num
+SIP3 CallPark Num  :$sip3_callpark_num
+SIP3 Retrieve Num  :$sip3_retrieve_num
+SIP3 MSRPHelp Num  :$sip3_msrphelp_num
+SIP3 User Is Phone :$sip3_user_is_phone
+SIP3 Auto Answer   :$sip3_auto_answer
+SIP3 NoAnswerTime  :$sip3_noanswertime
+SIP3 MissedCallLog :$sip3_missedcalllog
+SIP3 SvcCode Mode  :$sip3_svccode_mode
+SIP3 DNDOn SvcCode :$sip3_dndon_svccode
+SIP3 DNDOff SvcCode:$sip3_dndoff_svccode
+SIP3 CFUOn SvcCode :$sip3_cfuon_svccode
+SIP3 CFUOff SvcCode:$sip3_cfuoff_svccode
+SIP3 CFBOn SvcCode :$sip3_cfbon_svccode
+SIP3 CFBOff SvcCode:$sip3_cfboff_svccode
+SIP3 CFNOn SvcCode :$sip3_cfnon_svccode
+SIP3 CFNOff SvcCode:$sip3_cfnoff_svccode
+SIP3 ANCOn SvcCode :$sip3_ancon_svccode
+SIP3 ANCOff SvcCode:$sip3_ancoff_svccode
+SIP3 VoiceCodecMap :$sip3_voicecodecmap
+SIP3 BLFList Uri   :$sip3_blflist_uri
+SIP3 BLF Server    :$sip3_blf_server
+SIP3 Respond 182   :$sip3_respond_182
+SIP3 Enable BLFList:$sip3_enable_blflist
+SIP3 Caller Id Type:$sip3_caller_id_type
+SIP3 Syn Clock Time:$sip3_syn_clock_time
+SIP3 Use VPN       :$sip3_use_vpn
+SIP3 Enable DND    :$sip3_enable_dnd
+SIP3 Update Reg Exp:$sip3_update_reg_exp
+SIP3 Inactive Hold :$sip3_inactive_hold
+SIP3 Enable SCA    :$sip3_enable_sca
+SIP3 Sub CallPark  :$sip3_sub_callpark
+SIP3 Hoteling Event:$sip3_hoteling_event
+SIP3 Sub CC Status :$sip3_sub_cc_status
+SIP3 Feature Sync  :$sip3_feature_sync
+SIP3 Req With Port :$sip3_req_with_port
+SIP4 Phone Number  :$sip4_phone_number
+SIP4 Display Name  :$sip4_display_name
+SIP4 Sip Name      :$sip4_sip_name
+SIP4 Register Addr :$sip4_register_addr
+SIP4 Register Port :$sip4_register_port
+SIP4 Register User :$sip4_register_user
+SIP4 Register Pswd :$sip4_register_pswd
+SIP4 Register TTL  :$sip4_register_ttl
+SIP4 Enable Reg    :$sip4_enable_reg
+SIP4 Proxy Addr    :$sip4_proxy_addr
+SIP4 Proxy Port    :$sip4_proxy_port
+SIP4 Proxy User    :$sip4_proxy_user
+SIP4 Proxy Pswd    :$sip4_proxy_pswd
+SIP4 BakProxy Addr :$sip4_bakproxy_addr
+SIP4 BakProxy Port :$sip4_bakproxy_port
+SIP4 Enable Failbac:$sip4_enable_failbac
+SIP4 Signal Crypto :$sip4_signal_crypto
+SIP4 SigCrypto Key :$sip4_sigcrypto_key
+SIP4 Media Crypto  :$sip4_media_crypto
+SIP4 MedCrypto Key :$sip4_medcrypto_key
+SIP4 SRTP Auth-Tag :0
+SIP4 Local Domain  :$sip4_local_domain
+SIP4 Always FWD    :$sip4_always_fwd
+SIP4 Busy FWD      :$sip4_busy_fwd
+SIP4 No Answer FWD :$sip4_no_answer_fwd
+SIP4 Always FWD Num:$sip4_always_fwd_num
+SIP4 Busy FWD Num  :$sip4_busy_fwd_num
+SIP4 NoAnswer FWD N:$sip4_noanswer_fwd_n
+SIP4 FWD Timer     :$sip4_fwd_timer
+SIP4 Ring Type     :$sip4_ring_type
+SIP4 Hotline Num   :$sip4_hotline_num
+SIP4 Enable Hotline:$sip4_enable_hotline
+SIP4 WarmLine Time :$sip4_warmline_time
+SIP4 Pickup Num    :$sip4_pickup_num
+SIP4 Join Num      :$sip4_join_num
+SIP4 NAT UDPUpdate :$sip4_nat_udpupdate
+SIP4 UDPUpdate TTL :$sip4_udpupdate_ttl
+SIP4 Server Type   :$sip4_server_type
+SIP4 User Agent    :$sip4_user_agent
+SIP4 PRACK         :$sip4_prack
+SIP4 Keep AUTH     :$sip4_keep_auth
+SIP4 Session Timer :$sip4_session_timer
+SIP4 S.Timer Expire:$sip4_s_timer_expire
+SIP4 Enable GRUU   :$sip4_enable_gruu
+SIP4 DTMF Mode     :$sip4_dtmf_mode
+SIP4 DTMF Info Mode:$sip4_dtmf_info_mode
+SIP4 NAT Type      :$sip4_nat_type
+SIP4 Enable Rport  :$sip4_enable_rport
+SIP4 Subscribe     :$sip4_subscribe
+SIP4 Sub Expire    :$sip4_sub_expire
+SIP4 Single Codec  :$sip4_single_codec
+SIP4 CLIR          :$sip4_clir
+SIP4 Strict Proxy  :$sip4_strict_proxy
+SIP4 Direct Contact:$sip4_direct_contact
+SIP4 History Info  :$sip4_history_info
+SIP4 DNS Mode      :$sip4_dns_mode
+SIP4 XFER Expire   :$sip4_xfer_expire
+SIP4 Ban Anonymous :$sip4_ban_anonymous
+SIP4 Dial Off Line :$sip4_dial_off_line
+SIP4 Quota Name    :$sip4_quota_name
+SIP4 Presence Mode :$sip4_presence_mode
+SIP4 RFC Ver       :$sip4_rfc_ver
+SIP4 Signal Port   :$sip4_signal_port
+SIP4 Transport     :$sip4_transport
+SIP4 Use SRV Mixer :$sip4_use_srv_mixer
+SIP4 SRV Mixer Uri :$sip4_srv_mixer_uri
+SIP4 Long Contact  :$sip4_long_contact
+SIP4 Auto TCP      :$sip4_auto_tcp
+SIP4 Uri Escaped   :$sip4_uri_escaped
+SIP4 Click to Talk :$sip4_click_to_talk
+SIP4 MWI Num       :$sip4_mwi_num
+SIP4 CallPark Num  :$sip4_callpark_num
+SIP4 Retrieve Num  :$sip4_retrieve_num
+SIP4 MSRPHelp Num  :$sip4_msrphelp_num
+SIP4 User Is Phone :$sip4_user_is_phone
+SIP4 Auto Answer   :$sip4_auto_answer
+SIP4 NoAnswerTime  :$sip4_noanswertime
+SIP4 MissedCallLog :$sip4_missedcalllog
+SIP4 SvcCode Mode  :$sip4_svccode_mode
+SIP4 DNDOn SvcCode :$sip4_dndon_svccode
+SIP4 DNDOff SvcCode:$sip4_dndoff_svccode
+SIP4 CFUOn SvcCode :$sip4_cfuon_svccode
+SIP4 CFUOff SvcCode:$sip4_cfuoff_svccode
+SIP4 CFBOn SvcCode :$sip4_cfbon_svccode
+SIP4 CFBOff SvcCode:$sip4_cfboff_svccode
+SIP4 CFNOn SvcCode :$sip4_cfnon_svccode
+SIP4 CFNOff SvcCode:$sip4_cfnoff_svccode
+SIP4 ANCOn SvcCode :$sip4_ancon_svccode
+SIP4 ANCOff SvcCode:$sip4_ancoff_svccode
+SIP4 VoiceCodecMap :$sip4_voicecodecmap
+SIP4 BLFList Uri   :$sip4_blflist_uri
+SIP4 BLF Server    :$sip4_blf_server
+SIP4 Respond 182   :$sip4_respond_182
+SIP4 Enable BLFList:$sip4_enable_blflist
+SIP4 Caller Id Type:$sip4_caller_id_type
+SIP4 Syn Clock Time:$sip4_syn_clock_time
+SIP4 Use VPN       :$sip4_use_vpn
+SIP4 Enable DND    :$sip4_enable_dnd
+SIP4 Update Reg Exp:$sip4_update_reg_exp
+SIP4 Inactive Hold :$sip4_inactive_hold
+SIP4 Enable SCA    :$sip4_enable_sca
+SIP4 Sub CallPark  :$sip4_sub_callpark
+SIP4 Hoteling Event:$sip4_hoteling_event
+SIP4 Sub CC Status :$sip4_sub_cc_status
+SIP4 Feature Sync  :$sip4_feature_sync
+SIP4 Req With Port :$sip4_req_with_port
+SIP5 Phone Number  :$sip5_phone_number
+SIP5 Display Name  :$sip5_display_name
+SIP5 Sip Name      :$sip5_sip_name
+SIP5 Register Addr :$sip5_register_addr
+SIP5 Register Port :$sip5_register_port
+SIP5 Register User :$sip5_register_user
+SIP5 Register Pswd :$sip5_register_pswd
+SIP5 Register TTL  :$sip5_register_ttl
+SIP5 Enable Reg    :$sip5_enable_reg
+SIP5 Proxy Addr    :$sip5_proxy_addr
+SIP5 Proxy Port    :$sip5_proxy_port
+SIP5 Proxy User    :$sip5_proxy_user
+SIP5 Proxy Pswd    :$sip5_proxy_pswd
+SIP5 BakProxy Addr :$sip5_bakproxy_addr
+SIP5 BakProxy Port :$sip5_bakproxy_port
+SIP5 Enable Failbac:$sip5_enable_failbac
+SIP5 Signal Crypto :$sip5_signal_crypto
+SIP5 SigCrypto Key :$sip5_sigcrypto_key
+SIP5 Media Crypto  :$sip5_media_crypto
+SIP5 MedCrypto Key :$sip5_medcrypto_key
+SIP5 SRTP Auth-Tag :0
+SIP5 Local Domain  :$sip5_local_domain
+SIP5 Always FWD    :$sip5_always_fwd
+SIP5 Busy FWD      :$sip5_busy_fwd
+SIP5 No Answer FWD :$sip5_no_answer_fwd
+SIP5 Always FWD Num:$sip5_always_fwd_num
+SIP5 Busy FWD Num  :$sip5_busy_fwd_num
+SIP5 NoAnswer FWD N:$sip5_noanswer_fwd_n
+SIP5 FWD Timer     :$sip5_fwd_timer
+SIP5 Ring Type     :$sip5_ring_type
+SIP5 Hotline Num   :$sip5_hotline_num
+SIP5 Enable Hotline:$sip5_enable_hotline
+SIP5 WarmLine Time :$sip5_warmline_time
+SIP5 Pickup Num    :$sip5_pickup_num
+SIP5 Join Num      :$sip5_join_num
+SIP5 NAT UDPUpdate :$sip5_nat_udpupdate
+SIP5 UDPUpdate TTL :$sip5_udpupdate_ttl
+SIP5 Server Type   :$sip5_server_type
+SIP5 User Agent    :$sip5_user_agent
+SIP5 PRACK         :$sip5_prack
+SIP5 Keep AUTH     :$sip5_keep_auth
+SIP5 Session Timer :$sip5_session_timer
+SIP5 S.Timer Expire:$sip5_s_timer_expire
+SIP5 Enable GRUU   :$sip5_enable_gruu
+SIP5 DTMF Mode     :$sip5_dtmf_mode
+SIP5 DTMF Info Mode:$sip5_dtmf_info_mode
+SIP5 NAT Type      :$sip5_nat_type
+SIP5 Enable Rport  :$sip5_enable_rport
+SIP5 Subscribe     :$sip5_subscribe
+SIP5 Sub Expire    :$sip5_sub_expire
+SIP5 Single Codec  :$sip5_single_codec
+SIP5 CLIR          :$sip5_clir
+SIP5 Strict Proxy  :$sip5_strict_proxy
+SIP5 Direct Contact:$sip5_direct_contact
+SIP5 History Info  :$sip5_history_info
+SIP5 DNS Mode      :$sip5_dns_mode
+SIP5 XFER Expire   :$sip5_xfer_expire
+SIP5 Ban Anonymous :$sip5_ban_anonymous
+SIP5 Dial Off Line :$sip5_dial_off_line
+SIP5 Quota Name    :$sip5_quota_name
+SIP5 Presence Mode :$sip5_presence_mode
+SIP5 RFC Ver       :$sip5_rfc_ver
+SIP5 Signal Port   :$sip5_signal_port
+SIP5 Transport     :$sip5_transport
+SIP5 Use SRV Mixer :$sip5_use_srv_mixer
+SIP5 SRV Mixer Uri :$sip5_srv_mixer_uri
+SIP5 Long Contact  :$sip5_long_contact
+SIP5 Auto TCP      :$sip5_auto_tcp
+SIP5 Uri Escaped   :$sip5_uri_escaped
+SIP5 Click to Talk :$sip5_click_to_talk
+SIP5 MWI Num       :$sip5_mwi_num
+SIP5 CallPark Num  :$sip5_callpark_num
+SIP5 Retrieve Num  :$sip5_retrieve_num
+SIP5 MSRPHelp Num  :$sip5_msrphelp_num
+SIP5 User Is Phone :$sip5_user_is_phone
+SIP5 Auto Answer   :$sip5_auto_answer
+SIP5 NoAnswerTime  :$sip5_noanswertime
+SIP5 MissedCallLog :$sip5_missedcalllog
+SIP5 SvcCode Mode  :$sip5_svccode_mode
+SIP5 DNDOn SvcCode :$sip5_dndon_svccode
+SIP5 DNDOff SvcCode:$sip5_dndoff_svccode
+SIP5 CFUOn SvcCode :$sip5_cfuon_svccode
+SIP5 CFUOff SvcCode:$sip5_cfuoff_svccode
+SIP5 CFBOn SvcCode :$sip5_cfbon_svccode
+SIP5 CFBOff SvcCode:$sip5_cfboff_svccode
+SIP5 CFNOn SvcCode :$sip5_cfnon_svccode
+SIP5 CFNOff SvcCode:$sip5_cfnoff_svccode
+SIP5 ANCOn SvcCode :$sip5_ancon_svccode
+SIP5 ANCOff SvcCode:$sip5_ancoff_svccode
+SIP5 VoiceCodecMap :$sip5_voicecodecmap
+SIP5 BLFList Uri   :$sip5_blflist_uri
+SIP5 BLF Server    :$sip5_blf_server
+SIP5 Respond 182   :$sip5_respond_182
+SIP5 Enable BLFList:$sip5_enable_blflist
+SIP5 Caller Id Type:$sip5_caller_id_type
+SIP5 Syn Clock Time:$sip5_syn_clock_time
+SIP5 Use VPN       :$sip5_use_vpn
+SIP5 Enable DND    :$sip5_enable_dnd
+SIP5 Update Reg Exp:$sip5_update_reg_exp
+SIP5 Inactive Hold :$sip5_inactive_hold
+SIP5 Enable SCA    :$sip5_enable_sca
+SIP5 Sub CallPark  :$sip5_sub_callpark
+SIP5 Hoteling Event:$sip5_hoteling_event
+SIP5 Sub CC Status :$sip5_sub_cc_status
+SIP5 Feature Sync  :$sip5_feature_sync
+SIP5 Req With Port :$sip5_req_with_port
+SIP6 Phone Number  :$sip6_phone_number
+SIP6 Display Name  :$sip6_display_name
+SIP6 Sip Name      :$sip6_sip_name
+SIP6 Register Addr :$sip6_register_addr
+SIP6 Register Port :$sip6_register_port
+SIP6 Register User :$sip6_register_user
+SIP6 Register Pswd :$sip6_register_pswd
+SIP6 Register TTL  :$sip6_register_ttl
+SIP6 Enable Reg    :$sip6_enable_reg
+SIP6 Proxy Addr    :$sip6_proxy_addr
+SIP6 Proxy Port    :$sip6_proxy_port
+SIP6 Proxy User    :$sip6_proxy_user
+SIP6 Proxy Pswd    :$sip6_proxy_pswd
+SIP6 BakProxy Addr :$sip6_bakproxy_addr
+SIP6 BakProxy Port :$sip6_bakproxy_port
+SIP6 Enable Failbac:$sip6_enable_failbac
+SIP6 Signal Crypto :$sip6_signal_crypto
+SIP6 SigCrypto Key :$sip6_sigcrypto_key
+SIP6 Media Crypto  :$sip6_media_crypto
+SIP6 MedCrypto Key :$sip6_medcrypto_key
+SIP6 SRTP Auth-Tag :0
+SIP6 Local Domain  :$sip6_local_domain
+SIP6 Always FWD    :$sip6_always_fwd
+SIP6 Busy FWD      :$sip6_busy_fwd
+SIP6 No Answer FWD :$sip6_no_answer_fwd
+SIP6 Always FWD Num:$sip6_always_fwd_num
+SIP6 Busy FWD Num  :$sip6_busy_fwd_num
+SIP6 NoAnswer FWD N:$sip6_noanswer_fwd_n
+SIP6 FWD Timer     :$sip6_fwd_timer
+SIP6 Ring Type     :$sip6_ring_type
+SIP6 Hotline Num   :$sip6_hotline_num
+SIP6 Enable Hotline:$sip6_enable_hotline
+SIP6 WarmLine Time :$sip6_warmline_time
+SIP6 Pickup Num    :$sip6_pickup_num
+SIP6 Join Num      :$sip6_join_num
+SIP6 NAT UDPUpdate :$sip6_nat_udpupdate
+SIP6 UDPUpdate TTL :$sip6_udpupdate_ttl
+SIP6 Server Type   :$sip6_server_type
+SIP6 User Agent    :$sip6_user_agent
+SIP6 PRACK         :$sip6_prack
+SIP6 Keep AUTH     :$sip6_keep_auth
+SIP6 Session Timer :$sip6_session_timer
+SIP6 S.Timer Expire:$sip6_s_timer_expire
+SIP6 Enable GRUU   :$sip6_enable_gruu
+SIP6 DTMF Mode     :$sip6_dtmf_mode
+SIP6 DTMF Info Mode:$sip6_dtmf_info_mode
+SIP6 NAT Type      :$sip6_nat_type
+SIP6 Enable Rport  :$sip6_enable_rport
+SIP6 Subscribe     :$sip6_subscribe
+SIP6 Sub Expire    :$sip6_sub_expire
+SIP6 Single Codec  :$sip6_single_codec
+SIP6 CLIR          :$sip6_clir
+SIP6 Strict Proxy  :$sip6_strict_proxy
+SIP6 Direct Contact:$sip6_direct_contact
+SIP6 History Info  :$sip6_history_info
+SIP6 DNS Mode      :$sip6_dns_mode
+SIP6 XFER Expire   :$sip6_xfer_expire
+SIP6 Ban Anonymous :$sip6_ban_anonymous
+SIP6 Dial Off Line :$sip6_dial_off_line
+SIP6 Quota Name    :$sip6_quota_name
+SIP6 Presence Mode :$sip6_presence_mode
+SIP6 RFC Ver       :$sip6_rfc_ver
+SIP6 Signal Port   :$sip6_signal_port
+SIP6 Transport     :$sip6_transport
+SIP6 Use SRV Mixer :$sip6_use_srv_mixer
+SIP6 SRV Mixer Uri :$sip6_srv_mixer_uri
+SIP6 Long Contact  :$sip6_long_contact
+SIP6 Auto TCP      :$sip6_auto_tcp
+SIP6 Uri Escaped   :$sip6_uri_escaped
+SIP6 Click to Talk :$sip6_click_to_talk
+SIP6 MWI Num       :$sip6_mwi_num
+SIP6 CallPark Num  :$sip6_callpark_num
+SIP6 Retrieve Num  :$sip6_retrieve_num
+SIP6 MSRPHelp Num  :$sip6_msrphelp_num
+SIP6 User Is Phone :$sip6_user_is_phone
+SIP6 Auto Answer   :$sip6_auto_answer
+SIP6 NoAnswerTime  :$sip6_noanswertime
+SIP6 MissedCallLog :$sip6_missedcalllog
+SIP6 SvcCode Mode  :$sip6_svccode_mode
+SIP6 DNDOn SvcCode :$sip6_dndon_svccode
+SIP6 DNDOff SvcCode:$sip6_dndoff_svccode
+SIP6 CFUOn SvcCode :$sip6_cfuon_svccode
+SIP6 CFUOff SvcCode:$sip6_cfuoff_svccode
+SIP6 CFBOn SvcCode :$sip6_cfbon_svccode
+SIP6 CFBOff SvcCode:$sip6_cfboff_svccode
+SIP6 CFNOn SvcCode :$sip6_cfnon_svccode
+SIP6 CFNOff SvcCode:$sip6_cfnoff_svccode
+SIP6 ANCOn SvcCode :$sip6_ancon_svccode
+SIP6 ANCOff SvcCode:$sip6_ancoff_svccode
+SIP6 VoiceCodecMap :$sip6_voicecodecmap
+SIP6 BLFList Uri   :$sip6_blflist_uri
+SIP6 BLF Server    :$sip6_blf_server
+SIP6 Respond 182   :$sip6_respond_182
+SIP6 Enable BLFList:$sip6_enable_blflist
+SIP6 Caller Id Type:$sip6_caller_id_type
+SIP6 Syn Clock Time:$sip6_syn_clock_time
+SIP6 Use VPN       :$sip6_use_vpn
+SIP6 Enable DND    :$sip6_enable_dnd
+SIP6 Update Reg Exp:$sip6_update_reg_exp
+SIP6 Inactive Hold :$sip6_inactive_hold
+SIP6 Enable SCA    :$sip6_enable_sca
+SIP6 Sub CallPark  :$sip6_sub_callpark
+SIP6 Hoteling Event:$sip6_hoteling_event
+SIP6 Sub CC Status :$sip6_sub_cc_status
+SIP6 Feature Sync  :$sip6_feature_sync
+SIP6 Req With Port :$sip6_req_with_port
+
+<IAX2 CONFIG MODULE>
+Server Address     :$server_address
+Server Port        :$server_port
+User Name          :$user_name
+User Password      :$user_password
+User Number        :$user_number
+Voice Number       :$voice_number
+Voice Text         :$voice_text
+EchoTest Number    :$echotest_number
+EchoTest Text      :$echotest_text
+Local Port         :$local_port
+Enable Register    :$enable_register
+Refresh Time       :$refresh_time
+Enable G.729       :$enable_g_729
+
+<MCAST CFG MODULE>
+Priority           :$priority
+Enbale Priority    :$enbale_priority
+--Mcast Addr--     :
+MCAST1 Port        :$mcast1_port
+MCAST1 Name        :$mcast1_name
+MCAST1 Host        :$mcast1_host
+MCAST2 Port        :$mcast2_port
+MCAST2 Name        :$mcast2_name
+MCAST2 Host        :$mcast2_host
+MCAST3 Port        :$mcast3_port
+MCAST3 Name        :$mcast3_name
+MCAST3 Host        :$mcast3_host
+MCAST4 Port        :$mcast4_port
+MCAST4 Name        :$mcast4_name
+MCAST4 Host        :$mcast4_host
+MCAST5 Port        :$mcast5_port
+MCAST5 Name        :$mcast5_name
+MCAST5 Host        :$mcast5_host
+MCAST6 Port        :$mcast6_port
+MCAST6 Name        :$mcast6_name
+MCAST6 Host        :$mcast6_host
+MCAST7 Port        :$mcast7_port
+MCAST7 Name        :$mcast7_name
+MCAST7 Host        :$mcast7_host
+MCAST8 Port        :$mcast8_port
+MCAST8 Name        :$mcast8_name
+MCAST8 Host        :$mcast8_host
+MCAST9 Port        :$mcast9_port
+MCAST9 Name        :$mcast9_name
+MCAST9 Host        :$mcast9_host
+MCAST10 Port       :$mcast10_port
+MCAST10 Name       :$mcast10_name
+MCAST10 Host       :$mcast10_host
+
+<PPPoE CONFIG MODULE>
+PPPoE User         :$pppoe_user
+PPPoE Password     :$pppoe_password
+PPPoE Svc Name     :$pppoe_svc_name
+PPPoE IP Address   :$pppoe_ip_address
+
+<MMI CONFIG MODULE>
+Telnet Port        :$telnet_port
+Web Port           :$web_port
+Web Server Type    :$web_server_type
+Https Web Port     :$https_web_port
+Remote Control     :$remote_control
+Enable MMI Filter  :$enable_mmi_filter
+Telnet Prompt      :$telnet_prompt
+--MMI Account--    :
+Account1 Name      :$account1_name
+Account1 Password  :$account1_password
+Account1 Level     :$account1_level
+
+<QOS CONFIG MODULE>
+Enable VLAN        :$enable_vlan
+Enable diffServ    :$enable_diffserv
+LLDP Transmit      :$lldp_transmit
+LLDP Refresh Time  :$lldp_refresh_time
+LLDP Learn Policy  :$lldp_learn_policy
+Singalling DSCP    :$singalling_dscp
+Voice DSCP         :$voice_dscp
+VLAN ID            :$vlan_id
+Signalling Priority:$signalling_priority
+Voice Priority     :$voice_priority
+VLAN Recv Check    :$vlan_recv_check
+Enable PVID        :$enable_pvid
+PVID Value         :$pvid_value
+
+<DEBUG CONFIG MODULE>
+MGR Trace Level    :$mgr_trace_level
+SIP Trace Level    :$sip_trace_level
+IAX Trace Level    :$iax_trace_level
+Trace File Info    :$trace_file_info
+Enable Watch Dog   :$enable_watch_dog
+
+<AAA CONFIG MODULE>
+Enable Syslog      :$enable_syslog
+Syslog address     :$syslog_address
+Syslog port        :$syslog_port
+
+<ACCESS CONFIG MODULE>
+Enable In Access   :$enable_in_access
+Enable Out Access  :$enable_out_access
+
+<DHCP CONFIG MODULE>
+DHCP Server Type   :$dhcp_server_type
+DHCP Relay IP      :$dhcp_relay_ip
+Enable DNS Relay   :$enable_dns_relay
+Update SRV Mode    :$update_srv_mode
+Update TFTP SRV IP :$update_tftp_srv_ip
+
+<NAT CONFIG MODULE>
+Enable Nat         :$enable_nat
+Enable Ftp ALG     :$enable_ftp_alg
+Enable H323 ALG    :$enable_h323_alg
+Enable PPTP ALG    :$enable_pptp_alg
+Enable IPSec ALG   :$enable_ipsec_alg
+
+<PHONE CONFIG MODULE>
+Menu Password      :$menu_password
+KeyLock Password   :$keylock_password
+Fast Keylock Code  :$fast_keylock_code
+Enable KeyLock     :$enable_keylock
+Emergency Call     :$emergency_call
+LCD Title          :$sipname
+LCD Constrast      :$lcd_constrast
+LCD Luminance      :$lcd_luminance
+Backlight Off Time :$backlight_off_time
+Enable Power LED   :$enable_power_led
+Time Display Style :$time_display_style
+Enable TimeDisplay :$enable_timedisplay
+Phone Model        :$phone_model
+About Info         :$about_info
+Missed Call LED    :$missed_call_led
+Alarm  Clock       :$alarm__clock
+Disable CHN IME    :$disable_chn_ime
+Date Display Style :$date_display_style
+Date Separator     :$date_separator
+Enable Pre-Dial    :1
+Default Line       :$default_line
+Enable Default Line:$enable_default_line
+Enable Auto SelLine:$enable_auto_selline
+Agent Username     :$agent_username
+Agent Password     :$agent_password
+Agent Number       :$agent_number
+Agent Sipline      :$agent_sipline
+Agent Status       :$agent_status
+Agent Status Reason:$agent_status_reason
+--BW Calllogs Conf :
+BWCLog1 Title      :$bwclog1_title
+BWCLog1 URL        :$bwclog1_url
+BWCLog1 Username   :$bwclog1_username
+BWCLog1 Password   :$bwclog1_password
+BWCLog1 SipLine    :$bwclog1_sipline
+BWCLog2 Title      :$bwclog2_title
+BWCLog2 URL        :$bwclog2_url
+BWCLog2 Username   :$bwclog2_username
+BWCLog2 Password   :$bwclog2_password
+BWCLog2 SipLine    :$bwclog2_sipline
+BWCLog3 Title      :$bwclog3_title
+BWCLog3 URL        :$bwclog3_url
+BWCLog3 Username   :$bwclog3_username
+BWCLog3 Password   :$bwclog3_password
+BWCLog3 SipLine    :$bwclog3_sipline
+--BW Directory Conf:
+BWDir1 Title       :$bwdir1_title
+BWDir1 URL         :$bwdir1_url
+BWDir1 Username    :$bwdir1_username
+BWDir1 Password    :$bwdir1_password
+BWDir1 SipLine     :$bwdir1_sipline
+BWDir2 Title       :$bwdir2_title
+BWDir2 URL         :$bwdir2_url
+BWDir2 Username    :$bwdir2_username
+BWDir2 Password    :$bwdir2_password
+BWDir2 SipLine     :$bwdir2_sipline
+BWDir3 Title       :$bwdir3_title
+BWDir3 URL         :$bwdir3_url
+BWDir3 Username    :$bwdir3_username
+BWDir3 Password    :$bwdir3_password
+BWDir3 SipLine     :$bwdir3_sipline
+BWDir4 Title       :$bwdir4_title
+BWDir4 URL         :$bwdir4_url
+BWDir4 Username    :$bwdir4_username
+BWDir4 Password    :$bwdir4_password
+BWDir4 SipLine     :$bwdir4_sipline
+BWDir5 Title       :$bwdir5_title
+BWDir5 URL         :$bwdir5_url
+BWDir5 Username    :$bwdir5_username
+BWDir5 Password    :$bwdir5_password
+BWDir5 SipLine     :$bwdir5_sipline
+BWDir6 Title       :$bwdir6_title
+BWDir6 URL         :$bwdir6_url
+BWDir6 Username    :$bwdir6_username
+BWDir6 Password    :$bwdir6_password
+BWDir6 SipLine     :$bwdir6_sipline
+--LDAP Config--    :
+LDAP1 Title        :$ldap1_title
+LDAP1 Server       :$ldap1_server
+LDAP1 port         :$ldap1_port
+LDAP1 Authenticate :$ldap1_authenticate
+LDAP1 Version      :$ldap1_version
+LDAP1 Calling Line :$ldap1_calling_line
+LDAP1 Enable Search:$ldap1_enable_search
+LDAP1 Base         :$ldap1_base
+LDAP1 Username     :$ldap1_username
+LDAP1 Password     :$ldap1_password
+LDAP1 Tel Attr     :$ldap1_tel_attr
+LDAP1 Mobile Attr  :$ldap1_mobile_attr
+LDAP1 Other Attr   :$ldap1_other_attr
+LDAP1 Displayname  :$ldap1_displayname
+LDAP2 Title        :$ldap2_title
+LDAP2 Server       :$ldap2_server
+LDAP2 port         :$ldap2_port
+LDAP2 Authenticate :$ldap2_authenticate
+LDAP2 Version      :$ldap2_version
+LDAP2 Calling Line :$ldap2_calling_line
+LDAP2 Enable Search:$ldap2_enable_search
+LDAP2 Base         :$ldap2_base
+LDAP2 Username     :$ldap2_username
+LDAP2 Password     :$ldap2_password
+LDAP2 Tel Attr     :$ldap2_tel_attr
+LDAP2 Mobile Attr  :$ldap2_mobile_attr
+LDAP2 Other Attr   :$ldap2_other_attr
+LDAP2 Displayname  :$ldap2_displayname
+LDAP3 Title        :$ldap3_title
+LDAP3 Server       :$ldap3_server
+LDAP3 port         :$ldap3_port
+LDAP3 Authenticate :$ldap3_authenticate
+LDAP3 Version      :$ldap3_version
+LDAP3 Calling Line :$ldap3_calling_line
+LDAP3 Enable Search:$ldap3_enable_search
+LDAP3 Base         :$ldap3_base
+LDAP3 Username     :$ldap3_username
+LDAP3 Password     :$ldap3_password
+LDAP3 Tel Attr     :$ldap3_tel_attr
+LDAP3 Mobile Attr  :$ldap3_mobile_attr
+LDAP3 Other Attr   :$ldap3_other_attr
+LDAP3 Displayname  :$ldap3_displayname
+LDAP4 Title        :$ldap4_title
+LDAP4 Server       :$ldap4_server
+LDAP4 port         :$ldap4_port
+LDAP4 Authenticate :$ldap4_authenticate
+LDAP4 Version      :$ldap4_version
+LDAP4 Calling Line :$ldap4_calling_line
+LDAP4 Enable Search:$ldap4_enable_search
+LDAP4 Base         :$ldap4_base
+LDAP4 Username     :$ldap4_username
+LDAP4 Password     :$ldap4_password
+LDAP4 Tel Attr     :$ldap4_tel_attr
+LDAP4 Mobile Attr  :$ldap4_mobile_attr
+LDAP4 Other Attr   :$ldap4_other_attr
+LDAP4 Displayname  :$ldap4_displayname
+--Xml PhoneBook--  :
+XML-PBook1 Name    :
+XML-PBook1 Addr    :
+XML-PBook1 Auth    :
+XML-PBook1 Policy  :0
+XML-PBook1 Sipline :0
+XML-PBook2 Name    :
+XML-PBook2 Addr    :
+XML-PBook2 Auth    :
+XML-PBook2 Policy  :0
+XML-PBook2 Sipline :0
+XML-PBook3 Name    :
+XML-PBook3 Addr    :
+XML-PBook3 Auth    :
+XML-PBook3 Policy  :0
+XML-PBook3 Sipline :0
+XML-PBook4 Name    :
+XML-PBook4 Addr    :
+XML-PBook4 Auth    :
+XML-PBook4 Policy  :0
+XML-PBook4 Sipline :0
+Phonebook Groups   :$phonebook_groups
+--Function Key--   :
+Fkey1 Type         :$fkey1_type
+Fkey1 Value        :$fkey1_value
+Fkey1 Title        :$fkey1_title
+Fkey2 Type         :$fkey2_type
+Fkey2 Value        :$fkey2_value
+Fkey2 Title        :$fkey2_title
+Fkey3 Type         :$fkey3_type
+Fkey3 Value        :$fkey3_value
+Fkey3 Title        :$fkey3_title
+Fkey4 Type         :$fkey4_type
+Fkey4 Value        :$fkey4_value
+Fkey4 Title        :$fkey4_title
+Fkey5 Type         :$fkey5_type
+Fkey5 Value        :$fkey5_value
+Fkey5 Title        :$fkey5_title
+Fkey6 Type         :$fkey6_type
+Fkey6 Value        :$fkey6_value
+Fkey6 Title        :$fkey6_title
+Fkey7 Type         :$fkey7_type
+Fkey7 Value        :$fkey7_value
+Fkey7 Title        :$fkey7_title
+Fkey8 Type         :$fkey8_type
+Fkey8 Value        :$fkey8_value
+Fkey8 Title        :$fkey8_title
+Fkey9 Type         :$fkey9_type
+Fkey9 Value        :$fkey9_value
+Fkey9 Title        :$fkey9_title
+Fkey10 Type        :$fkey10_type
+Fkey10 Value       :$fkey10_value
+Fkey10 Title       :$fkey10_title
+Fkey11 Type        :$fkey11_type
+Fkey11 Value       :$fkey11_value
+Fkey11 Title       :$fkey11_title
+Fkey12 Type        :$fkey12_type
+Fkey12 Value       :$fkey12_value
+Fkey12 Title       :$fkey12_title
+Fkey13 Type        :$fkey13_type
+Fkey13 Value       :$fkey13_value
+Fkey13 Title       :$fkey13_title
+Fkey14 Type        :$fkey14_type
+Fkey14 Value       :$fkey14_value
+Fkey14 Title       :$fkey14_title
+Fkey15 Type        :$fkey15_type
+Fkey15 Value       :$fkey15_value
+Fkey15 Title       :$fkey15_title
+Fkey16 Type        :$fkey16_type
+Fkey16 Value       :$fkey16_value
+Fkey16 Title       :$fkey16_title
+Fkey17 Type        :$fkey17_type
+Fkey17 Value       :$fkey17_value
+Fkey17 Title       :$fkey17_title
+Fkey18 Type        :$fkey18_type
+Fkey18 Value       :$fkey18_value
+Fkey18 Title       :$fkey18_title
+Fkey19 Type        :$fkey19_type
+Fkey19 Value       :$fkey19_value
+Fkey19 Title       :$fkey19_title
+Fkey20 Type        :$fkey20_type
+Fkey20 Value       :$fkey20_value
+Fkey20 Title       :$fkey20_title
+Fkey21 Type        :$fkey21_type
+Fkey21 Value       :$fkey21_value
+Fkey21 Title       :$fkey21_title
+--Extern Console-- :
+exKey1 Type        :$exkey1_type
+exKey1 Val         :$exkey1_val
+exKey1 Name        :$exkey1_name
+exKey2 Type        :$exkey2_type
+exKey2 Val         :$exkey2_val
+exKey2 Name        :$exkey2_name
+exKey3 Type        :$exkey3_type
+exKey3 Val         :$exkey3_val
+exKey3 Name        :$exkey3_name
+exKey4 Type        :$exkey4_type
+exKey4 Val         :$exkey4_val
+exKey4 Name        :$exkey4_name
+exKey5 Type        :$exkey5_type
+exKey5 Val         :$exkey5_val
+exKey5 Name        :$exkey5_name
+exKey6 Type        :$exkey6_type
+exKey6 Val         :$exkey6_val
+exKey6 Name        :$exkey6_name
+exKey7 Type        :$exkey7_type
+exKey7 Val         :$exkey7_val
+exKey7 Name        :$exkey7_name
+exKey8 Type        :$exkey8_type
+exKey8 Val         :$exkey8_val
+exKey8 Name        :$exkey8_name
+exKey9 Type        :$exkey9_type
+exKey9 Val         :$exkey9_val
+exKey9 Name        :$exkey9_name
+exKey10 Type       :$exkey10_type
+exKey10 Val        :$exkey10_val
+exKey10 Name       :$exkey10_name
+exKey11 Type       :$exkey11_type
+exKey11 Val        :$exkey11_val
+exKey11 Name       :$exkey11_name
+exKey12 Type       :$exkey12_type
+exKey12 Val        :$exkey12_val
+exKey12 Name       :$exkey12_name
+exKey13 Type       :$exkey13_type
+exKey13 Val        :$exkey13_val
+exKey13 Name       :$exkey13_name
+exKey14 Type       :$exkey14_type
+exKey14 Val        :$exkey14_val
+exKey14 Name       :$exkey14_name
+exKey15 Type       :$exkey15_type
+exKey15 Val        :$exkey15_val
+exKey15 Name       :$exkey15_name
+exKey16 Type       :$exkey16_type
+exKey16 Val        :$exkey16_val
+exKey16 Name       :$exkey16_name
+exKey17 Type       :$exkey17_type
+exKey17 Val        :$exkey17_val
+exKey17 Name       :$exkey17_name
+exKey18 Type       :$exkey18_type
+exKey18 Val        :$exkey18_val
+exKey18 Name       :$exkey18_name
+exKey19 Type       :$exkey19_type
+exKey19 Val        :$exkey19_val
+exKey19 Name       :$exkey19_name
+exKey20 Type       :$exkey20_type
+exKey20 Val        :$exkey20_val
+exKey20 Name       :$exkey20_name
+exKey21 Type       :$exkey21_type
+exKey21 Val        :$exkey21_val
+exKey21 Name       :$exkey21_name
+exKey22 Type       :$exkey22_type
+exKey22 Val        :$exkey22_val
+exKey22 Name       :$exkey22_name
+exKey23 Type       :$exkey23_type
+exKey23 Val        :$exkey23_val
+exKey23 Name       :$exkey23_name
+exKey24 Type       :$exkey24_type
+exKey24 Val        :$exkey24_val
+exKey24 Name       :$exkey24_name
+exKey25 Type       :$exkey25_type
+exKey25 Val        :$exkey25_val
+exKey25 Name       :$exkey25_name
+exKey26 Type       :$exkey26_type
+exKey26 Val        :$exkey26_val
+exKey26 Name       :$exkey26_name
+exKey27 Type       :$exkey27_type
+exKey27 Val        :$exkey27_val
+exKey27 Name       :$exkey27_name
+exKey28 Type       :$exkey28_type
+exKey28 Val        :$exkey28_val
+exKey28 Name       :$exkey28_name
+exKey29 Type       :$exkey29_type
+exKey29 Val        :$exkey29_val
+exKey29 Name       :$exkey29_name
+exKey30 Type       :$exkey30_type
+exKey30 Val        :$exkey30_val
+exKey30 Name       :$exkey30_name
+exKey31 Type       :$exkey31_type
+exKey31 Val        :$exkey31_val
+exKey31 Name       :$exkey31_name
+exKey32 Type       :$exkey32_type
+exKey32 Val        :$exkey32_val
+exKey32 Name       :$exkey32_name
+exKey33 Type       :$exkey33_type
+exKey33 Val        :$exkey33_val
+exKey33 Name       :$exkey33_name
+exKey34 Type       :$exkey34_type
+exKey34 Val        :$exkey34_val
+exKey34 Name       :$exkey34_name
+exKey35 Type       :$exkey35_type
+exKey35 Val        :$exkey35_val
+exKey35 Name       :$exkey35_name
+exKey36 Type       :$exkey36_type
+exKey36 Val        :$exkey36_val
+exKey36 Name       :$exkey36_name
+exKey37 Type       :$exkey37_type
+exKey37 Val        :$exkey37_val
+exKey37 Name       :$exkey37_name
+exKey38 Type       :$exkey38_type
+exKey38 Val        :$exkey38_val
+exKey38 Name       :$exkey38_name
+exKey39 Type       :$exkey39_type
+exKey39 Val        :$exkey39_val
+exKey39 Name       :$exkey39_name
+exKey40 Type       :$exkey40_type
+exKey40 Val        :$exkey40_val
+exKey40 Name       :$exkey40_name
+exKey41 Type       :$exkey41_type
+exKey41 Val        :$exkey41_val
+exKey41 Name       :$exkey41_name
+exKey42 Type       :$exkey42_type
+exKey42 Val        :$exkey42_val
+exKey42 Name       :$exkey42_name
+exKey43 Type       :$exkey43_type
+exKey43 Val        :$exkey43_val
+exKey43 Name       :$exkey43_name
+exKey44 Type       :$exkey44_type
+exKey44 Val        :$exkey44_val
+exKey44 Name       :$exkey44_name
+exKey45 Type       :$exkey45_type
+exKey45 Val        :$exkey45_val
+exKey45 Name       :$exkey45_name
+exKey46 Type       :$exkey46_type
+exKey46 Val        :$exkey46_val
+exKey46 Name       :$exkey46_name
+exKey47 Type       :$exkey47_type
+exKey47 Val        :$exkey47_val
+exKey47 Name       :$exkey47_name
+exKey48 Type       :$exkey48_type
+exKey48 Val        :$exkey48_val
+exKey48 Name       :$exkey48_name
+exKey49 Type       :$exkey49_type
+exKey49 Val        :$exkey49_val
+exKey49 Name       :$exkey49_name
+exKey50 Type       :$exkey50_type
+exKey50 Val        :$exkey50_val
+exKey50 Name       :$exkey50_name
+exKey51 Type       :$exkey51_type
+exKey51 Val        :$exkey51_val
+exKey51 Name       :$exkey51_name
+exKey52 Type       :$exkey52_type
+exKey52 Val        :$exkey52_val
+exKey52 Name       :$exkey52_name
+exKey53 Type       :$exkey53_type
+exKey53 Val        :$exkey53_val
+exKey53 Name       :$exkey53_name
+exKey54 Type       :$exkey54_type
+exKey54 Val        :$exkey54_val
+exKey54 Name       :$exkey54_name
+exKey55 Type       :$exkey55_type
+exKey55 Val        :$exkey55_val
+exKey55 Name       :$exkey55_name
+exKey56 Type       :$exkey56_type
+exKey56 Val        :$exkey56_val
+exKey56 Name       :$exkey56_name
+exKey57 Type       :$exkey57_type
+exKey57 Val        :$exkey57_val
+exKey57 Name       :$exkey57_name
+exKey58 Type       :$exkey58_type
+exKey58 Val        :$exkey58_val
+exKey58 Name       :$exkey58_name
+exKey59 Type       :$exkey59_type
+exKey59 Val        :$exkey59_val
+exKey59 Name       :$exkey59_name
+exKey60 Type       :$exkey60_type
+exKey60 Val        :$exkey60_val
+exKey60 Name       :$exkey60_name
+exKey61 Type       :$exkey61_type
+exKey61 Val        :$exkey61_val
+exKey61 Name       :$exkey61_name
+exKey62 Type       :$exkey62_type
+exKey62 Val        :$exkey62_val
+exKey62 Name       :$exkey62_name
+exKey63 Type       :$exkey63_type
+exKey63 Val        :$exkey63_val
+exKey63 Name       :$exkey63_name
+exKey64 Type       :$exkey64_type
+exKey64 Val        :$exkey64_val
+exKey64 Name       :$exkey64_name
+exKey65 Type       :$exkey65_type
+exKey65 Val        :$exkey65_val
+exKey65 Name       :$exkey65_name
+exKey66 Type       :$exkey66_type
+exKey66 Val        :$exkey66_val
+exKey66 Name       :$exkey66_name
+exKey67 Type       :$exkey67_type
+exKey67 Val        :$exkey67_val
+exKey67 Name       :$exkey67_name
+exKey68 Type       :$exkey68_type
+exKey68 Val        :$exkey68_val
+exKey68 Name       :$exkey68_name
+exKey69 Type       :$exkey69_type
+exKey69 Val        :$exkey69_val
+exKey69 Name       :$exkey69_name
+exKey70 Type       :$exkey70_type
+exKey70 Val        :$exkey70_val
+exKey70 Name       :$exkey70_name
+exKey71 Type       :$exkey71_type
+exKey71 Val        :$exkey71_val
+exKey71 Name       :$exkey71_name
+exKey72 Type       :$exkey72_type
+exKey72 Val        :$exkey72_val
+exKey72 Name       :$exkey72_name
+exKey73 Type       :$exkey73_type
+exKey73 Val        :$exkey73_val
+exKey73 Name       :$exkey73_name
+exKey74 Type       :$exkey74_type
+exKey74 Val        :$exkey74_val
+exKey74 Name       :$exkey74_name
+exKey75 Type       :$exkey75_type
+exKey75 Val        :$exkey75_val
+exKey75 Name       :$exkey75_name
+exKey76 Type       :$exkey76_type
+exKey76 Val        :$exkey76_val
+exKey76 Name       :$exkey76_name
+exKey77 Type       :$exkey77_type
+exKey77 Val        :$exkey77_val
+exKey77 Name       :$exkey77_name
+exKey78 Type       :$exkey78_type
+exKey78 Val        :$exkey78_val
+exKey78 Name       :$exkey78_name
+exKey79 Type       :$exkey79_type
+exKey79 Val        :$exkey79_val
+exKey79 Name       :$exkey79_name
+exKey80 Type       :$exkey80_type
+exKey80 Val        :$exkey80_val
+exKey80 Name       :$exkey80_name
+exKey81 Type       :$exkey81_type
+exKey81 Val        :$exkey81_val
+exKey81 Name       :$exkey81_name
+exKey82 Type       :$exkey82_type
+exKey82 Val        :$exkey82_val
+exKey82 Name       :$exkey82_name
+exKey83 Type       :$exkey83_type
+exKey83 Val        :$exkey83_val
+exKey83 Name       :$exkey83_name
+exKey84 Type       :$exkey84_type
+exKey84 Val        :$exkey84_val
+exKey84 Name       :$exkey84_name
+exKey85 Type       :$exkey85_type
+exKey85 Val        :$exkey85_val
+exKey85 Name       :$exkey85_name
+exKey86 Type       :$exkey86_type
+exKey86 Val        :$exkey86_val
+exKey86 Name       :$exkey86_name
+exKey87 Type       :$exkey87_type
+exKey87 Val        :$exkey87_val
+exKey87 Name       :$exkey87_name
+exKey88 Type       :$exkey88_type
+exKey88 Val        :$exkey88_val
+exKey88 Name       :$exkey88_name
+exKey89 Type       :$exkey89_type
+exKey89 Val        :$exkey89_val
+exKey89 Name       :$exkey89_name
+exKey90 Type       :$exkey90_type
+exKey90 Val        :$exkey90_val
+exKey90 Name       :$exkey90_name
+exKey91 Type       :$exkey91_type
+exKey91 Val        :$exkey91_val
+exKey91 Name       :$exkey91_name
+exKey92 Type       :$exkey92_type
+exKey92 Val        :$exkey92_val
+exKey92 Name       :$exkey92_name
+exKey93 Type       :$exkey93_type
+exKey93 Val        :$exkey93_val
+exKey93 Name       :$exkey93_name
+exKey94 Type       :$exkey94_type
+exKey94 Val        :$exkey94_val
+exKey94 Name       :$exkey94_name
+exKey95 Type       :$exkey95_type
+exKey95 Val        :$exkey95_val
+exKey95 Name       :$exkey95_name
+exKey96 Type       :$exkey96_type
+exKey96 Val        :$exkey96_val
+exKey96 Name       :$exkey96_name
+exKey97 Type       :$exkey97_type
+exKey97 Val        :$exkey97_val
+exKey97 Name       :$exkey97_name
+exKey98 Type       :$exkey98_type
+exKey98 Val        :$exkey98_val
+exKey98 Name       :$exkey98_name
+exKey99 Type       :$exkey99_type
+exKey99 Val        :$exkey99_val
+exKey99 Name       :$exkey99_name
+exKey100 Type      :$exkey100_type
+exKey100 Val       :$exkey100_val
+exKey100 Name      :$exkey100_name
+exKey101 Type      :$exkey101_type
+exKey101 Val       :$exkey101_val
+exKey101 Name      :$exkey101_name
+exKey102 Type      :$exkey102_type
+exKey102 Val       :$exkey102_val
+exKey102 Name      :$exkey102_name
+exKey103 Type      :$exkey103_type
+exKey103 Val       :$exkey103_val
+exKey103 Name      :$exkey103_name
+exKey104 Type      :$exkey104_type
+exKey104 Val       :$exkey104_val
+exKey104 Name      :$exkey104_name
+exKey105 Type      :$exkey105_type
+exKey105 Val       :$exkey105_val
+exKey105 Name      :$exkey105_name
+exKey106 Type      :$exkey106_type
+exKey106 Val       :$exkey106_val
+exKey106 Name      :$exkey106_name
+exKey107 Type      :$exkey107_type
+exKey107 Val       :$exkey107_val
+exKey107 Name      :$exkey107_name
+exKey108 Type      :$exkey108_type
+exKey108 Val       :$exkey108_val
+exKey108 Name      :$exkey108_name
+exKey109 Type      :$exkey109_type
+exKey109 Val       :$exkey109_val
+exKey109 Name      :$exkey109_name
+exKey110 Type      :$exkey110_type
+exKey110 Val       :$exkey110_val
+exKey110 Name      :$exkey110_name
+exKey111 Type      :$exkey111_type
+exKey111 Val       :$exkey111_val
+exKey111 Name      :$exkey111_name
+exKey112 Type      :$exkey112_type
+exKey112 Val       :$exkey112_val
+exKey112 Name      :$exkey112_name
+exKey113 Type      :$exkey113_type
+exKey113 Val       :$exkey113_val
+exKey113 Name      :$exkey113_name
+exKey114 Type      :$exkey114_type
+exKey114 Val       :$exkey114_val
+exKey114 Name      :$exkey114_name
+exKey115 Type      :$exkey115_type
+exKey115 Val       :$exkey115_val
+exKey115 Name      :$exkey115_name
+exKey116 Type      :$exkey116_type
+exKey116 Val       :$exkey116_val
+exKey116 Name      :$exkey116_name
+exKey117 Type      :$exkey117_type
+exKey117 Val       :$exkey117_val
+exKey117 Name      :$exkey117_name
+exKey118 Type      :$exkey118_type
+exKey118 Val       :$exkey118_val
+exKey118 Name      :$exkey118_name
+exKey119 Type      :$exkey119_type
+exKey119 Val       :$exkey119_val
+exKey119 Name      :$exkey119_name
+exKey120 Type      :$exkey120_type
+exKey120 Val       :$exkey120_val
+exKey120 Name      :$exkey120_name
+exKey121 Type      :$exkey121_type
+exKey121 Val       :$exkey121_val
+exKey121 Name      :$exkey121_name
+exKey122 Type      :$exkey122_type
+exKey122 Val       :$exkey122_val
+exKey122 Name      :$exkey122_name
+exKey123 Type      :$exkey123_type
+exKey123 Val       :$exkey123_val
+exKey123 Name      :$exkey123_name
+exKey124 Type      :$exkey124_type
+exKey124 Val       :$exkey124_val
+exKey124 Name      :$exkey124_name
+exKey125 Type      :$exkey125_type
+exKey125 Val       :$exkey125_val
+exKey125 Name      :$exkey125_name
+exKey126 Type      :$exkey126_type
+exKey126 Val       :$exkey126_val
+exKey126 Name      :$exkey126_name
+exKey127 Type      :$exkey127_type
+exKey127 Val       :$exkey127_val
+exKey127 Name      :$exkey127_name
+exKey128 Type      :$exkey128_type
+exKey128 Val       :$exkey128_val
+exKey128 Name      :$exkey128_name
+exKey129 Type      :$exkey129_type
+exKey129 Val       :$exkey129_val
+exKey129 Name      :$exkey129_name
+exKey130 Type      :$exkey130_type
+exKey130 Val       :$exkey130_val
+exKey130 Name      :$exkey130_name
+exKey131 Type      :$exkey131_type
+exKey131 Val       :$exkey131_val
+exKey131 Name      :$exkey131_name
+exKey132 Type      :$exkey132_type
+exKey132 Val       :$exkey132_val
+exKey132 Name      :$exkey132_name
+exKey133 Type      :$exkey133_type
+exKey133 Val       :$exkey133_val
+exKey133 Name      :$exkey133_name
+exKey134 Type      :$exkey134_type
+exKey134 Val       :$exkey134_val
+exKey134 Name      :$exkey134_name
+exKey135 Type      :$exkey135_type
+exKey135 Val       :$exkey135_val
+exKey135 Name      :$exkey135_name
+exKey136 Type      :$exkey136_type
+exKey136 Val       :$exkey136_val
+exKey136 Name      :$exkey136_name
+exKey137 Type      :$exkey137_type
+exKey137 Val       :$exkey137_val
+exKey137 Name      :$exkey137_name
+exKey138 Type      :$exkey138_type
+exKey138 Val       :$exkey138_val
+exKey138 Name      :$exkey138_name
+exKey139 Type      :$exkey139_type
+exKey139 Val       :$exkey139_val
+exKey139 Name      :$exkey139_name
+exKey140 Type      :$exkey140_type
+exKey140 Val       :$exkey140_val
+exKey140 Name      :$exkey140_name
+exKey141 Type      :$exkey141_type
+exKey141 Val       :$exkey141_val
+exKey141 Name      :$exkey141_name
+exKey142 Type      :$exkey142_type
+exKey142 Val       :$exkey142_val
+exKey142 Name      :$exkey142_name
+exKey143 Type      :$exkey143_type
+exKey143 Val       :$exkey143_val
+exKey143 Name      :$exkey143_name
+exKey144 Type      :$exkey144_type
+exKey144 Val       :$exkey144_val
+exKey144 Name      :$exkey144_name
+exKey145 Type      :$exkey145_type
+exKey145 Val       :$exkey145_val
+exKey145 Name      :$exkey145_name
+exKey146 Type      :$exkey146_type
+exKey146 Val       :$exkey146_val
+exKey146 Name      :$exkey146_name
+exKey147 Type      :$exkey147_type
+exKey147 Val       :$exkey147_val
+exKey147 Name      :$exkey147_name
+exKey148 Type      :$exkey148_type
+exKey148 Val       :$exkey148_val
+exKey148 Name      :$exkey148_name
+exKey149 Type      :$exkey149_type
+exKey149 Val       :$exkey149_val
+exKey149 Name      :$exkey149_name
+exKey150 Type      :$exkey150_type
+exKey150 Val       :$exkey150_val
+exKey150 Name      :$exkey150_name
+
+<SCREEN KEY CONFIG MODULE>
+Desktop Softkey    :$desktop_softkey
+Talking Softkey    :$talking_softkey
+Ringing Softkey    :$ringing_softkey
+Alerting Softkey   :$alerting_softkey
+XAlerting Softkey  :$xalerting_softkey
+Conference Softkey :$conference_softkey
+Waiting Softkey    :$waiting_softkey
+Ending Softkey     :$ending_softkey
+DialerPre Softkey  :$dialerpre_softkey
+DialerCall Softkey :$dialercall_softkey
+DialerXfer Softkey :$dialerxfer_softkey
+DialerCfwd Softkey :$dialercfwd_softkey
+Desktop Click      :$desktop_click
+Dailer  Click      :$dailer__click
+Call    Click      :$call____click
+Desktop Long Press :$desktop_long_press
+Softkey Mode       :$softkey_mode
+
+<AUTOUPDATE CONFIG MODULE>
+Download Username  :$download_username
+Download Password  :$download_password
+FDPS Enable        :$fdps_enable
+Config File Name   :$config_file_name
+Config File Key    :$config_file_key
+Common Cfg File Key:$common_cfg_file_key
+Download Server IP :$download_server_ip
+Download Protocol  :$download_protocol
+Download Mode      :$download_mode
+Download Interval  :$download_interval
+DHCP Option        :$dhcp_option
+PNP Enable         :$pnp_enable
+PNP IP             :$pnp_ip
+PNP Port           :$pnp_port
+PNP Transport      :$pnp_transport
+PNP Interval       :$pnp_interval
+Save Provision Info:$save_provision_info
+
+<VPN CONFIG MODULE>
+VPN mode           :$vpn_mode
+L2TP LNS IP        :$l2tp_lns_ip
+L2TP User Name     :$l2tp_user_name
+L2TP Password      :$l2tp_password
+L2TP Negotiate DNS :$l2tp_negotiate_dns
+Enable VPN Tunnel  :$enable_vpn_tunnel
+VPN Server IP      :$vpn_server_ip
+VPN Server Port    :$vpn_server_port
+Server Group ID    :$server_group_id
+Server Area Code   :$server_area_code
+
+<DOT1X CONFIG MODULE>
+Xsup User          :$xsup_user
+Xsup Password      :$xsup_password
+Xsup Enable        :$xsup_enable
+Xsup AuthMac       :01:80:C2:00:00:03
+Xsup UseDefaultMac :$xsup_usedefaultmac
+
+<TR069 CONFIG MODULE>
+ACS Server Type    :$acs_server_type
+ACS URL            :$acs_url
+ACS UserName       :$acs_username
+ACS Password       :$acs_password
+CPE UserName       :$cpe_username
+CPE Password       :$cpe_password
+CPE SerialNumber   :$cpe_serialnumber
+TR069 Auto Login   :$tr069_auto_login
+TR069 Tone         :$tr069_tone
+Enable TR069       :$enable_tr069
+Periodix Interval  :$periodix_interval
+Area Code          :$area_code
+<<END OF FILE>>

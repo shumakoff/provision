@@ -1,0 +1,1765 @@
+
+# Use Ctrl+A to select all and copy this in your editor
+
+
+#Configure the url of the firmware file server, support ftp/tftp/http/https protocol, the suffix of the file name must be .rom;
+Config.Firmware.Url = $config_firmware_url
+
+#Configure the url of the custom ringtone file server, support ftp/tftp/http/https protocol, the suffix of the file name must be .wav;
+Config.Ringtone.Url = $config_ringtone_url
+
+#Configure the url of the contact file server, support ftp/tftp/http/https protocol, the suffix of the file name must be .xml;
+Config.Contact.Url = $config_contact_url
+
+#configure the url of client certificate
+Config.Certificate.01.Url = $config_certificate_01_url
+Config.Certificate.02.Url = $config_certificate_02_url
+Config.Certificate.03.Url = $config_certificate_03_url
+Config.Certificate.04.Url = $config_certificate_04_url
+Config.Certificate.05.Url = $config_certificate_05_url
+Config.Certificate.06.Url = $config_certificate_06_url
+Config.Certificate.07.Url = $config_certificate_07_url
+Config.Certificate.08.Url = $config_certificate_08_url
+Config.Certificate.09.Url = $config_certificate_09_url
+Config.Certificate.10.Url = $config_certificate_10_url
+
+# Autoprovision Configuration
+
+Config.Autoprovision.GENERAL.Url = $config_autoprovision_general_url
+Config.Autoprovision.GENERAL.UserName = $config_autoprovision_general_username
+Config.Autoprovision.GENERAL.Pwd = $config_autoprovision_general_pwd
+Config.Autoprovision.GENERAL.Priority = $config_autoprovision_general_priority
+Config.Autoprovision.GENERAL.CustomEnable = $config_autoprovision_general_customenable
+
+Config.Autoprovision.MODE.Mode = $config_autoprovision_mode_mode
+
+Config.Autoprovision.SCHEDULE.DayOfWeek = $config_autoprovision_schedule_dayofweek
+Config.Autoprovision.SCHEDULE.SomeDayOfWeek = $config_autoprovision_schedule_somedayofweek
+Config.Autoprovision.SCHEDULE.HourOfDay = $config_autoprovision_schedule_hourofday
+Config.Autoprovision.SCHEDULE.MinuteOfHour = $config_autoprovision_schedule_minuteofhour
+Config.Autoprovision.SCHEDULE.SecondOfMinute = $config_autoprovision_schedule_secondofminute
+
+Config.Autoprovision.REBOOT_MODE.Mode = $config_autoprovision_reboot_mode_mode
+
+Config.Autoprovision.REBOOT_SCHEDULE.DayOfWeek = $config_autoprovision_reboot_schedule_dayofweek
+Config.Autoprovision.REBOOT_SCHEDULE.HourOfDay = $config_autoprovision_reboot_schedule_hourofday
+Config.Autoprovision.REBOOT_SCHEDULE.Edit = $config_autoprovision_reboot_schedule_edit
+
+Config.Autoprovision.AES.Key16 = $config_autoprovision_aes_key16
+Config.Autoprovision.AES.Key16Mac = $config_autoprovision_aes_key16mac
+
+Config.Autoprovision.PNP.Enable = $config_autoprovision_pnp_enable
+Config.Autoprovision.PNP.Url = $config_autoprovision_pnp_url
+
+Config.Autoprovision.DHCP_OPTION.Enable = $config_autoprovision_dhcp_option_enable
+Config.Autoprovision.DHCP_OPTION.CustomId = $config_autoprovision_dhcp_option_customid
+Config.Autoprovision.DHCP_OPTION.CustomValue = $config_autoprovision_dhcp_option_customvalue
+
+Config.Autoprovision.RETRY_TIMES.Times = $config_autoprovision_retry_times_times
+
+Config.Autoprovision.REDIRECT.Url = $config_autoprovision_redirect_url
+Config.Autoprovision.REDIRECT.Enable = $config_autoprovision_redirect_enable
+
+;Config.Autoprovision.01.Name = $config_autoprovision_01_name
+;Config.Autoprovision.01.Code = $config_autoprovision_01_code
+;Config.Autoprovision.01.Url = $config_autoprovision_01_url
+;Config.Autoprovision.01.User = $config_autoprovision_01_user
+;Config.Autoprovision.01.Password = $config_autoprovision_01_password
+;Config.Autoprovision.01.ComAes = $config_autoprovision_01_comaes
+;Config.Autoprovision.01.MacAes = $config_autoprovision_01_macaes
+
+;Config.Autoprovision.02.Name = $config_autoprovision_02_name
+;Config.Autoprovision.02.Code = $config_autoprovision_02_code
+;Config.Autoprovision.02.Url = $config_autoprovision_02_url
+;Config.Autoprovision.02.User = $config_autoprovision_02_user
+;Config.Autoprovision.02.Password = $config_autoprovision_02_password
+;Config.Autoprovision.02.ComAes = $config_autoprovision_02_comaes
+;Config.Autoprovision.02.MacAes = $config_autoprovision_02_macaes
+
+;Config.Autoprovision.03.Name = $config_autoprovision_03_name
+;Config.Autoprovision.03.Code = $config_autoprovision_03_code
+;Config.Autoprovision.03.Url = $config_autoprovision_03_url
+;Config.Autoprovision.03.User = $config_autoprovision_03_user
+;Config.Autoprovision.03.Password = $config_autoprovision_03_password
+;Config.Autoprovision.03.ComAes = $config_autoprovision_03_comaes
+;Config.Autoprovision.03.MacAes = $config_autoprovision_03_macaes
+
+;Config.Autoprovision.04.Name = $config_autoprovision_04_name
+;Config.Autoprovision.04.Code = $config_autoprovision_04_code
+;Config.Autoprovision.04.Url = $config_autoprovision_04_url
+;Config.Autoprovision.04.User = $config_autoprovision_04_user
+;Config.Autoprovision.04.Password = $config_autoprovision_04_password
+;Config.Autoprovision.04.ComAes = $config_autoprovision_04_comaes
+;Config.Autoprovision.04.MacAes = $config_autoprovision_04_macaes
+
+;Config.Autoprovision.05.Name = $config_autoprovision_05_name
+;Config.Autoprovision.05.Code = $config_autoprovision_05_code
+;Config.Autoprovision.05.Url = $config_autoprovision_05_url
+;Config.Autoprovision.05.User = $config_autoprovision_05_user
+;Config.Autoprovision.05.Password = $config_autoprovision_05_password
+;Config.Autoprovision.05.ComAes = $config_autoprovision_05_comaes
+;Config.Autoprovision.05.MacAes = $config_autoprovision_05_macaes
+
+;Config.Autoprovision.06.Name = $config_autoprovision_06_name
+;Config.Autoprovision.06.Code = $config_autoprovision_06_code
+;Config.Autoprovision.06.Url = $config_autoprovision_06_url
+;Config.Autoprovision.06.User = $config_autoprovision_06_user
+;Config.Autoprovision.06.Password = $config_autoprovision_06_password
+;Config.Autoprovision.06.ComAes = $config_autoprovision_06_comaes
+;Config.Autoprovision.06.MacAes = $config_autoprovision_06_macaes
+
+;Config.Autoprovision.07.Name = $config_autoprovision_07_name
+;Config.Autoprovision.07.Code = $config_autoprovision_07_code
+;Config.Autoprovision.07.Url = $config_autoprovision_07_url
+;Config.Autoprovision.07.User = $config_autoprovision_07_user
+;Config.Autoprovision.07.Password = $config_autoprovision_07_password
+;Config.Autoprovision.07.ComAes = $config_autoprovision_07_comaes
+;Config.Autoprovision.07.MacAes = $config_autoprovision_07_macaes
+
+;Config.Autoprovision.08.Name = $config_autoprovision_08_name
+;Config.Autoprovision.08.Code = $config_autoprovision_08_code
+;Config.Autoprovision.08.Url = $config_autoprovision_08_url
+;Config.Autoprovision.08.User = $config_autoprovision_08_user
+;Config.Autoprovision.08.Password = $config_autoprovision_08_password
+;Config.Autoprovision.08.ComAes = $config_autoprovision_08_comaes
+;Config.Autoprovision.08.MacAes = $config_autoprovision_08_macaes
+
+;Config.Autoprovision.09.Name = $config_autoprovision_09_name
+;Config.Autoprovision.09.Code = $config_autoprovision_09_code
+;Config.Autoprovision.09.Url = $config_autoprovision_09_url
+;Config.Autoprovision.09.User = $config_autoprovision_09_user
+;Config.Autoprovision.09.Password = $config_autoprovision_09_password
+;Config.Autoprovision.09.ComAes = $config_autoprovision_09_comaes
+;Config.Autoprovision.09.MacAes = $config_autoprovision_09_macaes
+
+;Config.Autoprovision.10.Name = $config_autoprovision_10_name
+;Config.Autoprovision.10.Code = $config_autoprovision_10_code
+;Config.Autoprovision.10.Url = $config_autoprovision_10_url
+;Config.Autoprovision.10.User = $config_autoprovision_10_user
+;Config.Autoprovision.10.Password = $config_autoprovision_10_password
+;Config.Autoprovision.10.ComAes = $config_autoprovision_10_comaes
+;Config.Autoprovision.10.MacAes = $config_autoprovision_10_macaes
+
+;Config.Autoprovision.11.Name = $config_autoprovision_11_name
+;Config.Autoprovision.11.Code = $config_autoprovision_11_code
+;Config.Autoprovision.11.Url = $config_autoprovision_11_url
+;Config.Autoprovision.11.User = $config_autoprovision_11_user
+;Config.Autoprovision.11.Password = $config_autoprovision_11_password
+;Config.Autoprovision.11.ComAes = $config_autoprovision_11_comaes
+;Config.Autoprovision.11.MacAes = $config_autoprovision_11_macaes
+
+;Config.Autoprovision.12.Name = $config_autoprovision_12_name
+;Config.Autoprovision.12.Code = $config_autoprovision_12_code
+;Config.Autoprovision.12.Url = $config_autoprovision_12_url
+;Config.Autoprovision.12.User = $config_autoprovision_12_user
+;Config.Autoprovision.12.Password = $config_autoprovision_12_password
+;Config.Autoprovision.12.ComAes = $config_autoprovision_12_comaes
+;Config.Autoprovision.12.MacAes = $config_autoprovision_12_macaes
+
+;Config.Autoprovision.13.Name = $config_autoprovision_13_name
+;Config.Autoprovision.13.Code = $config_autoprovision_13_code
+;Config.Autoprovision.13.Url = $config_autoprovision_13_url
+;Config.Autoprovision.13.User = $config_autoprovision_13_user
+;Config.Autoprovision.13.Password = $config_autoprovision_13_password
+;Config.Autoprovision.13.ComAes = $config_autoprovision_13_comaes
+;Config.Autoprovision.13.MacAes = $config_autoprovision_13_macaes
+
+;Config.Autoprovision.14.Name = $config_autoprovision_14_name
+;Config.Autoprovision.14.Code = $config_autoprovision_14_code
+;Config.Autoprovision.14.Url = $config_autoprovision_14_url
+;Config.Autoprovision.14.User = $config_autoprovision_14_user
+;Config.Autoprovision.14.Password = $config_autoprovision_14_password
+;Config.Autoprovision.14.ComAes = $config_autoprovision_14_comaes
+;Config.Autoprovision.14.MacAes = $config_autoprovision_14_macaes
+
+;Config.Autoprovision.15.Name = $config_autoprovision_15_name
+;Config.Autoprovision.15.Code = $config_autoprovision_15_code
+;Config.Autoprovision.15.Url = $config_autoprovision_15_url
+;Config.Autoprovision.15.User = $config_autoprovision_15_user
+;Config.Autoprovision.15.Password = $config_autoprovision_15_password
+;Config.Autoprovision.15.ComAes = $config_autoprovision_15_comaes
+;Config.Autoprovision.15.MacAes = $config_autoprovision_15_macaes
+
+;Config.Autoprovision.16.Name = $config_autoprovision_16_name
+;Config.Autoprovision.16.Code = $config_autoprovision_16_code
+;Config.Autoprovision.16.Url = $config_autoprovision_16_url
+;Config.Autoprovision.16.User = $config_autoprovision_16_user
+;Config.Autoprovision.16.Password = $config_autoprovision_16_password
+;Config.Autoprovision.16.ComAes = $config_autoprovision_16_comaes
+;Config.Autoprovision.16.MacAes = $config_autoprovision_16_macaes
+
+;Config.Autoprovision.17.Name = $config_autoprovision_17_name
+;Config.Autoprovision.17.Code = $config_autoprovision_17_code
+;Config.Autoprovision.17.Url = $config_autoprovision_17_url
+;Config.Autoprovision.17.User = $config_autoprovision_17_user
+;Config.Autoprovision.17.Password = $config_autoprovision_17_password
+;Config.Autoprovision.17.ComAes = $config_autoprovision_17_comaes
+;Config.Autoprovision.17.MacAes = $config_autoprovision_17_macaes
+
+;Config.Autoprovision.18.Name = $config_autoprovision_18_name
+;Config.Autoprovision.18.Code = $config_autoprovision_18_code
+;Config.Autoprovision.18.Url = $config_autoprovision_18_url
+;Config.Autoprovision.18.User = $config_autoprovision_18_user
+;Config.Autoprovision.18.Password = $config_autoprovision_18_password
+;Config.Autoprovision.18.ComAes = $config_autoprovision_18_comaes
+;Config.Autoprovision.18.MacAes = $config_autoprovision_18_macaes
+
+;Config.Autoprovision.19.Name = $config_autoprovision_19_name
+;Config.Autoprovision.19.Code = $config_autoprovision_19_code
+;Config.Autoprovision.19.Url = $config_autoprovision_19_url
+;Config.Autoprovision.19.User = $config_autoprovision_19_user
+;Config.Autoprovision.19.Password = $config_autoprovision_19_password
+;Config.Autoprovision.19.ComAes = $config_autoprovision_19_comaes
+;Config.Autoprovision.19.MacAes = $config_autoprovision_19_macaes
+
+;Config.Autoprovision.20.Name = $config_autoprovision_20_name
+;Config.Autoprovision.20.Code = $config_autoprovision_20_code
+;Config.Autoprovision.20.Url = $config_autoprovision_20_url
+;Config.Autoprovision.20.User = $config_autoprovision_20_user
+;Config.Autoprovision.20.Password = $config_autoprovision_20_password
+;Config.Autoprovision.20.ComAes = $config_autoprovision_20_comaes
+;Config.Autoprovision.20.MacAes = $config_autoprovision_20_macaes
+
+;Config.Autoprovision.21.Name = $config_autoprovision_21_name
+;Config.Autoprovision.21.Code = $config_autoprovision_21_code
+;Config.Autoprovision.21.Url = $config_autoprovision_21_url
+;Config.Autoprovision.21.User = $config_autoprovision_21_user
+;Config.Autoprovision.21.Password = $config_autoprovision_21_password
+;Config.Autoprovision.21.ComAes = $config_autoprovision_21_comaes
+;Config.Autoprovision.21.MacAes = $config_autoprovision_21_macaes
+
+;Config.Autoprovision.22.Name = $config_autoprovision_22_name
+;Config.Autoprovision.22.Code = $config_autoprovision_22_code
+;Config.Autoprovision.22.Url = $config_autoprovision_22_url
+;Config.Autoprovision.22.User = $config_autoprovision_22_user
+;Config.Autoprovision.22.Password = $config_autoprovision_22_password
+;Config.Autoprovision.22.ComAes = $config_autoprovision_22_comaes
+;Config.Autoprovision.22.MacAes = $config_autoprovision_22_macaes
+
+;Config.Autoprovision.23.Name = $config_autoprovision_23_name
+;Config.Autoprovision.23.Code = $config_autoprovision_23_code
+;Config.Autoprovision.23.Url = $config_autoprovision_23_url
+;Config.Autoprovision.23.User = $config_autoprovision_23_user
+;Config.Autoprovision.23.Password = $config_autoprovision_23_password
+;Config.Autoprovision.23.ComAes = $config_autoprovision_23_comaes
+;Config.Autoprovision.23.MacAes = $config_autoprovision_23_macaes
+
+;Config.Autoprovision.24.Name = $config_autoprovision_24_name
+;Config.Autoprovision.24.Code = $config_autoprovision_24_code
+;Config.Autoprovision.24.Url = $config_autoprovision_24_url
+;Config.Autoprovision.24.User = $config_autoprovision_24_user
+;Config.Autoprovision.24.Password = $config_autoprovision_24_password
+;Config.Autoprovision.24.ComAes = $config_autoprovision_24_comaes
+;Config.Autoprovision.24.MacAes = $config_autoprovision_24_macaes
+
+;Config.Autoprovision.25.Name = $config_autoprovision_25_name
+;Config.Autoprovision.25.Code = $config_autoprovision_25_code
+;Config.Autoprovision.25.Url = $config_autoprovision_25_url
+;Config.Autoprovision.25.User = $config_autoprovision_25_user
+;Config.Autoprovision.25.Password = $config_autoprovision_25_password
+;Config.Autoprovision.25.ComAes = $config_autoprovision_25_comaes
+;Config.Autoprovision.25.MacAes = $config_autoprovision_25_macaes
+
+;Config.Autoprovision.26.Name = $config_autoprovision_26_name
+;Config.Autoprovision.26.Code = $config_autoprovision_26_code
+;Config.Autoprovision.26.Url = $config_autoprovision_26_url
+;Config.Autoprovision.26.User = $config_autoprovision_26_user
+;Config.Autoprovision.26.Password = $config_autoprovision_26_password
+;Config.Autoprovision.26.ComAes = $config_autoprovision_26_comaes
+;Config.Autoprovision.26.MacAes = $config_autoprovision_26_macaes
+
+;Config.Autoprovision.27.Name = $config_autoprovision_27_name
+;Config.Autoprovision.27.Code = $config_autoprovision_27_code
+;Config.Autoprovision.27.Url = $config_autoprovision_27_url
+;Config.Autoprovision.27.User = $config_autoprovision_27_user
+;Config.Autoprovision.27.Password = $config_autoprovision_27_password
+;Config.Autoprovision.27.ComAes = $config_autoprovision_27_comaes
+;Config.Autoprovision.27.MacAes = $config_autoprovision_27_macaes
+
+;Config.Autoprovision.28.Name = $config_autoprovision_28_name
+;Config.Autoprovision.28.Code = $config_autoprovision_28_code
+;Config.Autoprovision.28.Url = $config_autoprovision_28_url
+;Config.Autoprovision.28.User = $config_autoprovision_28_user
+;Config.Autoprovision.28.Password = $config_autoprovision_28_password
+;Config.Autoprovision.28.ComAes = $config_autoprovision_28_comaes
+;Config.Autoprovision.28.MacAes = $config_autoprovision_28_macaes
+
+;Config.Autoprovision.29.Name = $config_autoprovision_29_name
+;Config.Autoprovision.29.Code = $config_autoprovision_29_code
+;Config.Autoprovision.29.Url = $config_autoprovision_29_url
+;Config.Autoprovision.29.User = $config_autoprovision_29_user
+;Config.Autoprovision.29.Password = $config_autoprovision_29_password
+;Config.Autoprovision.29.ComAes = $config_autoprovision_29_comaes
+;Config.Autoprovision.29.MacAes = $config_autoprovision_29_macaes
+
+;Config.Autoprovision.30.Name = $config_autoprovision_30_name
+;Config.Autoprovision.30.Code = $config_autoprovision_30_code
+;Config.Autoprovision.30.Url = $config_autoprovision_30_url
+;Config.Autoprovision.30.User = $config_autoprovision_30_user
+;Config.Autoprovision.30.Password = $config_autoprovision_30_password
+;Config.Autoprovision.30.ComAes = $config_autoprovision_30_comaes
+;Config.Autoprovision.30.MacAes = $config_autoprovision_30_macaes
+
+;Config.Autoprovision.31.Name = $config_autoprovision_31_name
+;Config.Autoprovision.31.Code = $config_autoprovision_31_code
+;Config.Autoprovision.31.Url = $config_autoprovision_31_url
+;Config.Autoprovision.31.User = $config_autoprovision_31_user
+;Config.Autoprovision.31.Password = $config_autoprovision_31_password
+;Config.Autoprovision.31.ComAes = $config_autoprovision_31_comaes
+;Config.Autoprovision.31.MacAes = $config_autoprovision_31_macaes
+
+;Config.Autoprovision.32.Name = $config_autoprovision_32_name
+;Config.Autoprovision.32.Code = $config_autoprovision_32_code
+;Config.Autoprovision.32.Url = $config_autoprovision_32_url
+;Config.Autoprovision.32.User = $config_autoprovision_32_user
+;Config.Autoprovision.32.Password = $config_autoprovision_32_password
+;Config.Autoprovision.32.ComAes = $config_autoprovision_32_comaes
+;Config.Autoprovision.32.MacAes = $config_autoprovision_32_macaes
+
+;Config.Autoprovision.33.Name = $config_autoprovision_33_name
+;Config.Autoprovision.33.Code = $config_autoprovision_33_code
+;Config.Autoprovision.33.Url = $config_autoprovision_33_url
+;Config.Autoprovision.33.User = $config_autoprovision_33_user
+;Config.Autoprovision.33.Password = $config_autoprovision_33_password
+;Config.Autoprovision.33.ComAes = $config_autoprovision_33_comaes
+;Config.Autoprovision.33.MacAes = $config_autoprovision_33_macaes
+
+;Config.Autoprovision.34.Name = $config_autoprovision_34_name
+;Config.Autoprovision.34.Code = $config_autoprovision_34_code
+;Config.Autoprovision.34.Url = $config_autoprovision_34_url
+;Config.Autoprovision.34.User = $config_autoprovision_34_user
+;Config.Autoprovision.34.Password = $config_autoprovision_34_password
+;Config.Autoprovision.34.ComAes = $config_autoprovision_34_comaes
+;Config.Autoprovision.34.MacAes = $config_autoprovision_34_macaes
+
+;Config.Autoprovision.35.Name = $config_autoprovision_35_name
+;Config.Autoprovision.35.Code = $config_autoprovision_35_code
+;Config.Autoprovision.35.Url = $config_autoprovision_35_url
+;Config.Autoprovision.35.User = $config_autoprovision_35_user
+;Config.Autoprovision.35.Password = $config_autoprovision_35_password
+;Config.Autoprovision.35.ComAes = $config_autoprovision_35_comaes
+;Config.Autoprovision.35.MacAes = $config_autoprovision_35_macaes
+
+;Config.Autoprovision.36.Name = $config_autoprovision_36_name
+;Config.Autoprovision.36.Code = $config_autoprovision_36_code
+;Config.Autoprovision.36.Url = $config_autoprovision_36_url
+;Config.Autoprovision.36.User = $config_autoprovision_36_user
+;Config.Autoprovision.36.Password = $config_autoprovision_36_password
+;Config.Autoprovision.36.ComAes = $config_autoprovision_36_comaes
+;Config.Autoprovision.36.MacAes = $config_autoprovision_36_macaes
+
+;Config.Autoprovision.37.Name = $config_autoprovision_37_name
+;Config.Autoprovision.37.Code = $config_autoprovision_37_code
+;Config.Autoprovision.37.Url = $config_autoprovision_37_url
+;Config.Autoprovision.37.User = $config_autoprovision_37_user
+;Config.Autoprovision.37.Password = $config_autoprovision_37_password
+;Config.Autoprovision.37.ComAes = $config_autoprovision_37_comaes
+;Config.Autoprovision.37.MacAes = $config_autoprovision_37_macaes
+
+;Config.Autoprovision.38.Name = $config_autoprovision_38_name
+;Config.Autoprovision.38.Code = $config_autoprovision_38_code
+;Config.Autoprovision.38.Url = $config_autoprovision_38_url
+;Config.Autoprovision.38.User = $config_autoprovision_38_user
+;Config.Autoprovision.38.Password = $config_autoprovision_38_password
+;Config.Autoprovision.38.ComAes = $config_autoprovision_38_comaes
+;Config.Autoprovision.38.MacAes = $config_autoprovision_38_macaes
+
+;Config.Autoprovision.39.Name = $config_autoprovision_39_name
+;Config.Autoprovision.39.Code = $config_autoprovision_39_code
+;Config.Autoprovision.39.Url = $config_autoprovision_39_url
+;Config.Autoprovision.39.User = $config_autoprovision_39_user
+;Config.Autoprovision.39.Password = $config_autoprovision_39_password
+;Config.Autoprovision.39.ComAes = $config_autoprovision_39_comaes
+;Config.Autoprovision.39.MacAes = $config_autoprovision_39_macaes
+
+;Config.Autoprovision.40.Name = $config_autoprovision_40_name
+;Config.Autoprovision.40.Code = $config_autoprovision_40_code
+;Config.Autoprovision.40.Url = $config_autoprovision_40_url
+;Config.Autoprovision.40.User = $config_autoprovision_40_user
+;Config.Autoprovision.40.Password = $config_autoprovision_40_password
+;Config.Autoprovision.40.ComAes = $config_autoprovision_40_comaes
+;Config.Autoprovision.40.MacAes = $config_autoprovision_40_macaes
+
+;Config.Autoprovision.41.Name = $config_autoprovision_41_name
+;Config.Autoprovision.41.Code = $config_autoprovision_41_code
+;Config.Autoprovision.41.Url = $config_autoprovision_41_url
+;Config.Autoprovision.41.User = $config_autoprovision_41_user
+;Config.Autoprovision.41.Password = $config_autoprovision_41_password
+;Config.Autoprovision.41.ComAes = $config_autoprovision_41_comaes
+;Config.Autoprovision.41.MacAes = $config_autoprovision_41_macaes
+
+;Config.Autoprovision.42.Name = $config_autoprovision_42_name
+;Config.Autoprovision.42.Code = $config_autoprovision_42_code
+;Config.Autoprovision.42.Url = $config_autoprovision_42_url
+;Config.Autoprovision.42.User = $config_autoprovision_42_user
+;Config.Autoprovision.42.Password = $config_autoprovision_42_password
+;Config.Autoprovision.42.ComAes = $config_autoprovision_42_comaes
+;Config.Autoprovision.42.MacAes = $config_autoprovision_42_macaes
+
+;Config.Autoprovision.43.Name = $config_autoprovision_43_name
+;Config.Autoprovision.43.Code = $config_autoprovision_43_code
+;Config.Autoprovision.43.Url = $config_autoprovision_43_url
+;Config.Autoprovision.43.User = $config_autoprovision_43_user
+;Config.Autoprovision.43.Password = $config_autoprovision_43_password
+;Config.Autoprovision.43.ComAes = $config_autoprovision_43_comaes
+;Config.Autoprovision.43.MacAes = $config_autoprovision_43_macaes
+
+;Config.Autoprovision.44.Name = $config_autoprovision_44_name
+;Config.Autoprovision.44.Code = $config_autoprovision_44_code
+;Config.Autoprovision.44.Url = $config_autoprovision_44_url
+;Config.Autoprovision.44.User = $config_autoprovision_44_user
+;Config.Autoprovision.44.Password = $config_autoprovision_44_password
+;Config.Autoprovision.44.ComAes = $config_autoprovision_44_comaes
+;Config.Autoprovision.44.MacAes = $config_autoprovision_44_macaes
+
+;Config.Autoprovision.45.Name = $config_autoprovision_45_name
+;Config.Autoprovision.45.Code = $config_autoprovision_45_code
+;Config.Autoprovision.45.Url = $config_autoprovision_45_url
+;Config.Autoprovision.45.User = $config_autoprovision_45_user
+;Config.Autoprovision.45.Password = $config_autoprovision_45_password
+;Config.Autoprovision.45.ComAes = $config_autoprovision_45_comaes
+;Config.Autoprovision.45.MacAes = $config_autoprovision_45_macaes
+
+;Config.Autoprovision.46.Name = $config_autoprovision_46_name
+;Config.Autoprovision.46.Code = $config_autoprovision_46_code
+;Config.Autoprovision.46.Url = $config_autoprovision_46_url
+;Config.Autoprovision.46.User = $config_autoprovision_46_user
+;Config.Autoprovision.46.Password = $config_autoprovision_46_password
+;Config.Autoprovision.46.ComAes = $config_autoprovision_46_comaes
+;Config.Autoprovision.46.MacAes = $config_autoprovision_46_macaes
+
+;Config.Autoprovision.47.Name = $config_autoprovision_47_name
+;Config.Autoprovision.47.Code = $config_autoprovision_47_code
+;Config.Autoprovision.47.Url = $config_autoprovision_47_url
+;Config.Autoprovision.47.User = $config_autoprovision_47_user
+;Config.Autoprovision.47.Password = $config_autoprovision_47_password
+;Config.Autoprovision.47.ComAes = $config_autoprovision_47_comaes
+;Config.Autoprovision.47.MacAes = $config_autoprovision_47_macaes
+
+;Config.Autoprovision.48.Name = $config_autoprovision_48_name
+;Config.Autoprovision.48.Code = $config_autoprovision_48_code
+;Config.Autoprovision.48.Url = $config_autoprovision_48_url
+;Config.Autoprovision.48.User = $config_autoprovision_48_user
+;Config.Autoprovision.48.Password = $config_autoprovision_48_password
+;Config.Autoprovision.48.ComAes = $config_autoprovision_48_comaes
+;Config.Autoprovision.48.MacAes = $config_autoprovision_48_macaes
+
+;Config.Autoprovision.49.Name = $config_autoprovision_49_name
+;Config.Autoprovision.49.Code = $config_autoprovision_49_code
+;Config.Autoprovision.49.Url = $config_autoprovision_49_url
+;Config.Autoprovision.49.User = $config_autoprovision_49_user
+;Config.Autoprovision.49.Password = $config_autoprovision_49_password
+;Config.Autoprovision.49.ComAes = $config_autoprovision_49_comaes
+;Config.Autoprovision.49.MacAes = $config_autoprovision_49_macaes
+
+;Config.Autoprovision.50.Name = $config_autoprovision_50_name
+;Config.Autoprovision.50.Code = $config_autoprovision_50_code
+;Config.Autoprovision.50.Url = $config_autoprovision_50_url
+;Config.Autoprovision.50.User = $config_autoprovision_50_user
+;Config.Autoprovision.50.Password = $config_autoprovision_50_password
+;Config.Autoprovision.50.ComAes = $config_autoprovision_50_comaes
+;Config.Autoprovision.50.MacAes = $config_autoprovision_50_macaes
+
+# Network Configuration
+
+Config.Network.LAN.Type = $config_network_lan_type
+Config.Network.LAN.StaticIP = $config_network_lan_staticip
+Config.Network.LAN.SubnetMask = $config_network_lan_subnetmask
+Config.Network.LAN.DefaultGateway = $config_network_lan_defaultgateway
+Config.Network.LAN.PrimaryDNS = $config_network_lan_primarydns
+Config.Network.LAN.SecondaryDNS = $config_network_lan_secondarydns
+Config.Network.LAN.Enable = $config_network_lan_enable
+Config.Network.LAN.UseStaticDNS = $config_network_lan_usestaticdns
+
+Config.Network.PPPOE.User = $config_network_pppoe_user
+Config.Network.PPPOE.Pwd = $config_network_pppoe_pwd
+
+Config.Network.PC.Type = $config_network_pc_type
+Config.Network.PC.RouterIP = $config_network_pc_routerip
+Config.Network.PC.SubnetMask = $config_network_pc_subnetmask
+Config.Network.PC.EnableDHCP = $config_network_pc_enabledhcp
+Config.Network.PC.StartIP = $config_network_pc_startip
+Config.Network.PC.EndIP = $config_network_pc_endip
+
+Config.Network.8021X.ModeOf8021X = $config_network_8021x_modeof8021x
+Config.Network.8021X.Identity = $config_network_8021x_identity
+Config.Network.8021X.PwdMd5 = $config_network_8021x_pwdmd5
+
+Config.Network.RTPPORT.Max = $config_network_rtpport_max
+Config.Network.RTPPORT.Min = $config_network_rtpport_min
+
+Config.Network.QOS.SignalTos = $config_network_qos_signaltos
+Config.Network.QOS.RtpTos = $config_network_qos_rtptos
+
+Config.Network.LLDP.LLDPEnable = $config_network_lldp_lldpenable
+Config.Network.LLDP.Interval = $config_network_lldp_interval
+
+Config.Network.VLAN.LanVlanEnable = $config_network_vlan_lanvlanenable
+Config.Network.VLAN.LanVid = $config_network_vlan_lanvid
+Config.Network.VLAN.LanPriority = $config_network_vlan_lanpriority
+Config.Network.VLAN.PcVlanEnable = $config_network_vlan_pcvlanenable
+Config.Network.VLAN.PcVid = $config_network_vlan_pcvid
+Config.Network.VLAN.PcPriority = $config_network_vlan_pcpriority
+
+Config.Network.SNMP.Enable = $config_network_snmp_enable
+Config.Network.SNMP.Port = $config_network_snmp_port
+Config.Network.SNMP.TrustedAddress = $config_network_snmp_trustedaddress
+
+Config.Network.VPN.Enable = $config_network_vpn_enable
+
+# TR069 Configuration
+
+Config.TR069.General.Enable = $config_tr069_general_enable
+Config.TR069.General.Verison = $config_tr069_general_verison
+Config.TR069.General.ServerType = $config_tr069_general_servertype
+
+;Config.TR069.DeviceInfo.ProvisioningCode = $config_tr069_deviceinfo_provisioningcode
+Config.TR069.DeviceInfo.DeviceName = $config_tr069_deviceinfo_devicename
+Config.TR069.DeviceInfo.Password = $config_tr069_deviceinfo_password
+Config.TR069.DeviceInfo.ErrorNumber = $config_tr069_deviceinfo_errornumber
+Config.TR069.DeviceInfo.LongConnection = $config_tr069_deviceinfo_longconnection
+Config.TR069.DeviceInfo.Description = $config_tr069_deviceinfo_description
+Config.TR069.DeviceInfo.LongConnectionAddr = $config_tr069_deviceinfo_longconnectionaddr
+
+Config.TR069.ManagementServer.URL = $config_tr069_managementserver_url
+Config.TR069.ManagementServer.Username = $config_tr069_managementserver_username
+Config.TR069.ManagementServer.Password = $config_tr069_managementserver_password
+Config.TR069.ManagementServer.PeriodicInformEnable = $config_tr069_managementserver_periodicinformenable
+Config.TR069.ManagementServer.PeriodicInformInterval = $config_tr069_managementserver_periodicinforminterval
+Config.TR069.ManagementServer.PeriodicInformTime = $config_tr069_managementserver_periodicinformtime
+;Config.TR069.ManagementServer.ParameterKey = $config_tr069_managementserver_parameterkey
+Config.TR069.ManagementServer.ConnectionRequestURL = $config_tr069_managementserver_connectionrequesturl
+Config.TR069.ManagementServer.ConnectionRequestUsername = $config_tr069_managementserver_connectionrequestusername
+Config.TR069.ManagementServer.ConnectionRequestPassword = $config_tr069_managementserver_connectionrequestpassword
+Config.TR069.ManagementServer.STUNEnable = $config_tr069_managementserver_stunenable
+Config.TR069.ManagementServer.STUNServerAddress = $config_tr069_managementserver_stunserveraddress
+Config.TR069.ManagementServer.STUNServerPort = $config_tr069_managementserver_stunserverport
+Config.TR069.ManagementServer.STUNUsername = $config_tr069_managementserver_stunusername
+Config.TR069.ManagementServer.STUNPassword = $config_tr069_managementserver_stunpassword
+Config.TR069.ManagementServer.STUNMaximumKeepAlivePeriod = $config_tr069_managementserver_stunmaximumkeepaliveperiod
+Config.TR069.ManagementServer.STUNMinimumKeepAlivePeriod = $config_tr069_managementserver_stunminimumkeepaliveperiod
+Config.TR069.ManagementServer.NATDetected = $config_tr069_managementserver_natdetected
+Config.TR069.ManagementServer.UDPConnectionRequestAddress = $config_tr069_managementserver_udpconnectionrequestaddress
+Config.TR069.ManagementServer.UDPConnectionRequestAddressNotificationLimit = $config_tr069_managementserver_udpconnectionrequestaddressnotificationlimit
+Config.TR069.ManagementServer.UpgradesManaged = $config_tr069_managementserver_upgradesmanaged
+Config.TR069.ManagementServer.DHCPCustomId = $config_tr069_managementserver_dhcpcustomid
+
+;Config.TR069.Reboot.CmdKey = $config_tr069_reboot_cmdkey
+
+Config.TR069.Download.Enable = $config_tr069_download_enable
+;Config.TR069.Download.CmdKey = $config_tr069_download_cmdkey
+Config.TR069.Download.StartTime = $config_tr069_download_starttime
+Config.TR069.Download.Url = $config_tr069_download_url
+
+Config.TR069.UserInfo.SubID = $config_tr069_userinfo_subid
+Config.TR069.UserInfo.AuthenticationType = $config_tr069_userinfo_authenticationtype
+
+Config.TR069.IMSAKA_Ki.KiValue = $config_tr069_imsaka_ki_kivalue
+Config.TR069.IMSAKA_Ki.TemplateID = $config_tr069_imsaka_ki_templateid
+
+Config.TR069.IMSAKA_OPc.OPcValue = $config_tr069_imsaka_opc_opcvalue
+Config.TR069.IMSAKA_OPc.TemplateID = $config_tr069_imsaka_opc_templateid
+
+Config.TR069.IMPU.Priority = $config_tr069_impu_priority
+Config.TR069.IMPU.Service = $config_tr069_impu_service
+Config.TR069.IMPU.Port = $config_tr069_impu_port
+
+Config.TR069.IRS.IMPU = $config_tr069_irs_impu
+
+Config.TR069.WildcardedRegInfo.WildcardedGroupID = $config_tr069_wildcardedreginfo_wildcardedgroupid
+Config.TR069.WildcardedRegInfo.WildcardedIndication = $config_tr069_wildcardedreginfo_wildcardedindication
+
+Config.TR069.DeviceInfo.X_00D0F8_ConfigVersion = $config_tr069_deviceinfo_x_00d0f8_configversion
+
+# Account1 Configuration
+
+Config.Account1.GENERAL.Enable = $config_account1_general_enable
+Config.Account1.GENERAL.Label = $sipname
+Config.Account1.GENERAL.DisplayName = $sipname
+Config.Account1.GENERAL.UserName = $sipname
+Config.Account1.GENERAL.AuthName = $sipname
+Config.Account1.GENERAL.Pwd = $secret
+Config.Account1.GENERAL.UserAgent = $config_account1_general_useragent
+
+Config.Account1.SIP.Server = $config_account1_sip_server
+Config.Account1.SIP.Server2 = $config_account1_sip_server2
+Config.Account1.SIP.Port = $config_account1_sip_port
+Config.Account1.SIP.Port2 = $config_account1_sip_port2
+Config.Account1.SIP.TransType = $config_account1_sip_transtype
+Config.Account1.SIP.ListenPortMin = $config_account1_sip_listenportmin
+Config.Account1.SIP.ListenPortMax = $config_account1_sip_listenportmax
+
+Config.Account1.OUTPROXY.Enable = $config_account1_outproxy_enable
+Config.Account1.OUTPROXY.Server = $config_account1_outproxy_server
+Config.Account1.OUTPROXY.Port = $config_account1_outproxy_port
+Config.Account1.OUTPROXY.BakServer = $config_account1_outproxy_bakserver
+Config.Account1.OUTPROXY.BakPort = $config_account1_outproxy_bakport
+Config.Account1.OUTPROXY.DHCPOption = $config_account1_outproxy_dhcpoption
+
+Config.Account1.STUN.Enable = $config_account1_stun_enable
+Config.Account1.STUN.Server = $config_account1_stun_server
+Config.Account1.STUN.Port = $config_account1_stun_port
+
+Config.Account1.ENCRYPTION.SRTPEncryption = $config_account1_encryption_srtpencryption
+Config.Account1.ENCRYPTION.SRTPEncryptionAlg = $config_account1_encryption_srtpencryptionalg
+
+Config.Account1.DTMF.Type = $config_account1_dtmf_type
+Config.Account1.DTMF.Payload = $config_account1_dtmf_payload
+Config.Account1.DTMF.InfoType = $config_account1_dtmf_infotype
+Config.Account1.DTMF.Duration = $config_account1_dtmf_duration
+Config.Account1.DTMF.Power = $config_account1_dtmf_power
+
+Config.Account1.NAT.UdpKeepEnable = $config_account1_nat_udpkeepenable
+Config.Account1.NAT.UdpKeepInterval = $config_account1_nat_udpkeepinterval
+Config.Account1.NAT.Rport = $config_account1_nat_rport
+
+Config.Account1.BLF.SubscribePeriod = $config_account1_blf_subscribeperiod
+Config.Account1.BLF.BlfListUri = $config_account1_blf_blflisturi
+Config.Account1.BLF.BlfNotifyParseType = $config_account1_blf_blfnotifyparsetype
+Config.Account1.BLF.BlfListCode = $config_account1_blf_blflistcode
+Config.Account1.BLF.BlfListBargeInCode = $config_account1_blf_blflistbargeincode
+
+Config.Account1.VOICEMSG.Number = $config_account1_voicemsg_number
+
+Config.Account1.MUSIC_SERVER.Uri = $config_account1_music_server_uri
+Config.Account1.MUSIC_SERVER.Enable = $config_account1_music_server_enable
+
+Config.Account1.ANONYMOUS_CALL.Enable = $config_account1_anonymous_call_enable
+Config.Account1.ANONYMOUS_CALL.OnCode = $config_account1_anonymous_call_oncode
+Config.Account1.ANONYMOUS_CALL.OffCode = $config_account1_anonymous_call_offcode
+Config.Account1.ANONYMOUS_CALL.PrivacyHeaderValue = $config_account1_anonymous_call_privacyheadervalue
+
+Config.Account1.REJECT_ANONYMOUSCALL.Enable = $config_account1_reject_anonymouscall_enable
+Config.Account1.REJECT_ANONYMOUSCALL.OnCode = $config_account1_reject_anonymouscall_oncode
+Config.Account1.REJECT_ANONYMOUSCALL.OffCode = $config_account1_reject_anonymouscall_offcode
+
+Config.Account1.REG.Timeout = $config_account1_reg_timeout
+Config.Account1.REG.Timeout2 = $config_account1_reg_timeout2
+
+Config.Account1.CONFERENCE.Type = $config_account1_conference_type
+Config.Account1.CONFERENCE.Uri = $config_account1_conference_uri
+
+Config.Account1.AUTO_ANSWER.Enable = $config_account1_auto_answer_enable
+
+Config.Account1.SESSION.EnableTimer = $config_account1_session_enabletimer
+Config.Account1.SESSION.Interval = $config_account1_session_interval
+Config.Account1.SESSION.Refresher = $config_account1_session_refresher
+
+Config.Account1.SUBSCRIBE.SubscribeACDExpire = $config_account1_subscribe_subscribeacdexpire
+Config.Account1.SUBSCRIBE.SubsribeMWI = $config_account1_subscribe_subsribemwi
+Config.Account1.SUBSCRIBE.SubscribeMWIExpire = $config_account1_subscribe_subscribemwiexpire
+
+Config.Account1.CALL.Enable100Rel = $config_account1_call_enable100rel
+Config.Account1.CALL.CIDSource = $config_account1_call_cidsource
+Config.Account1.CALL.Ptime = $config_account1_call_ptime
+Config.Account1.CALL.UserPhone = $config_account1_call_userphone
+Config.Account1.CALL.RdrInfoDetection = $config_account1_call_rdrinfodetection
+Config.Account1.CALL.PreventSIPHacking = $config_account1_call_preventsiphacking
+Config.Account1.CALL.UseRemoteCodec = $config_account1_call_useremotecodec
+
+Config.Account1.FEATURE_DND.Enable = $config_account1_feature_dnd_enable
+Config.Account1.FEATURE_DND.OnCode = $config_account1_feature_dnd_oncode
+Config.Account1.FEATURE_DND.OffCode = $config_account1_feature_dnd_offcode
+Config.Account1.FEATURE_DND.ReturnCode = $config_account1_feature_dnd_returncode
+
+Config.Account1.FEATURE_FORWARD_ALWAYS.Enable = $config_account1_feature_forward_always_enable
+Config.Account1.FEATURE_FORWARD_ALWAYS.LastEnable = $config_account1_feature_forward_always_lastenable
+Config.Account1.FEATURE_FORWARD_ALWAYS.Target = $config_account1_feature_forward_always_target
+Config.Account1.FEATURE_FORWARD_ALWAYS.OnCode = $config_account1_feature_forward_always_oncode
+Config.Account1.FEATURE_FORWARD_ALWAYS.OffCode = $config_account1_feature_forward_always_offcode
+
+Config.Account1.FEATURE_FORWARD_BUSY.Enable = $config_account1_feature_forward_busy_enable
+Config.Account1.FEATURE_FORWARD_BUSY.LastEnable = $config_account1_feature_forward_busy_lastenable
+Config.Account1.FEATURE_FORWARD_BUSY.Target = $config_account1_feature_forward_busy_target
+Config.Account1.FEATURE_FORWARD_BUSY.OnCode = $config_account1_feature_forward_busy_oncode
+Config.Account1.FEATURE_FORWARD_BUSY.OffCode = $config_account1_feature_forward_busy_offcode
+
+Config.Account1.FEATURE_FORWARD_TIMEOUT.Enable = $config_account1_feature_forward_timeout_enable
+Config.Account1.FEATURE_FORWARD_TIMEOUT.LastEnable = $config_account1_feature_forward_timeout_lastenable
+Config.Account1.FEATURE_FORWARD_TIMEOUT.Target = $config_account1_feature_forward_timeout_target
+Config.Account1.FEATURE_FORWARD_TIMEOUT.OnCode = $config_account1_feature_forward_timeout_oncode
+Config.Account1.FEATURE_FORWARD_TIMEOUT.OffCode = $config_account1_feature_forward_timeout_offcode
+Config.Account1.FEATURE_FORWARD_TIMEOUT.TimeOut = $config_account1_feature_forward_timeout_timeout
+
+Config.Account1.Audio0.Enable = $config_account1_audio0_enable
+Config.Account1.Audio0.Name = $config_account1_audio0_name
+Config.Account1.Audio0.Priority = $config_account1_audio0_priority
+Config.Account1.Audio0.Payload = $config_account1_audio0_payload
+
+Config.Account1.Audio1.Enable = $config_account1_audio1_enable
+Config.Account1.Audio1.Name = $config_account1_audio1_name
+Config.Account1.Audio1.Priority = $config_account1_audio1_priority
+Config.Account1.Audio1.Payload = $config_account1_audio1_payload
+
+Config.Account1.Audio2.Enable = $config_account1_audio2_enable
+Config.Account1.Audio2.Name = $config_account1_audio2_name
+Config.Account1.Audio2.Priority = $config_account1_audio2_priority
+Config.Account1.Audio2.Payload = $config_account1_audio2_payload
+
+Config.Account1.Audio3.Enable = $config_account1_audio3_enable
+Config.Account1.Audio3.Name = $config_account1_audio3_name
+Config.Account1.Audio3.Priority = $config_account1_audio3_priority
+Config.Account1.Audio3.Payload = $config_account1_audio3_payload
+
+Config.Account1.Audio4.Enable = $config_account1_audio4_enable
+Config.Account1.Audio4.Name = $config_account1_audio4_name
+Config.Account1.Audio4.Priority = $config_account1_audio4_priority
+Config.Account1.Audio4.Payload = $config_account1_audio4_payload
+
+Config.Account1.Audio5.Enable = $config_account1_audio5_enable
+Config.Account1.Audio5.Name = $config_account1_audio5_name
+Config.Account1.Audio5.Priority = $config_account1_audio5_priority
+Config.Account1.Audio5.Payload = $config_account1_audio5_payload
+
+Config.Account1.Audio6.Enable = $config_account1_audio6_enable
+Config.Account1.Audio6.Name = $config_account1_audio6_name
+Config.Account1.Audio6.Priority = $config_account1_audio6_priority
+Config.Account1.Audio6.Payload = $config_account1_audio6_payload
+
+Config.Account1.Audio7.Enable = $config_account1_audio7_enable
+Config.Account1.Audio7.Name = $config_account1_audio7_name
+Config.Account1.Audio7.Priority = $config_account1_audio7_priority
+Config.Account1.Audio7.Payload = $config_account1_audio7_payload
+
+Config.Account1.Audio8.Enable = $config_account1_audio8_enable
+Config.Account1.Audio8.Name = $config_account1_audio8_name
+Config.Account1.Audio8.Priority = $config_account1_audio8_priority
+Config.Account1.Audio8.Payload = $config_account1_audio8_payload
+
+Config.Account1.Audio9.Enable = $config_account1_audio9_enable
+Config.Account1.Audio9.Name = $config_account1_audio9_name
+Config.Account1.Audio9.Priority = $config_account1_audio9_priority
+Config.Account1.Audio9.Payload = $config_account1_audio9_payload
+
+Config.Account1.Audio10.Enable = $config_account1_audio10_enable
+Config.Account1.Audio10.Name = $config_account1_audio10_name
+Config.Account1.Audio10.Priority = $config_account1_audio10_priority
+Config.Account1.Audio10.Payload = $config_account1_audio10_payload
+
+Config.Account1.Audio11.Enable = $config_account1_audio11_enable
+Config.Account1.Audio11.Name = $config_account1_audio11_name
+Config.Account1.Audio11.Priority = $config_account1_audio11_priority
+Config.Account1.Audio11.Payload = $config_account1_audio11_payload
+
+Config.Account1.Audio12.Enable = $config_account1_audio12_enable
+Config.Account1.Audio12.Name = $config_account1_audio12_name
+Config.Account1.Audio12.Priority = $config_account1_audio12_priority
+Config.Account1.Audio12.Payload = $config_account1_audio12_payload
+
+Config.Account1.AOC.AocEnable = $config_account1_aoc_aocenable
+
+Config.Account1.RINGTONE.Type = $config_account1_ringtone_type
+
+Config.Account1.ESCAPE_CHARACTER.Enable = $config_account1_escape_character_enable
+
+Config.Account1.ADVANCED.ShowMissedCall = $config_account1_advanced_showmissedcall
+
+Config.Account1.HOTELING.Enable = $config_account1_hoteling_enable
+Config.Account1.HOTELING.User = $config_account1_hoteling_user
+Config.Account1.HOTELING.Password = $config_account1_hoteling_password
+Config.Account1.HOTELING.AutoLogin = $config_account1_hoteling_autologin
+
+# Account2 Configuration
+
+Config.Account2.GENERAL.Enable = $config_account2_general_enable
+Config.Account2.GENERAL.Label = $config_account2_general_label
+Config.Account2.GENERAL.DisplayName = $config_account2_general_displayname
+Config.Account2.GENERAL.UserName = $config_account2_general_username
+Config.Account2.GENERAL.AuthName = $config_account2_general_authname
+Config.Account2.GENERAL.Pwd = $config_account2_general_pwd
+Config.Account2.GENERAL.UserAgent = $config_account2_general_useragent
+
+Config.Account2.SIP.Server = $config_account2_sip_server
+Config.Account2.SIP.Server2 = $config_account2_sip_server2
+Config.Account2.SIP.Port = $config_account2_sip_port
+Config.Account2.SIP.Port2 = $config_account2_sip_port2
+Config.Account2.SIP.TransType = $config_account2_sip_transtype
+Config.Account2.SIP.ListenPortMin = $config_account2_sip_listenportmin
+Config.Account2.SIP.ListenPortMax = $config_account2_sip_listenportmax
+
+Config.Account2.OUTPROXY.Enable = $config_account2_outproxy_enable
+Config.Account2.OUTPROXY.Server = $config_account2_outproxy_server
+Config.Account2.OUTPROXY.Port = $config_account2_outproxy_port
+Config.Account2.OUTPROXY.BakServer = $config_account2_outproxy_bakserver
+Config.Account2.OUTPROXY.BakPort = $config_account2_outproxy_bakport
+Config.Account2.OUTPROXY.DHCPOption = $config_account2_outproxy_dhcpoption
+
+Config.Account2.STUN.Enable = $config_account2_stun_enable
+Config.Account2.STUN.Server = $config_account2_stun_server
+Config.Account2.STUN.Port = $config_account2_stun_port
+
+Config.Account2.ENCRYPTION.SRTPEncryption = $config_account2_encryption_srtpencryption
+Config.Account2.ENCRYPTION.SRTPEncryptionAlg = $config_account2_encryption_srtpencryptionalg
+
+Config.Account2.DTMF.Type = $config_account2_dtmf_type
+Config.Account2.DTMF.Payload = $config_account2_dtmf_payload
+Config.Account2.DTMF.InfoType = $config_account2_dtmf_infotype
+Config.Account2.DTMF.Duration = $config_account2_dtmf_duration
+Config.Account2.DTMF.Power = $config_account2_dtmf_power
+
+Config.Account2.NAT.UdpKeepEnable = $config_account2_nat_udpkeepenable
+Config.Account2.NAT.UdpKeepInterval = $config_account2_nat_udpkeepinterval
+Config.Account2.NAT.Rport = $config_account2_nat_rport
+
+Config.Account2.BLF.SubscribePeriod = $config_account2_blf_subscribeperiod
+Config.Account2.BLF.BlfListUri = $config_account2_blf_blflisturi
+Config.Account2.BLF.BlfNotifyParseType = $config_account2_blf_blfnotifyparsetype
+Config.Account2.BLF.BlfListCode = $config_account2_blf_blflistcode
+Config.Account2.BLF.BlfListBargeInCode = $config_account2_blf_blflistbargeincode
+
+Config.Account2.VOICEMSG.Number = $config_account2_voicemsg_number
+
+Config.Account2.MUSIC_SERVER.Uri = $config_account2_music_server_uri
+Config.Account2.MUSIC_SERVER.Enable = $config_account2_music_server_enable
+
+Config.Account2.ANONYMOUS_CALL.Enable = $config_account2_anonymous_call_enable
+Config.Account2.ANONYMOUS_CALL.OnCode = $config_account2_anonymous_call_oncode
+Config.Account2.ANONYMOUS_CALL.OffCode = $config_account2_anonymous_call_offcode
+Config.Account2.ANONYMOUS_CALL.PrivacyHeaderValue = $config_account2_anonymous_call_privacyheadervalue
+
+Config.Account2.REJECT_ANONYMOUSCALL.Enable = $config_account2_reject_anonymouscall_enable
+Config.Account2.REJECT_ANONYMOUSCALL.OnCode = $config_account2_reject_anonymouscall_oncode
+Config.Account2.REJECT_ANONYMOUSCALL.OffCode = $config_account2_reject_anonymouscall_offcode
+
+Config.Account2.REG.Timeout = $config_account2_reg_timeout
+Config.Account2.REG.Timeout2 = $config_account2_reg_timeout2
+
+Config.Account2.CONFERENCE.Type = $config_account2_conference_type
+Config.Account2.CONFERENCE.Uri = $config_account2_conference_uri
+
+Config.Account2.AUTO_ANSWER.Enable = $config_account2_auto_answer_enable
+
+Config.Account2.SESSION.EnableTimer = $config_account2_session_enabletimer
+Config.Account2.SESSION.Interval = $config_account2_session_interval
+Config.Account2.SESSION.Refresher = $config_account2_session_refresher
+
+Config.Account2.SUBSCRIBE.SubscribeACDExpire = $config_account2_subscribe_subscribeacdexpire
+Config.Account2.SUBSCRIBE.SubsribeMWI = $config_account2_subscribe_subsribemwi
+Config.Account2.SUBSCRIBE.SubscribeMWIExpire = $config_account2_subscribe_subscribemwiexpire
+
+Config.Account2.CALL.Enable100Rel = $config_account2_call_enable100rel
+Config.Account2.CALL.CIDSource = $config_account2_call_cidsource
+Config.Account2.CALL.Ptime = $config_account2_call_ptime
+Config.Account2.CALL.UserPhone = $config_account2_call_userphone
+Config.Account2.CALL.RdrInfoDetection = $config_account2_call_rdrinfodetection
+Config.Account2.CALL.PreventSIPHacking = $config_account2_call_preventsiphacking
+Config.Account2.CALL.UseRemoteCodec = $config_account2_call_useremotecodec
+
+Config.Account2.FEATURE_DND.Enable = $config_account2_feature_dnd_enable
+Config.Account2.FEATURE_DND.OnCode = $config_account2_feature_dnd_oncode
+Config.Account2.FEATURE_DND.OffCode = $config_account2_feature_dnd_offcode
+Config.Account2.FEATURE_DND.ReturnCode = $config_account2_feature_dnd_returncode
+
+Config.Account2.FEATURE_FORWARD_ALWAYS.Enable = $config_account2_feature_forward_always_enable
+Config.Account2.FEATURE_FORWARD_ALWAYS.LastEnable = $config_account2_feature_forward_always_lastenable
+Config.Account2.FEATURE_FORWARD_ALWAYS.Target = $config_account2_feature_forward_always_target
+Config.Account2.FEATURE_FORWARD_ALWAYS.OnCode = $config_account2_feature_forward_always_oncode
+Config.Account2.FEATURE_FORWARD_ALWAYS.OffCode = $config_account2_feature_forward_always_offcode
+
+Config.Account2.FEATURE_FORWARD_BUSY.Enable = $config_account2_feature_forward_busy_enable
+Config.Account2.FEATURE_FORWARD_BUSY.LastEnable = $config_account2_feature_forward_busy_lastenable
+Config.Account2.FEATURE_FORWARD_BUSY.Target = $config_account2_feature_forward_busy_target
+Config.Account2.FEATURE_FORWARD_BUSY.OnCode = $config_account2_feature_forward_busy_oncode
+Config.Account2.FEATURE_FORWARD_BUSY.OffCode = $config_account2_feature_forward_busy_offcode
+
+Config.Account2.FEATURE_FORWARD_TIMEOUT.Enable = $config_account2_feature_forward_timeout_enable
+Config.Account2.FEATURE_FORWARD_TIMEOUT.LastEnable = $config_account2_feature_forward_timeout_lastenable
+Config.Account2.FEATURE_FORWARD_TIMEOUT.Target = $config_account2_feature_forward_timeout_target
+Config.Account2.FEATURE_FORWARD_TIMEOUT.OnCode = $config_account2_feature_forward_timeout_oncode
+Config.Account2.FEATURE_FORWARD_TIMEOUT.OffCode = $config_account2_feature_forward_timeout_offcode
+Config.Account2.FEATURE_FORWARD_TIMEOUT.TimeOut = $config_account2_feature_forward_timeout_timeout
+
+Config.Account2.Audio0.Enable = $config_account2_audio0_enable
+Config.Account2.Audio0.Name = $config_account2_audio0_name
+Config.Account2.Audio0.Priority = $config_account2_audio0_priority
+Config.Account2.Audio0.Payload = $config_account2_audio0_payload
+
+Config.Account2.Audio1.Enable = $config_account2_audio1_enable
+Config.Account2.Audio1.Name = $config_account2_audio1_name
+Config.Account2.Audio1.Priority = $config_account2_audio1_priority
+Config.Account2.Audio1.Payload = $config_account2_audio1_payload
+
+Config.Account2.Audio2.Enable = $config_account2_audio2_enable
+Config.Account2.Audio2.Name = $config_account2_audio2_name
+Config.Account2.Audio2.Priority = $config_account2_audio2_priority
+Config.Account2.Audio2.Payload = $config_account2_audio2_payload
+
+Config.Account2.Audio3.Enable = $config_account2_audio3_enable
+Config.Account2.Audio3.Name = $config_account2_audio3_name
+Config.Account2.Audio3.Priority = $config_account2_audio3_priority
+Config.Account2.Audio3.Payload = $config_account2_audio3_payload
+
+Config.Account2.Audio4.Enable = $config_account2_audio4_enable
+Config.Account2.Audio4.Name = $config_account2_audio4_name
+Config.Account2.Audio4.Priority = $config_account2_audio4_priority
+Config.Account2.Audio4.Payload = $config_account2_audio4_payload
+
+Config.Account2.Audio5.Enable = $config_account2_audio5_enable
+Config.Account2.Audio5.Name = $config_account2_audio5_name
+Config.Account2.Audio5.Priority = $config_account2_audio5_priority
+Config.Account2.Audio5.Payload = $config_account2_audio5_payload
+
+Config.Account2.Audio6.Enable = $config_account2_audio6_enable
+Config.Account2.Audio6.Name = $config_account2_audio6_name
+Config.Account2.Audio6.Priority = $config_account2_audio6_priority
+Config.Account2.Audio6.Payload = $config_account2_audio6_payload
+
+Config.Account2.Audio7.Enable = $config_account2_audio7_enable
+Config.Account2.Audio7.Name = $config_account2_audio7_name
+Config.Account2.Audio7.Priority = $config_account2_audio7_priority
+Config.Account2.Audio7.Payload = $config_account2_audio7_payload
+
+Config.Account2.Audio8.Enable = $config_account2_audio8_enable
+Config.Account2.Audio8.Name = $config_account2_audio8_name
+Config.Account2.Audio8.Priority = $config_account2_audio8_priority
+Config.Account2.Audio8.Payload = $config_account2_audio8_payload
+
+Config.Account2.Audio9.Enable = $config_account2_audio9_enable
+Config.Account2.Audio9.Name = $config_account2_audio9_name
+Config.Account2.Audio9.Priority = $config_account2_audio9_priority
+Config.Account2.Audio9.Payload = $config_account2_audio9_payload
+
+Config.Account2.Audio10.Enable = $config_account2_audio10_enable
+Config.Account2.Audio10.Name = $config_account2_audio10_name
+Config.Account2.Audio10.Priority = $config_account2_audio10_priority
+Config.Account2.Audio10.Payload = $config_account2_audio10_payload
+
+Config.Account2.Audio11.Enable = $config_account2_audio11_enable
+Config.Account2.Audio11.Name = $config_account2_audio11_name
+Config.Account2.Audio11.Priority = $config_account2_audio11_priority
+Config.Account2.Audio11.Payload = $config_account2_audio11_payload
+
+Config.Account2.Audio12.Enable = $config_account2_audio12_enable
+Config.Account2.Audio12.Name = $config_account2_audio12_name
+Config.Account2.Audio12.Priority = $config_account2_audio12_priority
+Config.Account2.Audio12.Payload = $config_account2_audio12_payload
+
+Config.Account2.AOC.AocEnable = $config_account2_aoc_aocenable
+
+Config.Account2.RINGTONE.Type = $config_account2_ringtone_type
+
+Config.Account2.ESCAPE_CHARACTER.Enable = $config_account2_escape_character_enable
+
+Config.Account2.ADVANCED.ShowMissedCall = $config_account2_advanced_showmissedcall
+
+Config.Account2.HOTELING.Enable = $config_account2_hoteling_enable
+Config.Account2.HOTELING.User = $config_account2_hoteling_user
+Config.Account2.HOTELING.Password = $config_account2_hoteling_password
+Config.Account2.HOTELING.AutoLogin = $config_account2_hoteling_autologin
+
+# Account3 Configuration
+
+Config.Account3.GENERAL.Enable = $config_account3_general_enable
+Config.Account3.GENERAL.Label = $config_account3_general_label
+Config.Account3.GENERAL.DisplayName = $config_account3_general_displayname
+Config.Account3.GENERAL.UserName = $config_account3_general_username
+Config.Account3.GENERAL.AuthName = $config_account3_general_authname
+Config.Account3.GENERAL.Pwd = $config_account3_general_pwd
+Config.Account3.GENERAL.UserAgent = $config_account3_general_useragent
+
+Config.Account3.SIP.Server = $config_account3_sip_server
+Config.Account3.SIP.Server2 = $config_account3_sip_server2
+Config.Account3.SIP.Port = $config_account3_sip_port
+Config.Account3.SIP.Port2 = $config_account3_sip_port2
+Config.Account3.SIP.TransType = $config_account3_sip_transtype
+Config.Account3.SIP.ListenPortMin = $config_account3_sip_listenportmin
+Config.Account3.SIP.ListenPortMax = $config_account3_sip_listenportmax
+
+Config.Account3.OUTPROXY.Enable = $config_account3_outproxy_enable
+Config.Account3.OUTPROXY.Server = $config_account3_outproxy_server
+Config.Account3.OUTPROXY.Port = $config_account3_outproxy_port
+Config.Account3.OUTPROXY.BakServer = $config_account3_outproxy_bakserver
+Config.Account3.OUTPROXY.BakPort = $config_account3_outproxy_bakport
+Config.Account3.OUTPROXY.DHCPOption = $config_account3_outproxy_dhcpoption
+
+Config.Account3.STUN.Enable = $config_account3_stun_enable
+Config.Account3.STUN.Server = $config_account3_stun_server
+Config.Account3.STUN.Port = $config_account3_stun_port
+
+Config.Account3.ENCRYPTION.SRTPEncryption = $config_account3_encryption_srtpencryption
+Config.Account3.ENCRYPTION.SRTPEncryptionAlg = $config_account3_encryption_srtpencryptionalg
+
+Config.Account3.DTMF.Type = $config_account3_dtmf_type
+Config.Account3.DTMF.Payload = $config_account3_dtmf_payload
+Config.Account3.DTMF.InfoType = $config_account3_dtmf_infotype
+Config.Account3.DTMF.Duration = $config_account3_dtmf_duration
+Config.Account3.DTMF.Power = $config_account3_dtmf_power
+
+Config.Account3.NAT.UdpKeepEnable = $config_account3_nat_udpkeepenable
+Config.Account3.NAT.UdpKeepInterval = $config_account3_nat_udpkeepinterval
+Config.Account3.NAT.Rport = $config_account3_nat_rport
+
+Config.Account3.BLF.SubscribePeriod = $config_account3_blf_subscribeperiod
+Config.Account3.BLF.BlfListUri = $config_account3_blf_blflisturi
+Config.Account3.BLF.BlfNotifyParseType = $config_account3_blf_blfnotifyparsetype
+Config.Account3.BLF.BlfListCode = $config_account3_blf_blflistcode
+Config.Account3.BLF.BlfListBargeInCode = $config_account3_blf_blflistbargeincode
+
+Config.Account3.VOICEMSG.Number = $config_account3_voicemsg_number
+
+Config.Account3.MUSIC_SERVER.Uri = $config_account3_music_server_uri
+Config.Account3.MUSIC_SERVER.Enable = $config_account3_music_server_enable
+
+Config.Account3.ANONYMOUS_CALL.Enable = $config_account3_anonymous_call_enable
+Config.Account3.ANONYMOUS_CALL.OnCode = $config_account3_anonymous_call_oncode
+Config.Account3.ANONYMOUS_CALL.OffCode = $config_account3_anonymous_call_offcode
+Config.Account3.ANONYMOUS_CALL.PrivacyHeaderValue = $config_account3_anonymous_call_privacyheadervalue
+
+Config.Account3.REJECT_ANONYMOUSCALL.Enable = $config_account3_reject_anonymouscall_enable
+Config.Account3.REJECT_ANONYMOUSCALL.OnCode = $config_account3_reject_anonymouscall_oncode
+Config.Account3.REJECT_ANONYMOUSCALL.OffCode = $config_account3_reject_anonymouscall_offcode
+
+Config.Account3.REG.Timeout = $config_account3_reg_timeout
+Config.Account3.REG.Timeout2 = $config_account3_reg_timeout2
+
+Config.Account3.CONFERENCE.Type = $config_account3_conference_type
+Config.Account3.CONFERENCE.Uri = $config_account3_conference_uri
+
+Config.Account3.AUTO_ANSWER.Enable = $config_account3_auto_answer_enable
+
+Config.Account3.SESSION.EnableTimer = $config_account3_session_enabletimer
+Config.Account3.SESSION.Interval = $config_account3_session_interval
+Config.Account3.SESSION.Refresher = $config_account3_session_refresher
+
+Config.Account3.SUBSCRIBE.SubscribeACDExpire = $config_account3_subscribe_subscribeacdexpire
+Config.Account3.SUBSCRIBE.SubsribeMWI = $config_account3_subscribe_subsribemwi
+Config.Account3.SUBSCRIBE.SubscribeMWIExpire = $config_account3_subscribe_subscribemwiexpire
+
+Config.Account3.CALL.Enable100Rel = $config_account3_call_enable100rel
+Config.Account3.CALL.CIDSource = $config_account3_call_cidsource
+Config.Account3.CALL.Ptime = $config_account3_call_ptime
+Config.Account3.CALL.UserPhone = $config_account3_call_userphone
+Config.Account3.CALL.RdrInfoDetection = $config_account3_call_rdrinfodetection
+Config.Account3.CALL.PreventSIPHacking = $config_account3_call_preventsiphacking
+Config.Account3.CALL.UseRemoteCodec = $config_account3_call_useremotecodec
+
+Config.Account3.FEATURE_DND.Enable = $config_account3_feature_dnd_enable
+Config.Account3.FEATURE_DND.OnCode = $config_account3_feature_dnd_oncode
+Config.Account3.FEATURE_DND.OffCode = $config_account3_feature_dnd_offcode
+Config.Account3.FEATURE_DND.ReturnCode = $config_account3_feature_dnd_returncode
+
+Config.Account3.FEATURE_FORWARD_ALWAYS.Enable = $config_account3_feature_forward_always_enable
+Config.Account3.FEATURE_FORWARD_ALWAYS.LastEnable = $config_account3_feature_forward_always_lastenable
+Config.Account3.FEATURE_FORWARD_ALWAYS.Target = $config_account3_feature_forward_always_target
+Config.Account3.FEATURE_FORWARD_ALWAYS.OnCode = $config_account3_feature_forward_always_oncode
+Config.Account3.FEATURE_FORWARD_ALWAYS.OffCode = $config_account3_feature_forward_always_offcode
+
+Config.Account3.FEATURE_FORWARD_BUSY.Enable = $config_account3_feature_forward_busy_enable
+Config.Account3.FEATURE_FORWARD_BUSY.LastEnable = $config_account3_feature_forward_busy_lastenable
+Config.Account3.FEATURE_FORWARD_BUSY.Target = $config_account3_feature_forward_busy_target
+Config.Account3.FEATURE_FORWARD_BUSY.OnCode = $config_account3_feature_forward_busy_oncode
+Config.Account3.FEATURE_FORWARD_BUSY.OffCode = $config_account3_feature_forward_busy_offcode
+
+Config.Account3.FEATURE_FORWARD_TIMEOUT.Enable = $config_account3_feature_forward_timeout_enable
+Config.Account3.FEATURE_FORWARD_TIMEOUT.LastEnable = $config_account3_feature_forward_timeout_lastenable
+Config.Account3.FEATURE_FORWARD_TIMEOUT.Target = $config_account3_feature_forward_timeout_target
+Config.Account3.FEATURE_FORWARD_TIMEOUT.OnCode = $config_account3_feature_forward_timeout_oncode
+Config.Account3.FEATURE_FORWARD_TIMEOUT.OffCode = $config_account3_feature_forward_timeout_offcode
+Config.Account3.FEATURE_FORWARD_TIMEOUT.TimeOut = $config_account3_feature_forward_timeout_timeout
+
+Config.Account3.Audio0.Enable = $config_account3_audio0_enable
+Config.Account3.Audio0.Name = $config_account3_audio0_name
+Config.Account3.Audio0.Priority = $config_account3_audio0_priority
+Config.Account3.Audio0.Payload = $config_account3_audio0_payload
+
+Config.Account3.Audio1.Enable = $config_account3_audio1_enable
+Config.Account3.Audio1.Name = $config_account3_audio1_name
+Config.Account3.Audio1.Priority = $config_account3_audio1_priority
+Config.Account3.Audio1.Payload = $config_account3_audio1_payload
+
+Config.Account3.Audio2.Enable = $config_account3_audio2_enable
+Config.Account3.Audio2.Name = $config_account3_audio2_name
+Config.Account3.Audio2.Priority = $config_account3_audio2_priority
+Config.Account3.Audio2.Payload = $config_account3_audio2_payload
+
+Config.Account3.Audio3.Enable = $config_account3_audio3_enable
+Config.Account3.Audio3.Name = $config_account3_audio3_name
+Config.Account3.Audio3.Priority = $config_account3_audio3_priority
+Config.Account3.Audio3.Payload = $config_account3_audio3_payload
+
+Config.Account3.Audio4.Enable = $config_account3_audio4_enable
+Config.Account3.Audio4.Name = $config_account3_audio4_name
+Config.Account3.Audio4.Priority = $config_account3_audio4_priority
+Config.Account3.Audio4.Payload = $config_account3_audio4_payload
+
+Config.Account3.Audio5.Enable = $config_account3_audio5_enable
+Config.Account3.Audio5.Name = $config_account3_audio5_name
+Config.Account3.Audio5.Priority = $config_account3_audio5_priority
+Config.Account3.Audio5.Payload = $config_account3_audio5_payload
+
+Config.Account3.Audio6.Enable = $config_account3_audio6_enable
+Config.Account3.Audio6.Name = $config_account3_audio6_name
+Config.Account3.Audio6.Priority = $config_account3_audio6_priority
+Config.Account3.Audio6.Payload = $config_account3_audio6_payload
+
+Config.Account3.Audio7.Enable = $config_account3_audio7_enable
+Config.Account3.Audio7.Name = $config_account3_audio7_name
+Config.Account3.Audio7.Priority = $config_account3_audio7_priority
+Config.Account3.Audio7.Payload = $config_account3_audio7_payload
+
+Config.Account3.Audio8.Enable = $config_account3_audio8_enable
+Config.Account3.Audio8.Name = $config_account3_audio8_name
+Config.Account3.Audio8.Priority = $config_account3_audio8_priority
+Config.Account3.Audio8.Payload = $config_account3_audio8_payload
+
+Config.Account3.Audio9.Enable = $config_account3_audio9_enable
+Config.Account3.Audio9.Name = $config_account3_audio9_name
+Config.Account3.Audio9.Priority = $config_account3_audio9_priority
+Config.Account3.Audio9.Payload = $config_account3_audio9_payload
+
+Config.Account3.Audio10.Enable = $config_account3_audio10_enable
+Config.Account3.Audio10.Name = $config_account3_audio10_name
+Config.Account3.Audio10.Priority = $config_account3_audio10_priority
+Config.Account3.Audio10.Payload = $config_account3_audio10_payload
+
+Config.Account3.Audio11.Enable = $config_account3_audio11_enable
+Config.Account3.Audio11.Name = $config_account3_audio11_name
+Config.Account3.Audio11.Priority = $config_account3_audio11_priority
+Config.Account3.Audio11.Payload = $config_account3_audio11_payload
+
+Config.Account3.Audio12.Enable = $config_account3_audio12_enable
+Config.Account3.Audio12.Name = $config_account3_audio12_name
+Config.Account3.Audio12.Priority = $config_account3_audio12_priority
+Config.Account3.Audio12.Payload = $config_account3_audio12_payload
+
+Config.Account3.AOC.AocEnable = $config_account3_aoc_aocenable
+
+Config.Account3.RINGTONE.Type = $config_account3_ringtone_type
+
+Config.Account3.ESCAPE_CHARACTER.Enable = $config_account3_escape_character_enable
+
+Config.Account3.ADVANCED.ShowMissedCall = $config_account3_advanced_showmissedcall
+
+Config.Account3.HOTELING.Enable = $config_account3_hoteling_enable
+Config.Account3.HOTELING.User = $config_account3_hoteling_user
+Config.Account3.HOTELING.Password = $config_account3_hoteling_password
+Config.Account3.HOTELING.AutoLogin = $config_account3_hoteling_autologin
+
+# Call Forward Configuration
+
+Config.Forward.ALWAYS.Enable = $config_forward_always_enable
+Config.Forward.ALWAYS.LastEnable = $config_forward_always_lastenable
+Config.Forward.ALWAYS.Target = $config_forward_always_target
+Config.Forward.ALWAYS.OnCode = $config_forward_always_oncode
+Config.Forward.ALWAYS.OffCode = $config_forward_always_offcode
+
+Config.Forward.BUSY.Enable = $config_forward_busy_enable
+Config.Forward.BUSY.LastEnable = $config_forward_busy_lastenable
+Config.Forward.BUSY.Target = $config_forward_busy_target
+Config.Forward.BUSY.OnCode = $config_forward_busy_oncode
+Config.Forward.BUSY.OffCode = $config_forward_busy_offcode
+
+Config.Forward.TIMEOUT.Enable = $config_forward_timeout_enable
+Config.Forward.TIMEOUT.LastEnable = $config_forward_timeout_lastenable
+Config.Forward.TIMEOUT.Target = $config_forward_timeout_target
+Config.Forward.TIMEOUT.Timeout = $config_forward_timeout_timeout
+Config.Forward.TIMEOUT.OnCode = $config_forward_timeout_oncode
+Config.Forward.TIMEOUT.OffCode = $config_forward_timeout_offcode
+
+Config.Forward.CALLPARK.Enable = $config_forward_callpark_enable
+Config.Forward.CALLPARK.Target = $config_forward_callpark_target
+Config.Forward.CALLPARK.Line = $config_forward_callpark_line
+
+Config.Forward.FORWARDMODE.Mode = $config_forward_forwardmode_mode
+Config.Forward.FORWARDMODE.FeatureSync = $config_forward_forwardmode_featuresync
+
+Config.Forward.ADVANCED.UseFwdAsTransfer = $config_forward_advanced_usefwdastransfer
+
+# BroadSoft Configuration
+
+Config.BroadSoft.BROADSOFT0.DisplayName = $config_broadsoft_broadsoft0_displayname
+Config.BroadSoft.BROADSOFT0.Server = $config_broadsoft_broadsoft0_server
+Config.BroadSoft.BROADSOFT0.Port = $config_broadsoft_broadsoft0_port
+Config.BroadSoft.BROADSOFT0.User = $config_broadsoft_broadsoft0_user
+Config.BroadSoft.BROADSOFT0.Pwd = $config_broadsoft_broadsoft0_pwd
+
+Config.BroadSoft.BROADSOFT1.DisplayName = $config_broadsoft_broadsoft1_displayname
+Config.BroadSoft.BROADSOFT1.Server = $config_broadsoft_broadsoft1_server
+Config.BroadSoft.BROADSOFT1.Port = $config_broadsoft_broadsoft1_port
+Config.BroadSoft.BROADSOFT1.User = $config_broadsoft_broadsoft1_user
+Config.BroadSoft.BROADSOFT1.Pwd = $config_broadsoft_broadsoft1_pwd
+
+Config.BroadSoft.BROADSOFT2.DisplayName = $config_broadsoft_broadsoft2_displayname
+Config.BroadSoft.BROADSOFT2.Server = $config_broadsoft_broadsoft2_server
+Config.BroadSoft.BROADSOFT2.Port = $config_broadsoft_broadsoft2_port
+Config.BroadSoft.BROADSOFT2.User = $config_broadsoft_broadsoft2_user
+Config.BroadSoft.BROADSOFT2.Pwd = $config_broadsoft_broadsoft2_pwd
+
+Config.BroadSoft.BROADSOFT3.DisplayName = $config_broadsoft_broadsoft3_displayname
+Config.BroadSoft.BROADSOFT3.Server = $config_broadsoft_broadsoft3_server
+Config.BroadSoft.BROADSOFT3.Port = $config_broadsoft_broadsoft3_port
+Config.BroadSoft.BROADSOFT3.User = $config_broadsoft_broadsoft3_user
+Config.BroadSoft.BROADSOFT3.Pwd = $config_broadsoft_broadsoft3_pwd
+
+Config.BroadSoft.BROADSOFT4.DisplayName = $config_broadsoft_broadsoft4_displayname
+Config.BroadSoft.BROADSOFT4.Server = $config_broadsoft_broadsoft4_server
+Config.BroadSoft.BROADSOFT4.Port = $config_broadsoft_broadsoft4_port
+Config.BroadSoft.BROADSOFT4.User = $config_broadsoft_broadsoft4_user
+Config.BroadSoft.BROADSOFT4.Pwd = $config_broadsoft_broadsoft4_pwd
+
+Config.BroadSoft.BROADSOFT5.DisplayName = $config_broadsoft_broadsoft5_displayname
+Config.BroadSoft.BROADSOFT5.Server = $config_broadsoft_broadsoft5_server
+Config.BroadSoft.BROADSOFT5.Port = $config_broadsoft_broadsoft5_port
+Config.BroadSoft.BROADSOFT5.User = $config_broadsoft_broadsoft5_user
+Config.BroadSoft.BROADSOFT5.Pwd = $config_broadsoft_broadsoft5_pwd
+
+Config.BroadSoft.UPDATECONTACT.Enable = $config_broadsoft_updatecontact_enable
+Config.BroadSoft.UPDATECONTACT.Interval = $config_broadsoft_updatecontact_interval
+
+# LDAP Configuration
+
+Config.Ldap.LDAP.NameFilter = $config_ldap_ldap_namefilter
+Config.Ldap.LDAP.NumberFilter = $config_ldap_ldap_numberfilter
+Config.Ldap.LDAP.Server = $config_ldap_ldap_server
+Config.Ldap.LDAP.Port = $config_ldap_ldap_port
+Config.Ldap.LDAP.Root = $config_ldap_ldap_root
+Config.Ldap.LDAP.User = $config_ldap_ldap_user
+Config.Ldap.LDAP.Pwd = $config_ldap_ldap_pwd
+Config.Ldap.LDAP.MaxHits = $config_ldap_ldap_maxhits
+Config.Ldap.LDAP.NameAttr = $config_ldap_ldap_nameattr
+Config.Ldap.LDAP.NumberAttr = $config_ldap_ldap_numberattr
+Config.Ldap.LDAP.DisplayName = $config_ldap_ldap_displayname
+Config.Ldap.LDAP.Version = $config_ldap_ldap_version
+Config.Ldap.LDAP.SearchDelay = $config_ldap_ldap_searchdelay
+Config.Ldap.LDAP.CallInLookup = $config_ldap_ldap_callinlookup
+Config.Ldap.LDAP.DialLookup = $config_ldap_ldap_diallookup
+Config.Ldap.LDAP.OUAttr = $config_ldap_ldap_ouattr
+Config.Ldap.LDAP.Enable = $config_ldap_ldap_enable
+
+# Remote Phone Book Configuration
+
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK0.DisplayName = $config_remotephonebook_remote_phone_book0_displayname
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK0.Url = $config_remotephonebook_remote_phone_book0_url
+
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK1.DisplayName = $config_remotephonebook_remote_phone_book1_displayname
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK1.Url = $config_remotephonebook_remote_phone_book1_url
+
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK2.DisplayName = $config_remotephonebook_remote_phone_book2_displayname
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK2.Url = $config_remotephonebook_remote_phone_book2_url
+
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK3.DisplayName = $config_remotephonebook_remote_phone_book3_displayname
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK3.Url = $config_remotephonebook_remote_phone_book3_url
+
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK4.DisplayName = $config_remotephonebook_remote_phone_book4_displayname
+Config.RemotePhoneBook.REMOTE_PHONE_BOOK4.Url = $config_remotephonebook_remote_phone_book4_url
+
+Config.RemotePhoneBook.GENERAL.Search = $config_remotephonebook_general_search
+Config.RemotePhoneBook.GENERAL.FlashInterval = $config_remotephonebook_general_flashinterval
+
+# AreaCode Configuration
+
+Config.AreaCode.GENERAL.Code = $config_areacode_general_code
+Config.AreaCode.GENERAL.MinLen = $config_areacode_general_minlen
+Config.AreaCode.GENERAL.MaxLen = $config_areacode_general_maxlen
+Config.AreaCode.GENERAL.Account = $config_areacode_general_account
+
+# Feature Configuration
+
+Config.Features.CALL_WAITING.Enable = $config_features_call_waiting_enable
+Config.Features.CALL_WAITING.PlayTone = $config_features_call_waiting_playtone
+
+Config.Features.HOTLINE.Enable = $config_features_hotline_enable
+Config.Features.HOTLINE.Number = $config_features_hotline_number
+Config.Features.HOTLINE.Delay = $config_features_hotline_delay
+
+Config.Features.AUTO_REDIAL.Enable = $config_features_auto_redial_enable
+Config.Features.AUTO_REDIAL.Interval = $config_features_auto_redial_interval
+Config.Features.AUTO_REDIAL.Times = $config_features_auto_redial_times
+
+Config.Features.DND.Enable = $config_features_dnd_enable
+Config.Features.DND.ReturnCode = $config_features_dnd_returncode
+Config.Features.DND.OnCode = $config_features_dnd_oncode
+Config.Features.DND.OffCode = $config_features_dnd_offcode
+
+Config.Features.REJECT.ReturnCode = $config_features_reject_returncode
+
+Config.Features.INTERCOM.Enable = $config_features_intercom_enable
+Config.Features.INTERCOM.Mute = $config_features_intercom_mute
+
+Config.Features.CALL_PICKUP.VisualAlert = $config_features_call_pickup_visualalert
+
+Config.Features.SPEEDDIAL.Label01 = $config_features_speeddial_label01
+Config.Features.SPEEDDIAL.Label02 = $config_features_speeddial_label02
+Config.Features.SPEEDDIAL.Label03 = $config_features_speeddial_label03
+Config.Features.SPEEDDIAL.Label04 = $config_features_speeddial_label04
+Config.Features.SPEEDDIAL.Label05 = $config_features_speeddial_label05
+Config.Features.SPEEDDIAL.Label06 = $config_features_speeddial_label06
+Config.Features.SPEEDDIAL.Label07 = $config_features_speeddial_label07
+Config.Features.SPEEDDIAL.Label08 = $config_features_speeddial_label08
+Config.Features.SPEEDDIAL.Label09 = $config_features_speeddial_label09
+Config.Features.SPEEDDIAL.Label10 = $config_features_speeddial_label10
+Config.Features.SPEEDDIAL.Label11 = $config_features_speeddial_label11
+Config.Features.SPEEDDIAL.Label12 = $config_features_speeddial_label12
+Config.Features.SPEEDDIAL.Num01 = $config_features_speeddial_num01
+Config.Features.SPEEDDIAL.Num02 = $config_features_speeddial_num02
+Config.Features.SPEEDDIAL.Num03 = $config_features_speeddial_num03
+Config.Features.SPEEDDIAL.Num04 = $config_features_speeddial_num04
+Config.Features.SPEEDDIAL.Num05 = $config_features_speeddial_num05
+Config.Features.SPEEDDIAL.Num06 = $config_features_speeddial_num06
+Config.Features.SPEEDDIAL.Num07 = $config_features_speeddial_num07
+Config.Features.SPEEDDIAL.Num08 = $config_features_speeddial_num08
+Config.Features.SPEEDDIAL.Num09 = $config_features_speeddial_num09
+Config.Features.SPEEDDIAL.Num10 = $config_features_speeddial_num10
+Config.Features.SPEEDDIAL.Num11 = $config_features_speeddial_num11
+Config.Features.SPEEDDIAL.Num12 = $config_features_speeddial_num12
+Config.Features.SPEEDDIAL.Line01 = $config_features_speeddial_line01
+Config.Features.SPEEDDIAL.Line02 = $config_features_speeddial_line02
+Config.Features.SPEEDDIAL.Line03 = $config_features_speeddial_line03
+Config.Features.SPEEDDIAL.Line04 = $config_features_speeddial_line04
+Config.Features.SPEEDDIAL.Line05 = $config_features_speeddial_line05
+Config.Features.SPEEDDIAL.Line06 = $config_features_speeddial_line06
+Config.Features.SPEEDDIAL.Line07 = $config_features_speeddial_line07
+Config.Features.SPEEDDIAL.Line08 = $config_features_speeddial_line08
+Config.Features.SPEEDDIAL.Line09 = $config_features_speeddial_line09
+Config.Features.SPEEDDIAL.Line10 = $config_features_speeddial_line10
+Config.Features.SPEEDDIAL.Line11 = $config_features_speeddial_line11
+Config.Features.SPEEDDIAL.Line12 = $config_features_speeddial_line12
+
+Config.Features.DIALNOW.Delay = $config_features_dialnow_delay
+Config.Features.DIALNOW.DialAll = $config_features_dialnow_dialall
+Config.Features.DIALNOW.DialAllForHandfree = $config_features_dialnow_dialallforhandfree
+Config.Features.DIALNOW.DialAllForHeadset = $config_features_dialnow_dialallforheadset
+
+Config.Features.AUTOANSWER.Delay = $config_features_autoanswer_delay
+
+Config.Features.Others.EarlyDTMF = $config_features_others_earlydtmf
+Config.Features.Others.ViewHistoryType = $config_features_others_viewhistorytype
+
+Config.Features.ACD.ACDAutoAvailable = $config_features_acd_acdautoavailable
+Config.Features.ACD.ACDAutoAvailableTime = $config_features_acd_acdautoavailabletime
+Config.Features.ACD.ACDAutoLogin = $config_features_acd_acdautologin
+
+Config.Features.ACTIONURL.SetupCompleted = $config_features_actionurl_setupcompleted
+Config.Features.ACTIONURL.Registered = $config_features_actionurl_registered
+Config.Features.ACTIONURL.Unregistered = $config_features_actionurl_unregistered
+Config.Features.ACTIONURL.RegisterFailed = $config_features_actionurl_registerfailed
+Config.Features.ACTIONURL.OffHook = $config_features_actionurl_offhook
+Config.Features.ACTIONURL.OnHook = $config_features_actionurl_onhook
+Config.Features.ACTIONURL.IncomingCall = $config_features_actionurl_incomingcall
+Config.Features.ACTIONURL.OutgoingCall = $config_features_actionurl_outgoingcall
+Config.Features.ACTIONURL.Established = $config_features_actionurl_established
+Config.Features.ACTIONURL.Terminated = $config_features_actionurl_terminated
+Config.Features.ACTIONURL.OpenDND = $config_features_actionurl_opendnd
+Config.Features.ACTIONURL.CloseDND = $config_features_actionurl_closednd
+Config.Features.ACTIONURL.OpenAlwaysForward = $config_features_actionurl_openalwaysforward
+Config.Features.ACTIONURL.CloseAlwaysForward = $config_features_actionurl_closealwaysforward
+Config.Features.ACTIONURL.OpenBusyForward = $config_features_actionurl_openbusyforward
+Config.Features.ACTIONURL.CloseBusyForward = $config_features_actionurl_closebusyforward
+Config.Features.ACTIONURL.OpenNoAnswerForward = $config_features_actionurl_opennoanswerforward
+Config.Features.ACTIONURL.CloseNoAnswerForward = $config_features_actionurl_closenoanswerforward
+Config.Features.ACTIONURL.TransferCall = $config_features_actionurl_transfercall
+Config.Features.ACTIONURL.BlindTransfer = $config_features_actionurl_blindtransfer
+Config.Features.ACTIONURL.AttendedTransfer = $config_features_actionurl_attendedtransfer
+Config.Features.ACTIONURL.Hold = $config_features_actionurl_hold
+Config.Features.ACTIONURL.UnHold = $config_features_actionurl_unhold
+Config.Features.ACTIONURL.Mute = $config_features_actionurl_mute
+Config.Features.ACTIONURL.UnMute = $config_features_actionurl_unmute
+Config.Features.ACTIONURL.MissedCall = $config_features_actionurl_missedcall
+Config.Features.ACTIONURL.IPChanged = $config_features_actionurl_ipchanged
+Config.Features.ACTIONURL.ForwardInComingCall = $config_features_actionurl_forwardincomingcall
+Config.Features.ACTIONURL.RejectInComingCall = $config_features_actionurl_rejectincomingcall
+Config.Features.ACTIONURL.AnswerNewInCall = $config_features_actionurl_answernewincall
+Config.Features.ACTIONURL.TransferFinished = $config_features_actionurl_transferfinished
+Config.Features.ACTIONURL.TransferFailed = $config_features_actionurl_transferfailed
+Config.Features.ACTIONURL.IdleToBusy = $config_features_actionurl_idletobusy
+Config.Features.ACTIONURL.BusyToIdle = $config_features_actionurl_busytoidle
+Config.Features.ACTIONURL.Enable = $config_features_actionurl_enable
+
+Config.Features.REMOTECONTROL.ActionURIAllowIPList = $config_features_remotecontrol_actionuriallowiplist
+
+Config.Features.SENDKEY.KeySendType = $config_features_sendkey_keysendtype
+
+Config.Features.CALLCOMPELETE.Enable = $config_features_callcompelete_enable
+
+Config.Features.DIALSEARCH.Enable = $config_features_dialsearch_enable
+Config.Features.DIALSEARCH.Delay = $config_features_dialsearch_delay
+
+Config.Features.BLF.CallType = $config_features_blf_calltype
+
+Config.Features.BLFLED.TerminateForDual = $config_features_blfled_terminatefordual
+Config.Features.BLFLED.ProceedingForDual = $config_features_blfled_proceedingfordual
+Config.Features.BLFLED.ConfirmedForDual = $config_features_blfled_confirmedfordual
+Config.Features.BLFLED.ConfirmedHoldForDual = $config_features_blfled_confirmedholdfordual
+Config.Features.BLFLED.TerminateForGreen = $config_features_blfled_terminateforgreen
+Config.Features.BLFLED.ProceedingForGreen = $config_features_blfled_proceedingforgreen
+Config.Features.BLFLED.ConfirmedForGreen = $config_features_blfled_confirmedforgreen
+
+# Setting Configuration
+
+Config.Settings.LANGUAGE.Type = $config_settings_language_type
+Config.Settings.LANGUAGE.ActiveWebLang = $config_settings_language_activeweblang
+Config.Settings.LANGUAGE.WebLang = $config_settings_language_weblang
+
+Config.Settings.DATETIME.Type = $config_settings_datetime_type
+Config.Settings.DATETIME.TimeFormat = $config_settings_datetime_timeformat
+Config.Settings.DATETIME.DateFormat = $config_settings_datetime_dateformat
+Config.Settings.DATETIME.Offset = $config_settings_datetime_offset
+
+Config.Settings.SNTP.Enable = $config_settings_sntp_enable
+Config.Settings.SNTP.TimeZone = $config_settings_sntp_timezone
+Config.Settings.SNTP.Name = $config_settings_sntp_name
+Config.Settings.SNTP.NTPServer1 = $config_settings_sntp_ntpserver1
+Config.Settings.SNTP.NTPServer2 = $config_settings_sntp_ntpserver2
+Config.Settings.SNTP.DTS = $config_settings_sntp_dts
+Config.Settings.SNTP.Interval = $config_settings_sntp_interval
+Config.Settings.SNTP.StartTime = $config_settings_sntp_starttime
+Config.Settings.SNTP.EndTime = $config_settings_sntp_endtime
+
+Config.Settings.BACKLIGHT.Level = $config_settings_backlight_level
+Config.Settings.BACKLIGHT.Time = $config_settings_backlight_time
+Config.Settings.BACKLIGHT.FreeLevel = $config_settings_backlight_freelevel
+
+Config.Settings.GENERAL.DirectIP = $config_settings_general_directip
+Config.Settings.GENERAL.WebTitle = $config_settings_general_webtitle
+Config.Settings.GENERAL.HttpUserAgent = $config_settings_general_httpuseragent
+Config.Settings.GENERAL.UseStarForIP = $config_settings_general_usestarforip
+
+Config.Settings.LOGLEVEL.Level = $config_settings_loglevel_level
+Config.Settings.LOGLEVEL.RemoteSyslog = $config_settings_loglevel_remotesyslog
+Config.Settings.LOGLEVEL.RemoteServer = $config_settings_loglevel_remoteserver
+
+Config.Settings.PCAP.RefreshEnable = $config_settings_pcap_refreshenable
+
+Config.Settings.RINGTONE.Type = $config_settings_ringtone_type
+
+Config.Settings.AUDIO.KeyVol = $config_settings_audio_keyvol
+Config.Settings.AUDIO.KeyMidVol = $config_settings_audio_keymidvol
+Config.Settings.AUDIO.RingVol = $config_settings_audio_ringvol
+Config.Settings.AUDIO.RingMidVol = $config_settings_audio_ringmidvol
+
+Config.Settings.HANDFREE.SpkVol = $config_settings_handfree_spkvol
+Config.Settings.HANDFREE.MicVol = $config_settings_handfree_micvol
+Config.Settings.HANDFREE.SpkMidValue = $config_settings_handfree_spkmidvalue
+Config.Settings.HANDFREE.MicMidValue = $config_settings_handfree_micmidvalue
+Config.Settings.HANDFREE.SigToneVol = $config_settings_handfree_sigtonevol
+Config.Settings.HANDFREE.SigToneMidVol = $config_settings_handfree_sigtonemidvol
+
+Config.Settings.HEADSET.Active = $config_settings_headset_active
+Config.Settings.HEADSET.SigToneVol = $config_settings_headset_sigtonevol
+Config.Settings.HEADSET.SigToneMidVol = $config_settings_headset_sigtonemidvol
+Config.Settings.HEADSET.SpkVol = $config_settings_headset_spkvol
+Config.Settings.HEADSET.MicVol = $config_settings_headset_micvol
+Config.Settings.HEADSET.SpkMidValue = $config_settings_headset_spkmidvalue
+Config.Settings.HEADSET.MicMidValue = $config_settings_headset_micmidvalue
+Config.Settings.HEADSET.PlayRing = $config_settings_headset_playring
+
+Config.Settings.HANDSET.SigToneVol = $config_settings_handset_sigtonevol
+Config.Settings.HANDSET.SigToneMidVol = $config_settings_handset_sigtonemidvol
+Config.Settings.HANDSET.SpkVol = $config_settings_handset_spkvol
+Config.Settings.HANDSET.MicVol = $config_settings_handset_micvol
+Config.Settings.HANDSET.SpkMidValue = $config_settings_handset_spkmidvalue
+Config.Settings.HANDSET.MicMidValue = $config_settings_handset_micmidvalue
+
+Config.Settings.LOGIN.User = $config_settings_login_user
+Config.Settings.LOGIN.Password = $config_settings_login_password
+
+Config.Settings.WEB_LOGIN.User = $config_settings_web_login_user
+Config.Settings.WEB_LOGIN.Password = $config_settings_web_login_password
+Config.Settings.WEB_LOGIN.Type = $config_settings_web_login_type
+Config.Settings.WEB_LOGIN.User02 = $config_settings_web_login_user02
+Config.Settings.WEB_LOGIN.Password02 = $config_settings_web_login_password02
+Config.Settings.WEB_LOGIN.Type02 = $config_settings_web_login_type02
+
+Config.Settings.WEB_LOGIN_STATUS.Active = $config_settings_web_login_status_active
+Config.Settings.WEB_LOGIN_STATUS.SessionTimeOut = $config_settings_web_login_status_sessiontimeout
+
+Config.Settings.CALLTIMEOUT.DialOut = $config_settings_calltimeout_dialout
+Config.Settings.CALLTIMEOUT.DialIn = $config_settings_calltimeout_dialin
+
+Config.Settings.RINGER.Keyword01 = $config_settings_ringer_keyword01
+Config.Settings.RINGER.Ringtone01 = $config_settings_ringer_ringtone01
+Config.Settings.RINGER.Keyword02 = $config_settings_ringer_keyword02
+Config.Settings.RINGER.Ringtone02 = $config_settings_ringer_ringtone02
+Config.Settings.RINGER.Keyword03 = $config_settings_ringer_keyword03
+Config.Settings.RINGER.Ringtone03 = $config_settings_ringer_ringtone03
+Config.Settings.RINGER.Keyword04 = $config_settings_ringer_keyword04
+Config.Settings.RINGER.Ringtone04 = $config_settings_ringer_ringtone04
+Config.Settings.RINGER.Keyword05 = $config_settings_ringer_keyword05
+Config.Settings.RINGER.Ringtone05 = $config_settings_ringer_ringtone05
+Config.Settings.RINGER.Keyword06 = $config_settings_ringer_keyword06
+Config.Settings.RINGER.Ringtone06 = $config_settings_ringer_ringtone06
+Config.Settings.RINGER.Keyword07 = $config_settings_ringer_keyword07
+Config.Settings.RINGER.Ringtone07 = $config_settings_ringer_ringtone07
+Config.Settings.RINGER.Keyword08 = $config_settings_ringer_keyword08
+Config.Settings.RINGER.Ringtone08 = $config_settings_ringer_ringtone08
+Config.Settings.RINGER.Keyword09 = $config_settings_ringer_keyword09
+Config.Settings.RINGER.Ringtone09 = $config_settings_ringer_ringtone09
+Config.Settings.RINGER.Keyword10 = $config_settings_ringer_keyword10
+Config.Settings.RINGER.Ringtone10 = $config_settings_ringer_ringtone10
+Config.Settings.RINGER.Keyword11 = $config_settings_ringer_keyword11
+Config.Settings.RINGER.Ringtone11 = $config_settings_ringer_ringtone11
+Config.Settings.RINGER.Keyword12 = $config_settings_ringer_keyword12
+Config.Settings.RINGER.Ringtone12 = $config_settings_ringer_ringtone12
+
+Config.Settings.HOTDESKING.ServerName = $config_settings_hotdesking_servername
+Config.Settings.HOTDESKING.ServerPort = $config_settings_hotdesking_serverport
+Config.Settings.HOTDESKING.OutBoundName = $config_settings_hotdesking_outboundname
+Config.Settings.HOTDESKING.OutBoundPort = $config_settings_hotdesking_outboundport
+Config.Settings.HOTDESKING.PhoneName = $config_settings_hotdesking_phonename
+Config.Settings.HOTDESKING.RegisterName = $config_settings_hotdesking_registername
+Config.Settings.HOTDESKING.PassWord = $config_settings_hotdesking_password
+Config.Settings.HOTDESKING.ServerName2 = $config_settings_hotdesking_servername2
+Config.Settings.HOTDESKING.ServerPort2 = $config_settings_hotdesking_serverport2
+
+Config.Settings.DATEDISPLAY.DisplayMode = $config_settings_datedisplay_displaymode
+
+Config.Settings.OTHERS.QuickReset = $config_settings_others_quickreset
+
+Config.Settings.KEYPADLOCK.Type = $config_settings_keypadlock_type
+Config.Settings.KEYPADLOCK.Pin = $config_settings_keypadlock_pin
+Config.Settings.KEYPADLOCK.Timeout = $config_settings_keypadlock_timeout
+
+Config.Settings.SECURITY.OnlyAcceptTrusted = $config_settings_security_onlyaccepttrusted
+
+Config.Settings.DNS.SipDnsCacheLevel = $config_settings_dns_sipdnscachelevel
+
+# Programmable Key Configuration
+
+Config.Programable.LINEKEY1.Type = $config_programable_linekey1_type
+Config.Programable.LINEKEY1.Label = $config_programable_linekey1_label
+Config.Programable.LINEKEY1.Param1 = $config_programable_linekey1_param1
+Config.Programable.LINEKEY1.Param2 = $config_programable_linekey1_param2
+Config.Programable.LINEKEY1.Param3 = $config_programable_linekey1_param3
+
+Config.Programable.LINEKEY2.Type = $config_programable_linekey2_type
+Config.Programable.LINEKEY2.Label = $config_programable_linekey2_label
+Config.Programable.LINEKEY2.Param1 = $config_programable_linekey2_param1
+Config.Programable.LINEKEY2.Param2 = $config_programable_linekey2_param2
+Config.Programable.LINEKEY2.Param3 = $config_programable_linekey2_param3
+
+Config.Programable.LINEKEY3.Type = $config_programable_linekey3_type
+Config.Programable.LINEKEY3.Label = $config_programable_linekey3_label
+Config.Programable.LINEKEY3.Param1 = $config_programable_linekey3_param1
+Config.Programable.LINEKEY3.Param2 = $config_programable_linekey3_param2
+Config.Programable.LINEKEY3.Param3 = $config_programable_linekey3_param3
+
+Config.Programable.SOFTKEY01.Type = $config_programable_softkey01_type
+Config.Programable.SOFTKEY01.Label = $config_programable_softkey01_label
+Config.Programable.SOFTKEY01.Param1 = $config_programable_softkey01_param1
+Config.Programable.SOFTKEY01.Param2 = $config_programable_softkey01_param2
+Config.Programable.SOFTKEY01.Param3 = $config_programable_softkey01_param3
+
+Config.Programable.SOFTKEY02.Type = $config_programable_softkey02_type
+Config.Programable.SOFTKEY02.Label = $config_programable_softkey02_label
+Config.Programable.SOFTKEY02.Param1 = $config_programable_softkey02_param1
+Config.Programable.SOFTKEY02.Param2 = $config_programable_softkey02_param2
+Config.Programable.SOFTKEY02.Param3 = $config_programable_softkey02_param3
+
+Config.Programable.SOFTKEY03.Type = $config_programable_softkey03_type
+Config.Programable.SOFTKEY03.Label = $config_programable_softkey03_label
+Config.Programable.SOFTKEY03.Param1 = $config_programable_softkey03_param1
+Config.Programable.SOFTKEY03.Param2 = $config_programable_softkey03_param2
+Config.Programable.SOFTKEY03.Param3 = $config_programable_softkey03_param3
+
+Config.Programable.SOFTKEY04.Type = $config_programable_softkey04_type
+Config.Programable.SOFTKEY04.Label = $config_programable_softkey04_label
+Config.Programable.SOFTKEY04.Param1 = $config_programable_softkey04_param1
+Config.Programable.SOFTKEY04.Param2 = $config_programable_softkey04_param2
+Config.Programable.SOFTKEY04.Param3 = $config_programable_softkey04_param3
+
+Config.Programable.HOME.Type = $config_programable_home_type
+Config.Programable.HOME.Param1 = $config_programable_home_param1
+Config.Programable.HOME.Param2 = $config_programable_home_param2
+Config.Programable.HOME.Param3 = $config_programable_home_param3
+
+Config.Programable.OK.Type = $config_programable_ok_type
+Config.Programable.OK.Param1 = $config_programable_ok_param1
+Config.Programable.OK.Param2 = $config_programable_ok_param2
+Config.Programable.OK.Param3 = $config_programable_ok_param3
+
+Config.Programable.CANCEL.Type = $config_programable_cancel_type
+Config.Programable.CANCEL.Param1 = $config_programable_cancel_param1
+Config.Programable.CANCEL.Param2 = $config_programable_cancel_param2
+Config.Programable.CANCEL.Param3 = $config_programable_cancel_param3
+
+Config.Programable.FWD.Type = $config_programable_fwd_type
+Config.Programable.FWD.Param1 = $config_programable_fwd_param1
+Config.Programable.FWD.Param2 = $config_programable_fwd_param2
+Config.Programable.FWD.Param3 = $config_programable_fwd_param3
+
+Config.Programable.BOOK.Type = $config_programable_book_type
+Config.Programable.BOOK.Param1 = $config_programable_book_param1
+Config.Programable.BOOK.Param2 = $config_programable_book_param2
+Config.Programable.BOOK.Param3 = $config_programable_book_param3
+
+Config.Programable.MUTE.Type = $config_programable_mute_type
+Config.Programable.MUTE.Param1 = $config_programable_mute_param1
+Config.Programable.MUTE.Param2 = $config_programable_mute_param2
+Config.Programable.MUTE.Param3 = $config_programable_mute_param3
+
+Config.Programable.REDIAL.Type = $config_programable_redial_type
+Config.Programable.REDIAL.Param1 = $config_programable_redial_param1
+Config.Programable.REDIAL.Param2 = $config_programable_redial_param2
+Config.Programable.REDIAL.Param3 = $config_programable_redial_param3
+
+Config.Programable.VOICEMESSAGE.Type = $config_programable_voicemessage_type
+Config.Programable.VOICEMESSAGE.Label = $config_programable_voicemessage_label
+Config.Programable.VOICEMESSAGE.Param1 = $config_programable_voicemessage_param1
+Config.Programable.VOICEMESSAGE.Param2 = $config_programable_voicemessage_param2
+Config.Programable.VOICEMESSAGE.Param3 = $config_programable_voicemessage_param3
+
+Config.Programable.DSSKEY01.Type = $config_programable_dsskey01_type
+Config.Programable.DSSKEY01.Param1 = $config_programable_dsskey01_param1
+Config.Programable.DSSKEY01.Param2 = $config_programable_dsskey01_param2
+Config.Programable.DSSKEY01.Param3 = $config_programable_dsskey01_param3
+
+Config.Programable.DSSKEY02.Type = $config_programable_dsskey02_type
+Config.Programable.DSSKEY02.Param1 = $config_programable_dsskey02_param1
+Config.Programable.DSSKEY02.Param2 = $config_programable_dsskey02_param2
+Config.Programable.DSSKEY02.Param3 = $config_programable_dsskey02_param3
+
+Config.Programable.DSSKEY03.Type = $config_programable_dsskey03_type
+Config.Programable.DSSKEY03.Param1 = $config_programable_dsskey03_param1
+Config.Programable.DSSKEY03.Param2 = $config_programable_dsskey03_param2
+Config.Programable.DSSKEY03.Param3 = $config_programable_dsskey03_param3
+
+Config.Programable.DSSKEY04.Type = $config_programable_dsskey04_type
+Config.Programable.DSSKEY04.Param1 = $config_programable_dsskey04_param1
+Config.Programable.DSSKEY04.Param2 = $config_programable_dsskey04_param2
+Config.Programable.DSSKEY04.Param3 = $config_programable_dsskey04_param3
+
+Config.Programable.DSSKEY05.Type = $config_programable_dsskey05_type
+Config.Programable.DSSKEY05.Param1 = $config_programable_dsskey05_param1
+Config.Programable.DSSKEY05.Param2 = $config_programable_dsskey05_param2
+Config.Programable.DSSKEY05.Param3 = $config_programable_dsskey05_param3
+
+Config.Programable.DSSKEY06.Type = $config_programable_dsskey06_type
+Config.Programable.DSSKEY06.Param1 = $config_programable_dsskey06_param1
+Config.Programable.DSSKEY06.Param2 = $config_programable_dsskey06_param2
+Config.Programable.DSSKEY06.Param3 = $config_programable_dsskey06_param3
+
+Config.Programable.DSSKEY07.Type = $config_programable_dsskey07_type
+Config.Programable.DSSKEY07.Param1 = $config_programable_dsskey07_param1
+Config.Programable.DSSKEY07.Param2 = $config_programable_dsskey07_param2
+Config.Programable.DSSKEY07.Param3 = $config_programable_dsskey07_param3
+
+Config.Programable.DSSKEY08.Type = $config_programable_dsskey08_type
+Config.Programable.DSSKEY08.Param1 = $config_programable_dsskey08_param1
+Config.Programable.DSSKEY08.Param2 = $config_programable_dsskey08_param2
+Config.Programable.DSSKEY08.Param3 = $config_programable_dsskey08_param3
+
+Config.Programable.DSSKEY09.Type = $config_programable_dsskey09_type
+Config.Programable.DSSKEY09.Param1 = $config_programable_dsskey09_param1
+Config.Programable.DSSKEY09.Param2 = $config_programable_dsskey09_param2
+Config.Programable.DSSKEY09.Param3 = $config_programable_dsskey09_param3
+
+Config.Programable.DSSKEY10.Type = $config_programable_dsskey10_type
+Config.Programable.DSSKEY10.Param1 = $config_programable_dsskey10_param1
+Config.Programable.DSSKEY10.Param2 = $config_programable_dsskey10_param2
+Config.Programable.DSSKEY10.Param3 = $config_programable_dsskey10_param3
+
+# Tone Configuration
+
+Config.Tone.GENERAL.Ringback = $config_tone_general_ringback
+Config.Tone.GENERAL.Dialtone = $config_tone_general_dialtone
+Config.Tone.GENERAL.Callwait = $config_tone_general_callwait
+
+# Voice Configuration
+
+Config.Voice.GENERAL.VAD = $config_voice_general_vad
+Config.Voice.GENERAL.CNG = $config_voice_general_cng
+Config.Voice.GENERAL.SideTone = $config_voice_general_sidetone
+Config.Voice.GENERAL.EchoCanceller = $config_voice_general_echocanceller
+
+Config.Voice.JITTER.Enable = $config_voice_jitter_enable
+Config.Voice.JITTER.Adaptive = $config_voice_jitter_adaptive
+Config.Voice.JITTER.Min = $config_voice_jitter_min
+Config.Voice.JITTER.Max = $config_voice_jitter_max
+Config.Voice.JITTER.Nominal = $config_voice_jitter_nominal
+
+Config.Voice.TONE.Country = $config_voice_tone_country
+
+Config.Voice.DTMF.Repetition = $config_voice_dtmf_repetition
+Config.Voice.DTMF.Duration = $config_voice_dtmf_duration
+
+Config.Voice.RTCP.Enable = $config_voice_rtcp_enable
+Config.Voice.RTCP.Interval = $config_voice_rtcp_interval
+Config.Voice.RTCP.RTCPXR = $config_voice_rtcp_rtcpxr
+
+Config.Voice.G726.Coding = $config_voice_g726_coding
+
+# XML Browser Configuration
+
+Config.XMLBrowser.XMLBROWSER.VendorPrefix = $config_xmlbrowser_xmlbrowser_vendorprefix
+Config.XMLBrowser.XMLBROWSER.MenuItemNode = $config_xmlbrowser_xmlbrowser_menuitemnode
+Config.XMLBrowser.XMLBROWSER.DirectoryItemNode = $config_xmlbrowser_xmlbrowser_directoryitemnode
+Config.XMLBrowser.XMLBROWSER.MenuItemNameNode = $config_xmlbrowser_xmlbrowser_menuitemnamenode
+Config.XMLBrowser.XMLBROWSER.MenuItemURLNode = $config_xmlbrowser_xmlbrowser_menuitemurlnode
+Config.XMLBrowser.XMLBROWSER.DirectoryItemNameNode = $config_xmlbrowser_xmlbrowser_directoryitemnamenode
+Config.XMLBrowser.XMLBROWSER.DirectoryItemTelephoneNode = $config_xmlbrowser_xmlbrowser_directoryitemtelephonenode
+Config.XMLBrowser.XMLBROWSER.DirectoryItemPresenceNode = $config_xmlbrowser_xmlbrowser_directoryitempresencenode
+
+Config.XMLBrowser.REMOTEURL.History = $config_xmlbrowser_remoteurl_history
+Config.XMLBrowser.REMOTEURL.Phonebook = $config_xmlbrowser_remoteurl_phonebook
+Config.XMLBrowser.REMOTEURL.HistoryMissed = $config_xmlbrowser_remoteurl_historymissed
+
+# CustomcMenu Configuration
+
+Config.CustomMenu.DIALMENUITEM01.Type = $config_custommenu_dialmenuitem01_type
+Config.CustomMenu.DIALMENUITEM01.Label = $config_custommenu_dialmenuitem01_label
+Config.CustomMenu.DIALMENUITEM01.Param1 = $config_custommenu_dialmenuitem01_param1
+
+Config.CustomMenu.DIALMENUITEM02.Type = $config_custommenu_dialmenuitem02_type
+Config.CustomMenu.DIALMENUITEM02.Label = $config_custommenu_dialmenuitem02_label
+Config.CustomMenu.DIALMENUITEM02.Param1 = $config_custommenu_dialmenuitem02_param1
+
+Config.CustomMenu.DIALMENUITEM03.Type = $config_custommenu_dialmenuitem03_type
+Config.CustomMenu.DIALMENUITEM03.Label = $config_custommenu_dialmenuitem03_label
+Config.CustomMenu.DIALMENUITEM03.Param1 = $config_custommenu_dialmenuitem03_param1
+
+Config.CustomMenu.DIALMENUITEM04.Type = $config_custommenu_dialmenuitem04_type
+Config.CustomMenu.DIALMENUITEM04.Label = $config_custommenu_dialmenuitem04_label
+Config.CustomMenu.DIALMENUITEM04.Param1 = $config_custommenu_dialmenuitem04_param1
+
+Config.CustomMenu.DIALMENUITEM05.Type = $config_custommenu_dialmenuitem05_type
+Config.CustomMenu.DIALMENUITEM05.Label = $config_custommenu_dialmenuitem05_label
+Config.CustomMenu.DIALMENUITEM05.Param1 = $config_custommenu_dialmenuitem05_param1
+
+Config.CustomMenu.DIALMENUITEM06.Type = $config_custommenu_dialmenuitem06_type
+Config.CustomMenu.DIALMENUITEM06.Label = $config_custommenu_dialmenuitem06_label
+Config.CustomMenu.DIALMENUITEM06.Param1 = $config_custommenu_dialmenuitem06_param1
+
+Config.CustomMenu.DIALMENUITEM07.Type = $config_custommenu_dialmenuitem07_type
+Config.CustomMenu.DIALMENUITEM07.Label = $config_custommenu_dialmenuitem07_label
+Config.CustomMenu.DIALMENUITEM07.Param1 = $config_custommenu_dialmenuitem07_param1
+
+Config.CustomMenu.DIALMENUITEM08.Type = $config_custommenu_dialmenuitem08_type
+Config.CustomMenu.DIALMENUITEM08.Label = $config_custommenu_dialmenuitem08_label
+Config.CustomMenu.DIALMENUITEM08.Param1 = $config_custommenu_dialmenuitem08_param1
+
+# Multicast Configuration
+
+Config.Multicast.PRIORITY.Enable = $config_multicast_priority_enable
+Config.Multicast.PRIORITY.Priority = $config_multicast_priority_priority
+
+Config.Multicast.GENERAL.Codec = $config_multicast_general_codec
+
+Config.Multicast.LISTEN0.Label = $config_multicast_listen0_label
+Config.Multicast.LISTEN0.IP = $config_multicast_listen0_ip
+
+Config.Multicast.LISTEN1.Label = $config_multicast_listen1_label
+Config.Multicast.LISTEN1.IP = $config_multicast_listen1_ip
+
+Config.Multicast.LISTEN2.Label = $config_multicast_listen2_label
+Config.Multicast.LISTEN2.IP = $config_multicast_listen2_ip
+
+Config.Multicast.LISTEN3.Label = $config_multicast_listen3_label
+Config.Multicast.LISTEN3.IP = $config_multicast_listen3_ip
+
+Config.Multicast.LISTEN4.Label = $config_multicast_listen4_label
+Config.Multicast.LISTEN4.IP = $config_multicast_listen4_ip
+
+Config.Multicast.LISTEN5.Label = $config_multicast_listen5_label
+Config.Multicast.LISTEN5.IP = $config_multicast_listen5_ip
+
+Config.Multicast.LISTEN6.Label = $config_multicast_listen6_label
+Config.Multicast.LISTEN6.IP = $config_multicast_listen6_ip
+
+Config.Multicast.LISTEN7.Label = $config_multicast_listen7_label
+Config.Multicast.LISTEN7.IP = $config_multicast_listen7_ip
+
+Config.Multicast.LISTEN8.Label = $config_multicast_listen8_label
+Config.Multicast.LISTEN8.IP = $config_multicast_listen8_ip
+
+Config.Multicast.LISTEN9.Label = $config_multicast_listen9_label
+Config.Multicast.LISTEN9.IP = $config_multicast_listen9_ip
