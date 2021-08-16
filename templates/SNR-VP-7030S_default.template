@@ -1,0 +1,1712 @@
+<<VOIP CONFIG FILE>>Version:2.0002                            
+
+<GLOBAL CONFIG MODULE>
+WAN Mode           :DHCP
+WAN IP             :192.168.1.179
+WAN Subnet Mask    :255.255.255.0
+WAN Gateway        :192.168.1.1
+Default Protocol   :2
+Primary DNS        :202.96.134.133
+Secondary DNS      :202.96.128.68
+Enable DHCP        :1
+Use Vendor Class ID:0
+Vendor Class ID    :Wodun C62
+DHCP Auto DNS      :1
+DHCP Auto Time     :0
+Domain Name        :
+Host Name          :VOIP
+Enable PPPoE       :0
+RTP Initial Port   :10000
+RTP Port Quantity  :200
+SNTP Server        :time.local.xxx-com.ru
+Second SNTP Server :
+Enable SNTP        :1
+Time Zone          :46
+Time Zone Name     :UCT_005
+Enable DST         :0
+SNTP Timeout       :60
+DST Min Offset     :60
+DST Start Mon      :3
+DST Start Week     :5
+DST Start Wday     :0
+DST Start Hour     :2
+DST Start Min      :0
+DST End Mon        :10
+DST End Week       :5
+DST End Wday       :0
+DST End Hour       :2
+DST End Min        :0
+Default UI         :12
+MTU Length         :1500
+Push XML IP        :
+Enable Call History:1
+Active Uri IP      :
+Boot Completed Url :
+Reg On Url         :
+Reg Off Url        :
+Reg Failed Url     :
+Offhook Url        :
+Onhook Uri         :
+Incmoing Call Url  :
+Outgoing Call Url  :
+Call Active Url    :
+Call Stop Url      :
+DND On Url         :
+DND Off Url        :
+Always FWD On Url  :
+Always FWD Off Url :
+Busy FWD On Url    :
+Busy FWD Off Url   :
+No Ans FWD On Url  :
+No Ans FWD Off Url :
+Transfer Url       :
+B Transfer Url     :
+A Transfer Url     :
+Hold Url           :
+Unhold Url         :
+Mute Url           :
+Unmute Url         :
+Missed call Url    :
+IP Change Url      :
+Idle to Busy Url   :
+Busy to Idle Url   :
+
+<LAN CONFIG MODULE>
+LAN IP             :192.168.10.1
+LAN SubNetMask     :255.255.255.0
+Enable Bridge Mode :1
+Enable Port Mirror :1
+
+<TELE CONFIG MODULE>
+Dial by Pound      :1
+BTransfer by Pound :1
+Onhook to BXfer    :0
+Onhook to AXfer    :0
+Memory Key to BXfer:0
+Xfer On Conf Onhook:0
+Dial Fixed Length  :0
+Fixed Length Nums  :11
+Dial by Timeout    :1
+Dial Timeout value :5
+Dialpeer With Line :0
+Port Sequence      :0
+Accept Any Call    :1
+Main Digit Prefix  :
+IP Dial Prefix     :.
+--Port Config--    :
+P1 Enable DND      :0
+P1 DND Mode        :0
+P1 Mute Ringing    :0
+P1 CWaiting Tone   :1
+P1 Ban Dial Out    :0
+P1 Ban Empty CID   :0
+P1 Enable CLIP     :1
+P1 CallWaiting     :0
+P1 CallTransfer    :1
+P1 CallSemiXfer    :1
+P1 CallConference  :1
+P1 AutoAnswer      :0
+P1 No Answer Time  :20
+P1 Warm Line Time  :0
+P1 Port Ext Num    :
+P1 Hotline Num     :
+P1 SRV Record Num  :
+P1 Use SRV Record  :0
+P1 Auto PickupNext :0
+P1 Busy No Line    :0
+P1 Auto Onhook     :1
+P1 Auto Onhook Time:3
+P1 DND Code        :1
+P1 Busy Code       :2
+P1 Reject Code     :3
+P1 Enable Intercom :1
+P1 Intercom Mute   :0
+P1 Intercom Tone   :1
+P1 Intercom Barge  :1
+P1 Use Auto Redial :0
+P1 AutoRedial Delay:10
+P1 AutoRedial Times:10
+P1 Call Complete   :0
+P1 Hide DTMF Type  :0
+P1 Talk DTMF Tone  :1
+P1 Dial DTMF Tone  :1
+P1 Psw Dial Mode   :0
+P1 Psw Dial Length :0
+P1 Psw Dial Prefix :
+P1 Enable MultiLine:1
+P1 Allow IP Call   :1
+P1 Update Dial Call:1
+Default Ext line   :0
+Default Ans mode   :0
+Default Dial mode  :0
+Hold To Transfer   :0
+
+<DSP CONFIG MODULE>
+Signal Standard    :1
+Enable MWI Tone    :1
+Onhook Time        :200
+G729 Payload Len   :1
+G723 Bit Rate      :1
+G722 Timestamps    :0
+VAD                :0
+Ring Type          :1
+Dtmf Payload Type  :101
+RTP Probe          :0
+HD Voice           :0
+TX AGC             :0
+RX AGC             :0
+Headset MIC offset :3
+Sidetone GAIN      :1
+--Port Config--    :
+P1 General Spk Vol :9
+P1 General Mic Vol :3
+P1 Headset Vol     :5
+P1 Ring in Headset :0
+P1 Auto Headset    :1
+P1 Headset Ring Vol:5
+P1 HandFree Vol    :5
+P1 RingTone Vol    :1
+P1 Voice Codec1    :PCMA/8000
+P1 Voice Codec2    :PCMU/8000
+P1 Voice Codec3    :G729/8000
+P1 Voice Codec4    :
+P1 Voice Codec5    :
+P1 Voice Codec6    :
+--Codec Config--   :
+Codec1 Format      :PCMA/8000;payload=8;
+Codec2 Format      :PCMU/8000;payload=0;
+Codec3 Format      :G722/8000;payload=9;
+Codec4 Format      :G723/8000;payload=4;bitrate=6.3;
+Codec5 Format      :G729/8000;payload=18;annexb=no;
+Codec6 Format      :G726-32/8000;payload=2;
+Codec7 Format      :telephone-event/8000;payload=101;
+--Alert Info Ring--:
+Alert1 Text        :
+Alert1 Ring Type   :1
+Alert2 Text        :
+Alert2 Ring Type   :2
+Alert3 Text        :
+Alert3 Ring Type   :3
+Alert4 Text        :
+Alert4 Ring Type   :4
+Alert5 Text        :
+Alert5 Ring Type   :5
+Alert6 Text        :
+Alert6 Ring Type   :6
+Alert7 Text        :
+Alert7 Ring Type   :7
+Alert8 Text        :
+Alert8 Ring Type   :8
+Alert9 Text        :
+Alert9 Ring Type   :9
+Alert10 Text       :
+Alert10 Ring Type  :101
+
+<SIP CONFIG MODULE>
+SIP  Port          :5060
+STUN Server        :
+STUN Port          :3478
+STUN Refresh Time  :50
+SIP Wait Stun Time :800
+Extern NAT Addrs   :
+Reg Fail Interval  :32
+SIP Pswd Encryption:0
+Strict BranchPrefix:0
+Video Mute Attr    :0
+Enable Group Backup:0
+Enable RFC4475     :1
+--SIP Line List--  :
+SIP1 Phone Number  :574
+SIP1 Display Name  :574
+SIP1 Sip Name      :pbx
+SIP1 Register Addr :pbx.xxx-com.ru
+SIP1 Register Port :5060
+SIP1 Register User :574
+SIP1 Register Pswd :pass
+SIP1 Register TTL  :3600
+SIP1 Enable Reg    :1
+SIP1 Proxy Addr    :pbx.local.xxx-com.ru
+SIP1 Proxy Port    :5060
+SIP1 Proxy User    :574
+SIP1 Proxy Pswd    :pass
+SIP1 BakProxy Addr :
+SIP1 BakProxy Port :5060
+SIP1 Enable Failbac:0
+SIP1 Signal Crypto :0
+SIP1 SigCrypto Key :
+SIP1 Media Crypto  :0
+SIP1 MedCrypto Key :
+SIP1 SRTP Auth-Tag :0
+SIP1 Local Domain  :574
+SIP1 Always FWD    :0
+SIP1 Busy FWD      :0
+SIP1 No Answer FWD :0
+SIP1 Always FWD Num:
+SIP1 Busy FWD Num  :
+SIP1 NoAnswer FWD N:
+SIP1 FWD Timer     :60
+SIP1 Ring Type     :0
+SIP1 Hotline Num   :
+SIP1 Enable Hotline:0
+SIP1 WarmLine Time :0
+SIP1 Pickup Num    :
+SIP1 Join Num      :
+SIP1 NAT UDPUpdate :1
+SIP1 UDPUpdate TTL :60
+SIP1 Server Type   :0
+SIP1 User Agent    :
+SIP1 PRACK         :0
+SIP1 Keep AUTH     :0
+SIP1 Session Timer :0
+SIP1 S.Timer Expire:0
+SIP1 Enable GRUU   :0
+SIP1 DTMF Mode     :3
+SIP1 DTMF Info Mode:0
+SIP1 NAT Type      :0
+SIP1 Enable Rport  :0
+SIP1 Subscribe     :0
+SIP1 Sub Expire    :3600
+SIP1 Single Codec  :0
+SIP1 CLIR          :0
+SIP1 Strict Proxy  :0
+SIP1 Direct Contact:0
+SIP1 History Info  :0
+SIP1 DNS Mode      :0
+SIP1 XFER Expire   :0
+SIP1 Ban Anonymous :0
+SIP1 Dial Off Line :0
+SIP1 Quota Name    :0
+SIP1 Presence Mode :0
+SIP1 RFC Ver       :1
+SIP1 Signal Port   :0
+SIP1 Transport     :0
+SIP1 Use SRV Mixer :0
+SIP1 SRV Mixer Uri :
+SIP1 Long Contact  :0
+SIP1 Auto TCP      :0
+SIP1 Uri Escaped   :1
+SIP1 Click to Talk :0
+SIP1 MWI Num       :
+SIP1 CallPark Num  :
+SIP1 Retrieve Num  :
+SIP1 MSRPHelp Num  :
+SIP1 User Is Phone :1
+SIP1 Auto Answer   :0
+SIP1 NoAnswerTime  :60
+SIP1 MissedCallLog :1
+SIP1 SvcCode Mode  :0
+SIP1 DNDOn SvcCode :
+SIP1 DNDOff SvcCode:
+SIP1 CFUOn SvcCode :
+SIP1 CFUOff SvcCode:
+SIP1 CFBOn SvcCode :
+SIP1 CFBOff SvcCode:
+SIP1 CFNOn SvcCode :
+SIP1 CFNOff SvcCode:
+SIP1 ANCOn SvcCode :
+SIP1 ANCOff SvcCode:
+SIP1 VoiceCodecMap :
+SIP1 BLFList Uri   :
+SIP1 BLF Server    :
+SIP1 Respond 182   :0
+SIP1 Enable BLFList:0
+SIP1 Caller Id Type:1
+SIP1 Syn Clock Time:0
+SIP1 Use VPN       :1
+SIP1 Enable DND    :0
+SIP1 Update Reg Exp:1
+SIP1 Inactive Hold :0
+SIP1 Enable SCA    :0
+SIP1 Sub CallPark  :0
+SIP1 Hoteling Event:0
+SIP1 Sub CC Status :0
+SIP1 Feature Sync  :0
+SIP1 Req With Port :0
+SIP2 Phone Number  :
+SIP2 Display Name  :
+SIP2 Sip Name      :
+SIP2 Register Addr :
+SIP2 Register Port :5060
+SIP2 Register User :
+SIP2 Register Pswd :
+SIP2 Register TTL  :3600
+SIP2 Enable Reg    :0
+SIP2 Proxy Addr    :
+SIP2 Proxy Port    :5060
+SIP2 Proxy User    :
+SIP2 Proxy Pswd    :
+SIP2 BakProxy Addr :
+SIP2 BakProxy Port :5060
+SIP2 Enable Failbac:0
+SIP2 Signal Crypto :0
+SIP2 SigCrypto Key :
+SIP2 Media Crypto  :0
+SIP2 MedCrypto Key :
+SIP2 SRTP Auth-Tag :0
+SIP2 Local Domain  :
+SIP2 Always FWD    :0
+SIP2 Busy FWD      :0
+SIP2 No Answer FWD :0
+SIP2 Always FWD Num:
+SIP2 Busy FWD Num  :
+SIP2 NoAnswer FWD N:
+SIP2 FWD Timer     :60
+SIP2 Ring Type     :0
+SIP2 Hotline Num   :
+SIP2 Enable Hotline:0
+SIP2 WarmLine Time :0
+SIP2 Pickup Num    :
+SIP2 Join Num      :
+SIP2 NAT UDPUpdate :1
+SIP2 UDPUpdate TTL :60
+SIP2 Server Type   :0
+SIP2 User Agent    :
+SIP2 PRACK         :0
+SIP2 Keep AUTH     :0
+SIP2 Session Timer :0
+SIP2 S.Timer Expire:0
+SIP2 Enable GRUU   :0
+SIP2 DTMF Mode     :3
+SIP2 DTMF Info Mode:0
+SIP2 NAT Type      :0
+SIP2 Enable Rport  :0
+SIP2 Subscribe     :0
+SIP2 Sub Expire    :3600
+SIP2 Single Codec  :0
+SIP2 CLIR          :0
+SIP2 Strict Proxy  :0
+SIP2 Direct Contact:0
+SIP2 History Info  :0
+SIP2 DNS Mode      :0
+SIP2 XFER Expire   :0
+SIP2 Ban Anonymous :0
+SIP2 Dial Off Line :0
+SIP2 Quota Name    :0
+SIP2 Presence Mode :0
+SIP2 RFC Ver       :1
+SIP2 Signal Port   :0
+SIP2 Transport     :0
+SIP2 Use SRV Mixer :0
+SIP2 SRV Mixer Uri :
+SIP2 Long Contact  :0
+SIP2 Auto TCP      :0
+SIP2 Uri Escaped   :1
+SIP2 Click to Talk :0
+SIP2 MWI Num       :
+SIP2 CallPark Num  :
+SIP2 Retrieve Num  :
+SIP2 MSRPHelp Num  :
+SIP2 User Is Phone :1
+SIP2 Auto Answer   :0
+SIP2 NoAnswerTime  :60
+SIP2 MissedCallLog :1
+SIP2 SvcCode Mode  :0
+SIP2 DNDOn SvcCode :
+SIP2 DNDOff SvcCode:
+SIP2 CFUOn SvcCode :
+SIP2 CFUOff SvcCode:
+SIP2 CFBOn SvcCode :
+SIP2 CFBOff SvcCode:
+SIP2 CFNOn SvcCode :
+SIP2 CFNOff SvcCode:
+SIP2 ANCOn SvcCode :
+SIP2 ANCOff SvcCode:
+SIP2 VoiceCodecMap :
+SIP2 BLFList Uri   :
+SIP2 BLF Server    :
+SIP2 Respond 182   :0
+SIP2 Enable BLFList:0
+SIP2 Caller Id Type:1
+SIP2 Syn Clock Time:0
+SIP2 Use VPN       :1
+SIP2 Enable DND    :0
+SIP2 Update Reg Exp:1
+SIP2 Inactive Hold :0
+SIP2 Enable SCA    :0
+SIP2 Sub CallPark  :0
+SIP2 Hoteling Event:0
+SIP2 Sub CC Status :0
+SIP2 Feature Sync  :0
+SIP2 Req With Port :0
+SIP3 Phone Number  :
+SIP3 Display Name  :
+SIP3 Sip Name      :
+SIP3 Register Addr :
+SIP3 Register Port :5060
+SIP3 Register User :
+SIP3 Register Pswd :
+SIP3 Register TTL  :3600
+SIP3 Enable Reg    :0
+SIP3 Proxy Addr    :
+SIP3 Proxy Port    :5060
+SIP3 Proxy User    :
+SIP3 Proxy Pswd    :
+SIP3 BakProxy Addr :
+SIP3 BakProxy Port :5060
+SIP3 Enable Failbac:0
+SIP3 Signal Crypto :0
+SIP3 SigCrypto Key :
+SIP3 Media Crypto  :0
+SIP3 MedCrypto Key :
+SIP3 SRTP Auth-Tag :0
+SIP3 Local Domain  :
+SIP3 Always FWD    :0
+SIP3 Busy FWD      :0
+SIP3 No Answer FWD :0
+SIP3 Always FWD Num:
+SIP3 Busy FWD Num  :
+SIP3 NoAnswer FWD N:
+SIP3 FWD Timer     :60
+SIP3 Ring Type     :0
+SIP3 Hotline Num   :
+SIP3 Enable Hotline:0
+SIP3 WarmLine Time :0
+SIP3 Pickup Num    :
+SIP3 Join Num      :
+SIP3 NAT UDPUpdate :1
+SIP3 UDPUpdate TTL :60
+SIP3 Server Type   :0
+SIP3 User Agent    :
+SIP3 PRACK         :0
+SIP3 Keep AUTH     :0
+SIP3 Session Timer :0
+SIP3 S.Timer Expire:0
+SIP3 Enable GRUU   :0
+SIP3 DTMF Mode     :3
+SIP3 DTMF Info Mode:0
+SIP3 NAT Type      :0
+SIP3 Enable Rport  :0
+SIP3 Subscribe     :0
+SIP3 Sub Expire    :3600
+SIP3 Single Codec  :0
+SIP3 CLIR          :0
+SIP3 Strict Proxy  :0
+SIP3 Direct Contact:0
+SIP3 History Info  :0
+SIP3 DNS Mode      :0
+SIP3 XFER Expire   :0
+SIP3 Ban Anonymous :0
+SIP3 Dial Off Line :0
+SIP3 Quota Name    :0
+SIP3 Presence Mode :0
+SIP3 RFC Ver       :1
+SIP3 Signal Port   :0
+SIP3 Transport     :0
+SIP3 Use SRV Mixer :0
+SIP3 SRV Mixer Uri :
+SIP3 Long Contact  :0
+SIP3 Auto TCP      :0
+SIP3 Uri Escaped   :1
+SIP3 Click to Talk :0
+SIP3 MWI Num       :
+SIP3 CallPark Num  :
+SIP3 Retrieve Num  :
+SIP3 MSRPHelp Num  :
+SIP3 User Is Phone :1
+SIP3 Auto Answer   :0
+SIP3 NoAnswerTime  :60
+SIP3 MissedCallLog :1
+SIP3 SvcCode Mode  :0
+SIP3 DNDOn SvcCode :
+SIP3 DNDOff SvcCode:
+SIP3 CFUOn SvcCode :
+SIP3 CFUOff SvcCode:
+SIP3 CFBOn SvcCode :
+SIP3 CFBOff SvcCode:
+SIP3 CFNOn SvcCode :
+SIP3 CFNOff SvcCode:
+SIP3 ANCOn SvcCode :
+SIP3 ANCOff SvcCode:
+SIP3 VoiceCodecMap :
+SIP3 BLFList Uri   :
+SIP3 BLF Server    :
+SIP3 Respond 182   :0
+SIP3 Enable BLFList:0
+SIP3 Caller Id Type:1
+SIP3 Syn Clock Time:0
+SIP3 Use VPN       :1
+SIP3 Enable DND    :0
+SIP3 Update Reg Exp:1
+SIP3 Inactive Hold :0
+SIP3 Enable SCA    :0
+SIP3 Sub CallPark  :0
+SIP3 Hoteling Event:0
+SIP3 Sub CC Status :0
+SIP3 Feature Sync  :0
+SIP3 Req With Port :0
+SIP4 Phone Number  :
+SIP4 Display Name  :
+SIP4 Sip Name      :
+SIP4 Register Addr :
+SIP4 Register Port :5060
+SIP4 Register User :
+SIP4 Register Pswd :
+SIP4 Register TTL  :3600
+SIP4 Enable Reg    :0
+SIP4 Proxy Addr    :
+SIP4 Proxy Port    :5060
+SIP4 Proxy User    :
+SIP4 Proxy Pswd    :
+SIP4 BakProxy Addr :
+SIP4 BakProxy Port :5060
+SIP4 Enable Failbac:0
+SIP4 Signal Crypto :0
+SIP4 SigCrypto Key :
+SIP4 Media Crypto  :0
+SIP4 MedCrypto Key :
+SIP4 SRTP Auth-Tag :0
+SIP4 Local Domain  :
+SIP4 Always FWD    :0
+SIP4 Busy FWD      :0
+SIP4 No Answer FWD :0
+SIP4 Always FWD Num:
+SIP4 Busy FWD Num  :
+SIP4 NoAnswer FWD N:
+SIP4 FWD Timer     :60
+SIP4 Ring Type     :0
+SIP4 Hotline Num   :
+SIP4 Enable Hotline:0
+SIP4 WarmLine Time :0
+SIP4 Pickup Num    :
+SIP4 Join Num      :
+SIP4 NAT UDPUpdate :1
+SIP4 UDPUpdate TTL :60
+SIP4 Server Type   :0
+SIP4 User Agent    :
+SIP4 PRACK         :0
+SIP4 Keep AUTH     :0
+SIP4 Session Timer :0
+SIP4 S.Timer Expire:0
+SIP4 Enable GRUU   :0
+SIP4 DTMF Mode     :3
+SIP4 DTMF Info Mode:0
+SIP4 NAT Type      :0
+SIP4 Enable Rport  :0
+SIP4 Subscribe     :0
+SIP4 Sub Expire    :3600
+SIP4 Single Codec  :0
+SIP4 CLIR          :0
+SIP4 Strict Proxy  :0
+SIP4 Direct Contact:0
+SIP4 History Info  :0
+SIP4 DNS Mode      :0
+SIP4 XFER Expire   :0
+SIP4 Ban Anonymous :0
+SIP4 Dial Off Line :0
+SIP4 Quota Name    :0
+SIP4 Presence Mode :0
+SIP4 RFC Ver       :1
+SIP4 Signal Port   :0
+SIP4 Transport     :0
+SIP4 Use SRV Mixer :0
+SIP4 SRV Mixer Uri :
+SIP4 Long Contact  :0
+SIP4 Auto TCP      :0
+SIP4 Uri Escaped   :1
+SIP4 Click to Talk :0
+SIP4 MWI Num       :
+SIP4 CallPark Num  :
+SIP4 Retrieve Num  :
+SIP4 MSRPHelp Num  :
+SIP4 User Is Phone :1
+SIP4 Auto Answer   :0
+SIP4 NoAnswerTime  :60
+SIP4 MissedCallLog :1
+SIP4 SvcCode Mode  :0
+SIP4 DNDOn SvcCode :
+SIP4 DNDOff SvcCode:
+SIP4 CFUOn SvcCode :
+SIP4 CFUOff SvcCode:
+SIP4 CFBOn SvcCode :
+SIP4 CFBOff SvcCode:
+SIP4 CFNOn SvcCode :
+SIP4 CFNOff SvcCode:
+SIP4 ANCOn SvcCode :
+SIP4 ANCOff SvcCode:
+SIP4 VoiceCodecMap :
+SIP4 BLFList Uri   :
+SIP4 BLF Server    :
+SIP4 Respond 182   :0
+SIP4 Enable BLFList:0
+SIP4 Caller Id Type:1
+SIP4 Syn Clock Time:0
+SIP4 Use VPN       :1
+SIP4 Enable DND    :0
+SIP4 Update Reg Exp:1
+SIP4 Inactive Hold :0
+SIP4 Enable SCA    :0
+SIP4 Sub CallPark  :0
+SIP4 Hoteling Event:0
+SIP4 Sub CC Status :0
+SIP4 Feature Sync  :0
+SIP4 Req With Port :0
+SIP5 Phone Number  :
+SIP5 Display Name  :
+SIP5 Sip Name      :
+SIP5 Register Addr :
+SIP5 Register Port :5060
+SIP5 Register User :
+SIP5 Register Pswd :
+SIP5 Register TTL  :3600
+SIP5 Enable Reg    :0
+SIP5 Proxy Addr    :
+SIP5 Proxy Port    :5060
+SIP5 Proxy User    :
+SIP5 Proxy Pswd    :
+SIP5 BakProxy Addr :
+SIP5 BakProxy Port :5060
+SIP5 Enable Failbac:0
+SIP5 Signal Crypto :0
+SIP5 SigCrypto Key :
+SIP5 Media Crypto  :0
+SIP5 MedCrypto Key :
+SIP5 SRTP Auth-Tag :0
+SIP5 Local Domain  :
+SIP5 Always FWD    :0
+SIP5 Busy FWD      :0
+SIP5 No Answer FWD :0
+SIP5 Always FWD Num:
+SIP5 Busy FWD Num  :
+SIP5 NoAnswer FWD N:
+SIP5 FWD Timer     :60
+SIP5 Ring Type     :0
+SIP5 Hotline Num   :
+SIP5 Enable Hotline:0
+SIP5 WarmLine Time :0
+SIP5 Pickup Num    :
+SIP5 Join Num      :
+SIP5 NAT UDPUpdate :1
+SIP5 UDPUpdate TTL :60
+SIP5 Server Type   :0
+SIP5 User Agent    :
+SIP5 PRACK         :0
+SIP5 Keep AUTH     :0
+SIP5 Session Timer :0
+SIP5 S.Timer Expire:0
+SIP5 Enable GRUU   :0
+SIP5 DTMF Mode     :3
+SIP5 DTMF Info Mode:0
+SIP5 NAT Type      :0
+SIP5 Enable Rport  :0
+SIP5 Subscribe     :0
+SIP5 Sub Expire    :3600
+SIP5 Single Codec  :0
+SIP5 CLIR          :0
+SIP5 Strict Proxy  :0
+SIP5 Direct Contact:0
+SIP5 History Info  :0
+SIP5 DNS Mode      :0
+SIP5 XFER Expire   :0
+SIP5 Ban Anonymous :0
+SIP5 Dial Off Line :0
+SIP5 Quota Name    :0
+SIP5 Presence Mode :0
+SIP5 RFC Ver       :1
+SIP5 Signal Port   :0
+SIP5 Transport     :0
+SIP5 Use SRV Mixer :0
+SIP5 SRV Mixer Uri :
+SIP5 Long Contact  :0
+SIP5 Auto TCP      :0
+SIP5 Uri Escaped   :1
+SIP5 Click to Talk :0
+SIP5 MWI Num       :
+SIP5 CallPark Num  :
+SIP5 Retrieve Num  :
+SIP5 MSRPHelp Num  :
+SIP5 User Is Phone :1
+SIP5 Auto Answer   :0
+SIP5 NoAnswerTime  :60
+SIP5 MissedCallLog :1
+SIP5 SvcCode Mode  :0
+SIP5 DNDOn SvcCode :
+SIP5 DNDOff SvcCode:
+SIP5 CFUOn SvcCode :
+SIP5 CFUOff SvcCode:
+SIP5 CFBOn SvcCode :
+SIP5 CFBOff SvcCode:
+SIP5 CFNOn SvcCode :
+SIP5 CFNOff SvcCode:
+SIP5 ANCOn SvcCode :
+SIP5 ANCOff SvcCode:
+SIP5 VoiceCodecMap :
+SIP5 BLFList Uri   :
+SIP5 BLF Server    :
+SIP5 Respond 182   :0
+SIP5 Enable BLFList:0
+SIP5 Caller Id Type:1
+SIP5 Syn Clock Time:0
+SIP5 Use VPN       :1
+SIP5 Enable DND    :0
+SIP5 Update Reg Exp:1
+SIP5 Inactive Hold :0
+SIP5 Enable SCA    :0
+SIP5 Sub CallPark  :0
+SIP5 Hoteling Event:0
+SIP5 Sub CC Status :0
+SIP5 Feature Sync  :0
+SIP5 Req With Port :0
+SIP6 Phone Number  :
+SIP6 Display Name  :
+SIP6 Sip Name      :
+SIP6 Register Addr :
+SIP6 Register Port :5060
+SIP6 Register User :
+SIP6 Register Pswd :
+SIP6 Register TTL  :3600
+SIP6 Enable Reg    :0
+SIP6 Proxy Addr    :
+SIP6 Proxy Port    :5060
+SIP6 Proxy User    :
+SIP6 Proxy Pswd    :
+SIP6 BakProxy Addr :
+SIP6 BakProxy Port :5060
+SIP6 Enable Failbac:0
+SIP6 Signal Crypto :0
+SIP6 SigCrypto Key :
+SIP6 Media Crypto  :0
+SIP6 MedCrypto Key :
+SIP6 SRTP Auth-Tag :0
+SIP6 Local Domain  :
+SIP6 Always FWD    :0
+SIP6 Busy FWD      :0
+SIP6 No Answer FWD :0
+SIP6 Always FWD Num:
+SIP6 Busy FWD Num  :
+SIP6 NoAnswer FWD N:
+SIP6 FWD Timer     :60
+SIP6 Ring Type     :0
+SIP6 Hotline Num   :
+SIP6 Enable Hotline:0
+SIP6 WarmLine Time :0
+SIP6 Pickup Num    :
+SIP6 Join Num      :
+SIP6 NAT UDPUpdate :1
+SIP6 UDPUpdate TTL :60
+SIP6 Server Type   :0
+SIP6 User Agent    :
+SIP6 PRACK         :0
+SIP6 Keep AUTH     :0
+SIP6 Session Timer :0
+SIP6 S.Timer Expire:0
+SIP6 Enable GRUU   :0
+SIP6 DTMF Mode     :3
+SIP6 DTMF Info Mode:0
+SIP6 NAT Type      :0
+SIP6 Enable Rport  :0
+SIP6 Subscribe     :0
+SIP6 Sub Expire    :3600
+SIP6 Single Codec  :0
+SIP6 CLIR          :0
+SIP6 Strict Proxy  :0
+SIP6 Direct Contact:0
+SIP6 History Info  :0
+SIP6 DNS Mode      :0
+SIP6 XFER Expire   :0
+SIP6 Ban Anonymous :0
+SIP6 Dial Off Line :0
+SIP6 Quota Name    :0
+SIP6 Presence Mode :0
+SIP6 RFC Ver       :1
+SIP6 Signal Port   :0
+SIP6 Transport     :0
+SIP6 Use SRV Mixer :0
+SIP6 SRV Mixer Uri :
+SIP6 Long Contact  :0
+SIP6 Auto TCP      :0
+SIP6 Uri Escaped   :1
+SIP6 Click to Talk :0
+SIP6 MWI Num       :
+SIP6 CallPark Num  :
+SIP6 Retrieve Num  :
+SIP6 MSRPHelp Num  :
+SIP6 User Is Phone :1
+SIP6 Auto Answer   :0
+SIP6 NoAnswerTime  :60
+SIP6 MissedCallLog :1
+SIP6 SvcCode Mode  :0
+SIP6 DNDOn SvcCode :
+SIP6 DNDOff SvcCode:
+SIP6 CFUOn SvcCode :
+SIP6 CFUOff SvcCode:
+SIP6 CFBOn SvcCode :
+SIP6 CFBOff SvcCode:
+SIP6 CFNOn SvcCode :
+SIP6 CFNOff SvcCode:
+SIP6 ANCOn SvcCode :
+SIP6 ANCOff SvcCode:
+SIP6 VoiceCodecMap :
+SIP6 BLFList Uri   :
+SIP6 BLF Server    :
+SIP6 Respond 182   :0
+SIP6 Enable BLFList:0
+SIP6 Caller Id Type:1
+SIP6 Syn Clock Time:0
+SIP6 Use VPN       :1
+SIP6 Enable DND    :0
+SIP6 Update Reg Exp:1
+SIP6 Inactive Hold :0
+SIP6 Enable SCA    :0
+SIP6 Sub CallPark  :0
+SIP6 Hoteling Event:0
+SIP6 Sub CC Status :0
+SIP6 Feature Sync  :0
+SIP6 Req With Port :0
+
+<IAX2 CONFIG MODULE>
+Server Address     :
+Server Port        :4569
+User Name          :
+User Password      :
+User Number        :
+Voice Number       :0
+Voice Text         :mail
+EchoTest Number    :1
+EchoTest Text      :echo
+Local Port         :4569
+Enable Register    :0
+Refresh Time       :60
+Enable G.729       :0
+
+<MCAST CFG MODULE>
+Priority           :0
+Enbale Priority    :0
+--Mcast Addr--     :
+MCAST1 Port        :0
+MCAST1 Name        :
+MCAST1 Host        :
+MCAST2 Port        :0
+MCAST2 Name        :
+MCAST2 Host        :
+MCAST3 Port        :0
+MCAST3 Name        :
+MCAST3 Host        :
+MCAST4 Port        :0
+MCAST4 Name        :
+MCAST4 Host        :
+MCAST5 Port        :0
+MCAST5 Name        :
+MCAST5 Host        :
+MCAST6 Port        :0
+MCAST6 Name        :
+MCAST6 Host        :
+MCAST7 Port        :0
+MCAST7 Name        :
+MCAST7 Host        :
+MCAST8 Port        :0
+MCAST8 Name        :
+MCAST8 Host        :
+MCAST9 Port        :0
+MCAST9 Name        :
+MCAST9 Host        :
+MCAST10 Port       :0
+MCAST10 Name       :
+MCAST10 Host       :
+
+<PPPoE CONFIG MODULE>
+PPPoE User         :user123
+PPPoE Password     :password
+PPPoE Svc Name     :ANY
+PPPoE IP Address   :
+
+<MMI CONFIG MODULE>
+Telnet Port        :23
+Web Port           :80
+Web Server Type    :0
+Https Web Port     :443
+Remote Control     :1
+Enable MMI Filter  :0
+Telnet Prompt      :
+--MMI Account--    :
+Account1 Name      :admin
+Account1 Password  :pass
+Account1 Level     :10
+
+<QOS CONFIG MODULE>
+Enable VLAN        :1
+Enable diffServ    :0
+LLDP Transmit      :0
+LLDP Refresh Time  :60
+LLDP Learn Policy  :0
+Singalling DSCP    :46
+Voice DSCP         :46
+VLAN ID            :105
+Signalling Priority:7
+Voice Priority     :7
+VLAN Recv Check    :1
+Enable PVID        :1
+PVID Value         :0
+
+<DEBUG CONFIG MODULE>
+MGR Trace Level    :0
+SIP Trace Level    :0
+IAX Trace Level    :0
+Trace File Info    :0
+Enable Watch Dog   :1
+
+<AAA CONFIG MODULE>
+Enable Syslog      :0
+Syslog address     :0.0.0.0
+Syslog port        :514
+
+<ACCESS CONFIG MODULE>
+Enable In Access   :0
+Enable Out Access  :0
+
+<DHCP CONFIG MODULE>
+DHCP Server Type   :0
+DHCP Relay IP      :
+Enable DNS Relay   :1
+Update SRV Mode    :0
+Update TFTP SRV IP :0.0.0.0
+
+<NAT CONFIG MODULE>
+Enable Nat         :0
+Enable Ftp ALG     :1
+Enable H323 ALG    :0
+Enable PPTP ALG    :1
+Enable IPSec ALG   :1
+
+<PHONE CONFIG MODULE>
+Menu Password      :123
+KeyLock Password   :123
+Fast Keylock Code  :
+Enable KeyLock     :0
+Emergency Call     :110
+LCD Title          :574
+LCD Constrast      :3
+LCD Luminance      :1
+Backlight Off Time :30
+Enable Power LED   :1
+Time Display Style :0
+Enable TimeDisplay :1
+Phone Model        :
+About Info         :
+Missed Call LED    :1
+Alarm  Clock       :0,,1
+Disable CHN IME    :0
+Date Display Style :9
+Date Separator     :2
+Enable Pre-Dial    :0
+Default Line       :1
+Enable Default Line:0
+Enable Auto SelLine:1
+Agent Username     :
+Agent Password     :
+Agent Number       :
+Agent Sipline      :0
+Agent Status       :0
+Agent Status Reason:
+--BW Calllogs Conf :
+BWCLog1 Title      :
+BWCLog1 URL        :
+BWCLog1 Username   :
+BWCLog1 Password   :
+BWCLog1 SipLine    :0
+BWCLog2 Title      :
+BWCLog2 URL        :
+BWCLog2 Username   :
+BWCLog2 Password   :
+BWCLog2 SipLine    :0
+BWCLog3 Title      :
+BWCLog3 URL        :
+BWCLog3 Username   :
+BWCLog3 Password   :
+BWCLog3 SipLine    :0
+--BW Directory Conf:
+BWDir1 Title       :
+BWDir1 URL         :
+BWDir1 Username    :
+BWDir1 Password    :
+BWDir1 SipLine     :0
+BWDir2 Title       :
+BWDir2 URL         :
+BWDir2 Username    :
+BWDir2 Password    :
+BWDir2 SipLine     :0
+BWDir3 Title       :
+BWDir3 URL         :
+BWDir3 Username    :
+BWDir3 Password    :
+BWDir3 SipLine     :0
+BWDir4 Title       :
+BWDir4 URL         :
+BWDir4 Username    :
+BWDir4 Password    :
+BWDir4 SipLine     :0
+BWDir5 Title       :
+BWDir5 URL         :
+BWDir5 Username    :
+BWDir5 Password    :
+BWDir5 SipLine     :0
+BWDir6 Title       :
+BWDir6 URL         :
+BWDir6 Username    :
+BWDir6 Password    :
+BWDir6 SipLine     :0
+--LDAP Config--    :
+LDAP1 Title        :
+LDAP1 Server       :
+LDAP1 port         :389
+LDAP1 Authenticate :0
+LDAP1 Version      :3
+LDAP1 Calling Line :0
+LDAP1 Enable Search:0
+LDAP1 Base         :
+LDAP1 Username     :
+LDAP1 Password     :
+LDAP1 Tel Attr     :telephoneNumber
+LDAP1 Mobile Attr  :mobile
+LDAP1 Other Attr   :home
+LDAP1 Displayname  :cn
+LDAP2 Title        :
+LDAP2 Server       :
+LDAP2 port         :389
+LDAP2 Authenticate :0
+LDAP2 Version      :3
+LDAP2 Calling Line :0
+LDAP2 Enable Search:0
+LDAP2 Base         :
+LDAP2 Username     :
+LDAP2 Password     :
+LDAP2 Tel Attr     :telephoneNumber
+LDAP2 Mobile Attr  :mobile
+LDAP2 Other Attr   :home
+LDAP2 Displayname  :cn
+LDAP3 Title        :
+LDAP3 Server       :
+LDAP3 port         :389
+LDAP3 Authenticate :0
+LDAP3 Version      :3
+LDAP3 Calling Line :0
+LDAP3 Enable Search:0
+LDAP3 Base         :
+LDAP3 Username     :
+LDAP3 Password     :
+LDAP3 Tel Attr     :telephoneNumber
+LDAP3 Mobile Attr  :mobile
+LDAP3 Other Attr   :home
+LDAP3 Displayname  :cn
+LDAP4 Title        :
+LDAP4 Server       :
+LDAP4 port         :389
+LDAP4 Authenticate :0
+LDAP4 Version      :3
+LDAP4 Calling Line :0
+LDAP4 Enable Search:0
+LDAP4 Base         :
+LDAP4 Username     :
+LDAP4 Password     :
+LDAP4 Tel Attr     :telephoneNumber
+LDAP4 Mobile Attr  :mobile
+LDAP4 Other Attr   :home
+LDAP4 Displayname  :cn
+--Xml PhoneBook--  :
+XML-PBook1 Name    :
+XML-PBook1 Addr    :
+XML-PBook1 Auth    :
+XML-PBook1 Policy  :0
+XML-PBook1 Sipline :0
+XML-PBook2 Name    :
+XML-PBook2 Addr    :
+XML-PBook2 Auth    :
+XML-PBook2 Policy  :0
+XML-PBook2 Sipline :0
+XML-PBook3 Name    :
+XML-PBook3 Addr    :
+XML-PBook3 Auth    :
+XML-PBook3 Policy  :0
+XML-PBook3 Sipline :0
+XML-PBook4 Name    :
+XML-PBook4 Addr    :
+XML-PBook4 Auth    :
+XML-PBook4 Policy  :0
+XML-PBook4 Sipline :0
+Phonebook Groups   :friend,home,work,business,classmate,colleague
+--Function Key--   :
+Fkey1 Type         :2
+Fkey1 Value        :SIP1
+Fkey1 Title        :
+Fkey2 Type         :2
+Fkey2 Value        :SIP2
+Fkey2 Title        :
+Fkey3 Type         :0
+Fkey3 Value        :
+Fkey3 Title        :
+Fkey4 Type         :0
+Fkey4 Value        :
+Fkey4 Title        :
+Fkey5 Type         :4
+Fkey5 Value        :*2
+Fkey5 Title        :
+Fkey6 Type         :0
+Fkey6 Value        :
+Fkey6 Title        :
+Fkey7 Type         :0
+Fkey7 Value        :
+Fkey7 Title        :
+Fkey8 Type         :0
+Fkey8 Value        :
+Fkey8 Title        :
+Fkey9 Type         :0
+Fkey9 Value        :
+Fkey9 Title        :
+Fkey10 Type        :3
+Fkey10 Value       :F_HOLD
+Fkey10 Title       :
+Fkey11 Type        :3
+Fkey11 Value       :F_HEADSET
+Fkey11 Title       :
+Fkey12 Type        :0
+Fkey12 Value       :
+Fkey12 Title       :
+Fkey13 Type        :0
+Fkey13 Value       :
+Fkey13 Title       :
+Fkey14 Type        :0
+Fkey14 Value       :
+Fkey14 Title       :
+Fkey15 Type        :0
+Fkey15 Value       :
+Fkey15 Title       :
+Fkey16 Type        :0
+Fkey16 Value       :
+Fkey16 Title       :
+Fkey17 Type        :0
+Fkey17 Value       :
+Fkey17 Title       :
+Fkey18 Type        :0
+Fkey18 Value       :
+Fkey18 Title       :
+Fkey19 Type        :0
+Fkey19 Value       :
+Fkey19 Title       :
+Fkey20 Type        :0
+Fkey20 Value       :
+Fkey20 Title       :
+Fkey21 Type        :0
+Fkey21 Value       :
+Fkey21 Title       :
+--Extern Console-- :
+exKey1 Type        :0
+exKey1 Val         :
+exKey1 Name        :
+exKey2 Type        :0
+exKey2 Val         :
+exKey2 Name        :
+exKey3 Type        :0
+exKey3 Val         :
+exKey3 Name        :
+exKey4 Type        :0
+exKey4 Val         :
+exKey4 Name        :
+exKey5 Type        :0
+exKey5 Val         :
+exKey5 Name        :
+exKey6 Type        :0
+exKey6 Val         :
+exKey6 Name        :
+exKey7 Type        :0
+exKey7 Val         :
+exKey7 Name        :
+exKey8 Type        :0
+exKey8 Val         :
+exKey8 Name        :
+exKey9 Type        :0
+exKey9 Val         :
+exKey9 Name        :
+exKey10 Type       :0
+exKey10 Val        :
+exKey10 Name       :
+exKey11 Type       :0
+exKey11 Val        :
+exKey11 Name       :
+exKey12 Type       :0
+exKey12 Val        :
+exKey12 Name       :
+exKey13 Type       :0
+exKey13 Val        :
+exKey13 Name       :
+exKey14 Type       :0
+exKey14 Val        :
+exKey14 Name       :
+exKey15 Type       :0
+exKey15 Val        :
+exKey15 Name       :
+exKey16 Type       :0
+exKey16 Val        :
+exKey16 Name       :
+exKey17 Type       :0
+exKey17 Val        :
+exKey17 Name       :
+exKey18 Type       :0
+exKey18 Val        :
+exKey18 Name       :
+exKey19 Type       :0
+exKey19 Val        :
+exKey19 Name       :
+exKey20 Type       :0
+exKey20 Val        :
+exKey20 Name       :
+exKey21 Type       :0
+exKey21 Val        :
+exKey21 Name       :
+exKey22 Type       :0
+exKey22 Val        :
+exKey22 Name       :
+exKey23 Type       :0
+exKey23 Val        :
+exKey23 Name       :
+exKey24 Type       :0
+exKey24 Val        :
+exKey24 Name       :
+exKey25 Type       :0
+exKey25 Val        :
+exKey25 Name       :
+exKey26 Type       :0
+exKey26 Val        :
+exKey26 Name       :
+exKey27 Type       :0
+exKey27 Val        :
+exKey27 Name       :
+exKey28 Type       :0
+exKey28 Val        :
+exKey28 Name       :
+exKey29 Type       :0
+exKey29 Val        :
+exKey29 Name       :
+exKey30 Type       :0
+exKey30 Val        :
+exKey30 Name       :
+exKey31 Type       :0
+exKey31 Val        :
+exKey31 Name       :
+exKey32 Type       :0
+exKey32 Val        :
+exKey32 Name       :
+exKey33 Type       :0
+exKey33 Val        :
+exKey33 Name       :
+exKey34 Type       :0
+exKey34 Val        :
+exKey34 Name       :
+exKey35 Type       :0
+exKey35 Val        :
+exKey35 Name       :
+exKey36 Type       :0
+exKey36 Val        :
+exKey36 Name       :
+exKey37 Type       :0
+exKey37 Val        :
+exKey37 Name       :
+exKey38 Type       :0
+exKey38 Val        :
+exKey38 Name       :
+exKey39 Type       :0
+exKey39 Val        :
+exKey39 Name       :
+exKey40 Type       :0
+exKey40 Val        :
+exKey40 Name       :
+exKey41 Type       :0
+exKey41 Val        :
+exKey41 Name       :
+exKey42 Type       :0
+exKey42 Val        :
+exKey42 Name       :
+exKey43 Type       :0
+exKey43 Val        :
+exKey43 Name       :
+exKey44 Type       :0
+exKey44 Val        :
+exKey44 Name       :
+exKey45 Type       :0
+exKey45 Val        :
+exKey45 Name       :
+exKey46 Type       :0
+exKey46 Val        :
+exKey46 Name       :
+exKey47 Type       :0
+exKey47 Val        :
+exKey47 Name       :
+exKey48 Type       :0
+exKey48 Val        :
+exKey48 Name       :
+exKey49 Type       :0
+exKey49 Val        :
+exKey49 Name       :
+exKey50 Type       :0
+exKey50 Val        :
+exKey50 Name       :
+exKey51 Type       :0
+exKey51 Val        :
+exKey51 Name       :
+exKey52 Type       :0
+exKey52 Val        :
+exKey52 Name       :
+exKey53 Type       :0
+exKey53 Val        :
+exKey53 Name       :
+exKey54 Type       :0
+exKey54 Val        :
+exKey54 Name       :
+exKey55 Type       :0
+exKey55 Val        :
+exKey55 Name       :
+exKey56 Type       :0
+exKey56 Val        :
+exKey56 Name       :
+exKey57 Type       :0
+exKey57 Val        :
+exKey57 Name       :
+exKey58 Type       :0
+exKey58 Val        :
+exKey58 Name       :
+exKey59 Type       :0
+exKey59 Val        :
+exKey59 Name       :
+exKey60 Type       :0
+exKey60 Val        :
+exKey60 Name       :
+exKey61 Type       :0
+exKey61 Val        :
+exKey61 Name       :
+exKey62 Type       :0
+exKey62 Val        :
+exKey62 Name       :
+exKey63 Type       :0
+exKey63 Val        :
+exKey63 Name       :
+exKey64 Type       :0
+exKey64 Val        :
+exKey64 Name       :
+exKey65 Type       :0
+exKey65 Val        :
+exKey65 Name       :
+exKey66 Type       :0
+exKey66 Val        :
+exKey66 Name       :
+exKey67 Type       :0
+exKey67 Val        :
+exKey67 Name       :
+exKey68 Type       :0
+exKey68 Val        :
+exKey68 Name       :
+exKey69 Type       :0
+exKey69 Val        :
+exKey69 Name       :
+exKey70 Type       :0
+exKey70 Val        :
+exKey70 Name       :
+exKey71 Type       :0
+exKey71 Val        :
+exKey71 Name       :
+exKey72 Type       :0
+exKey72 Val        :
+exKey72 Name       :
+exKey73 Type       :0
+exKey73 Val        :
+exKey73 Name       :
+exKey74 Type       :0
+exKey74 Val        :
+exKey74 Name       :
+exKey75 Type       :0
+exKey75 Val        :
+exKey75 Name       :
+exKey76 Type       :0
+exKey76 Val        :
+exKey76 Name       :
+exKey77 Type       :0
+exKey77 Val        :
+exKey77 Name       :
+exKey78 Type       :0
+exKey78 Val        :
+exKey78 Name       :
+exKey79 Type       :0
+exKey79 Val        :
+exKey79 Name       :
+exKey80 Type       :0
+exKey80 Val        :
+exKey80 Name       :
+exKey81 Type       :0
+exKey81 Val        :
+exKey81 Name       :
+exKey82 Type       :0
+exKey82 Val        :
+exKey82 Name       :
+exKey83 Type       :0
+exKey83 Val        :
+exKey83 Name       :
+exKey84 Type       :0
+exKey84 Val        :
+exKey84 Name       :
+exKey85 Type       :0
+exKey85 Val        :
+exKey85 Name       :
+exKey86 Type       :0
+exKey86 Val        :
+exKey86 Name       :
+exKey87 Type       :0
+exKey87 Val        :
+exKey87 Name       :
+exKey88 Type       :0
+exKey88 Val        :
+exKey88 Name       :
+exKey89 Type       :0
+exKey89 Val        :
+exKey89 Name       :
+exKey90 Type       :0
+exKey90 Val        :
+exKey90 Name       :
+exKey91 Type       :0
+exKey91 Val        :
+exKey91 Name       :
+exKey92 Type       :0
+exKey92 Val        :
+exKey92 Name       :
+exKey93 Type       :0
+exKey93 Val        :
+exKey93 Name       :
+exKey94 Type       :0
+exKey94 Val        :
+exKey94 Name       :
+exKey95 Type       :0
+exKey95 Val        :
+exKey95 Name       :
+exKey96 Type       :0
+exKey96 Val        :
+exKey96 Name       :
+exKey97 Type       :0
+exKey97 Val        :
+exKey97 Name       :
+exKey98 Type       :0
+exKey98 Val        :
+exKey98 Name       :
+exKey99 Type       :0
+exKey99 Val        :
+exKey99 Name       :
+exKey100 Type      :0
+exKey100 Val       :
+exKey100 Name      :
+exKey101 Type      :0
+exKey101 Val       :
+exKey101 Name      :
+exKey102 Type      :0
+exKey102 Val       :
+exKey102 Name      :
+exKey103 Type      :0
+exKey103 Val       :
+exKey103 Name      :
+exKey104 Type      :0
+exKey104 Val       :
+exKey104 Name      :
+exKey105 Type      :0
+exKey105 Val       :
+exKey105 Name      :
+exKey106 Type      :0
+exKey106 Val       :
+exKey106 Name      :
+exKey107 Type      :0
+exKey107 Val       :
+exKey107 Name      :
+exKey108 Type      :0
+exKey108 Val       :
+exKey108 Name      :
+exKey109 Type      :0
+exKey109 Val       :
+exKey109 Name      :
+exKey110 Type      :0
+exKey110 Val       :
+exKey110 Name      :
+exKey111 Type      :0
+exKey111 Val       :
+exKey111 Name      :
+exKey112 Type      :0
+exKey112 Val       :
+exKey112 Name      :
+exKey113 Type      :0
+exKey113 Val       :
+exKey113 Name      :
+exKey114 Type      :0
+exKey114 Val       :
+exKey114 Name      :
+exKey115 Type      :0
+exKey115 Val       :
+exKey115 Name      :
+exKey116 Type      :0
+exKey116 Val       :
+exKey116 Name      :
+exKey117 Type      :0
+exKey117 Val       :
+exKey117 Name      :
+exKey118 Type      :0
+exKey118 Val       :
+exKey118 Name      :
+exKey119 Type      :0
+exKey119 Val       :
+exKey119 Name      :
+exKey120 Type      :0
+exKey120 Val       :
+exKey120 Name      :
+exKey121 Type      :0
+exKey121 Val       :
+exKey121 Name      :
+exKey122 Type      :0
+exKey122 Val       :
+exKey122 Name      :
+exKey123 Type      :0
+exKey123 Val       :
+exKey123 Name      :
+exKey124 Type      :0
+exKey124 Val       :
+exKey124 Name      :
+exKey125 Type      :0
+exKey125 Val       :
+exKey125 Name      :
+exKey126 Type      :0
+exKey126 Val       :
+exKey126 Name      :
+exKey127 Type      :0
+exKey127 Val       :
+exKey127 Name      :
+exKey128 Type      :0
+exKey128 Val       :
+exKey128 Name      :
+exKey129 Type      :0
+exKey129 Val       :
+exKey129 Name      :
+exKey130 Type      :0
+exKey130 Val       :
+exKey130 Name      :
+exKey131 Type      :0
+exKey131 Val       :
+exKey131 Name      :
+exKey132 Type      :0
+exKey132 Val       :
+exKey132 Name      :
+exKey133 Type      :0
+exKey133 Val       :
+exKey133 Name      :
+exKey134 Type      :0
+exKey134 Val       :
+exKey134 Name      :
+exKey135 Type      :0
+exKey135 Val       :
+exKey135 Name      :
+exKey136 Type      :0
+exKey136 Val       :
+exKey136 Name      :
+exKey137 Type      :0
+exKey137 Val       :
+exKey137 Name      :
+exKey138 Type      :0
+exKey138 Val       :
+exKey138 Name      :
+exKey139 Type      :0
+exKey139 Val       :
+exKey139 Name      :
+exKey140 Type      :0
+exKey140 Val       :
+exKey140 Name      :
+exKey141 Type      :0
+exKey141 Val       :
+exKey141 Name      :
+exKey142 Type      :0
+exKey142 Val       :
+exKey142 Name      :
+exKey143 Type      :0
+exKey143 Val       :
+exKey143 Name      :
+exKey144 Type      :0
+exKey144 Val       :
+exKey144 Name      :
+exKey145 Type      :0
+exKey145 Val       :
+exKey145 Name      :
+exKey146 Type      :0
+exKey146 Val       :
+exKey146 Name      :
+exKey147 Type      :0
+exKey147 Val       :
+exKey147 Name      :
+exKey148 Type      :0
+exKey148 Val       :
+exKey148 Name      :
+exKey149 Type      :0
+exKey149 Val       :
+exKey149 Name      :
+exKey150 Type      :0
+exKey150 Val       :
+exKey150 Name      :
+
+<SCREEN KEY CONFIG MODULE>
+Desktop Softkey    :history;contact;dnd;menu;
+Talking Softkey    :hold;conf;end;
+Ringing Softkey    :accept;none;cfwd;reject;
+Alerting Softkey   :none;none;none;end;
+XAlerting Softkey  :xfer;none;none;end;
+Conference Softkey :hold;none;split;end;
+Waiting Softkey    :hold;conf;end;
+Ending Softkey     :repeat;none;none;end;
+DialerPre Softkey  :delete;save;send;exit;
+DialerCall Softkey :delete;none;send;exit;
+DialerXfer Softkey :delete;xfer;send;exit;
+DialerCfwd Softkey :delete;none;cfwd;exit;
+Desktop Click      :history;status;paccout;naccout;menu;
+Dailer  Click      :pline;nline;none;none;none;
+Call    Click      :pcall;ncall;voldown;volup;none;
+Desktop Long Press :status;none;none;sdial;none;
+Softkey Mode       :1
+
+<AUTOUPDATE CONFIG MODULE>
+Download Username  :
+Download Password  :
+FDPS Enable        :1
+Config File Name   :
+Config File Key    :
+Common Cfg File Key:
+Download Server IP :xxx.xxx.xxx.xxx
+Download Protocol  :2
+Download Mode      :2
+Download Interval  :1
+DHCP Option        :66
+PNP Enable         :1
+PNP IP             :224.0.1.75
+PNP Port           :5060
+PNP Transport      :0
+PNP Interval       :1
+Save Provision Info:0
+
+<VPN CONFIG MODULE>
+VPN mode           :0
+L2TP LNS IP        :
+L2TP User Name     :
+L2TP Password      :
+L2TP Negotiate DNS :1
+Enable VPN Tunnel  :0
+VPN Server IP      :0.0.0.0
+VPN Server Port    :80
+Server Group ID    :VPN
+Server Area Code   :12345
+
+<DOT1X CONFIG MODULE>
+Xsup User          :admin
+Xsup Password      :admin
+Xsup Enable        :0
+Xsup AuthMac       :01:80:C2:00:00:03
+Xsup UseDefaultMac :0
+
+<TR069 CONFIG MODULE>
+ACS Server Type    :1
+ACS URL            :0.0.0.0
+ACS UserName       :admin
+ACS Password       :admin
+CPE UserName       :dps
+CPE Password       :dps
+CPE SerialNumber   :00100400FV02001000004c3b74014da8
+TR069 Auto Login   :0
+TR069 Tone         :1
+Enable TR069       :0
+Periodix Interval  :3600
+Area Code          :020
+<<END OF FILE>>

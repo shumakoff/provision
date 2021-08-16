@@ -40,3 +40,5 @@ Example of two SIP-accounts, each of which with a custom ringtone:
 
 After filling all of the required fields in sip.conf you can generate config file by running ```provision --sip <your_sip> --verbose```.
 Generated config file will be placed in ```output_dir``` from ```provision.conf```. Please check ```provision.conf``` for more options before running the script.
+
+You will want to use your own templates for ones that have ```_default``` in their names. You can export them from SNR phone via Web-interface.
