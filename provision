@@ -1,0 +1,342 @@
+#!/usr/bin/env python3
+# vim: set fileencoding=utf-8
+import configparser
+import re
+import string
+import os
+import sys
+import argparse
+import hashlib
+
+
+def vprint(msg, verbose):
+    if verbose:
+        print(msg)
+
+
+def main():
+    """
+    Main wrapper
+    """
+    parser = argparse.ArgumentParser(description='Script for generating IP Phone configuration template for autoprovisioning.')
+    parser.add_argument('-v', '--verbose', dest='verbose', action='store_true')
+    parser.add_argument('-s', '--sip', dest='sipname', help='SIP account for which we going to generate config')
+    args = parser.parse_args()
+    if (not args.sipname):
+        parser.print_help()
+        sys.exit(1)
+
+    sipname = args.sipname
+    verbose = args.verbose
+
+    # which SIP account to generate for
+    if sipname != 'all':
+        vprint('Generating template for SIP account %s' % sipname, verbose)
+    else:
+        sipname = [False]
+        vprint('SIP account is not specified, generating for all available', verbose)
+
+    provision = Provision(verbose=verbose)
+    # magick
+    sipname_mac = provision.parse_sip(sipname=sipname, verbose=verbose)
+
+    # more magick
+    templates = os.listdir(provision.templates_dir)
+    template_found = False
+
+    for pair in sipname_mac:
+        template = pair['template']
+
+        for tmpl in templates:
+
+            if len(tmpl.split('.')) > 3:
+                continue
+
+            if template == tmpl.split('.')[0]:
+                template_version = int(pair['template_version'])
+                template_path = os.path.join(provision.templates_dir, tmpl)
+                if template_version:
+                    vprint('Using template %s version %d' % (template_path, template_version), verbose)
+                else:
+                    vprint('Using template %s' % (template_path), verbose)
+                template_found = True
+                break
+
+        if not template_found:
+            vprint('Template %s not found. \
+                    Template name should be <model>.template.<version>. \
+                    Aavailable templates: %s'.encode('utf-8') % (
+                        template, ', '.join(os.listdir(provision.templates_dir))), verbose)
+            sys.exit(2)
+
+        config_name = provision.gen_template(template=template_path,
+                                             template_version=template_version,
+                                             filename=pair['mac'],
+                                             subst=pair,
+                                             verbose=verbose)
+        vprint('Generated template %s for SIP %s' % (config_name, pair['sipname']), verbose)
+        vprint('='*50, verbose)
+
+
+class Provision(object):
+    """
+    Main class
+    """
+
+    def __init__(self, verbose):
+
+        self.verbose = verbose
+        # we are looking for config file in /etc/provision/provision.conf
+        # or in cwd
+        etc_path = '/etc/provision/provision.conf'
+
+        pathname = os.path.dirname(sys.argv[0])
+        script_directory = os.path.abspath(pathname)
+
+        if os.path.isfile(etc_path):
+            self.config_path = etc_path
+        else:
+            self.config_path = os.path.join(os.path.abspath(pathname), 'provision.conf')
+
+        self.config = configparser.ConfigParser()
+        self.config.read(self.config_path)
+
+        self.script_directory = script_directory
+        self.sip_conf = self.config.get('general', 'sip_conf', fallback=0)
+        self.templates_dir = self.config.get('general', 'templates_dir', fallback=0)
+        self.output_dir = self.config.get('general', 'output_dir', fallback=0)
+        self.cleaned_sip_conf = os.path.join('/tmp', 'sip_cleaned.conf')
+
+
+    def parse_sip(self, sipname, verbose):
+        """
+        Parses sip.conf and returns dict that looks like:
+        {'template_version': '2011',
+        'description': '0c1105023dec',
+        'sipname': '618',
+        'hostname': 'th0216',
+        'secret': 'ws0100Sip1',
+        'mac': '0c1105023dec',
+        'template': 'SNR-VP-53'}
+        and additional options
+        """
+        cleaned_sip_conf = []
+        sipname_mac = []
+
+        with open(self.sip_conf, 'r') as sip_conf_fd:
+            content = sip_conf_fd.readlines()
+            sip_conf_fd.close()
+
+        for line in content:
+            # turning all lines starting with ;;;
+            # into configuration options
+            l = re.sub(r'^;;;', '', line)
+            # remove leading whitespaces
+            l = re.sub(r'^\ +', '', l)# 2.6 strikes again
+            cleaned_sip_conf.append(l)
+
+        # save
+        with open(self.cleaned_sip_conf, 'w') as cleaned_sip_conf_fd:
+            cleaned_sip_conf_fd.writelines(cleaned_sip_conf)
+            cleaned_sip_conf_fd.flush()
+            cleaned_sip_conf_fd.close()
+
+        # parsing sip_cleaned.conf
+        sip_conf = configparser.RawConfigParser(strict=False)
+        sip_conf.read(self.cleaned_sip_conf)
+
+        if sipname[0]: # for a list of sip accounts
+            sections = sipname.split(',')
+        else: # all were passed as an argument
+            sections = sorted(sip_conf.sections())
+
+        for section in sections:
+            try:
+                mac = sip_conf.get(section, 'description')
+                secret = sip_conf.get(section, 'secret')
+                template = sip_conf.get(section, 'template')
+                d = {}
+                for option in sip_conf.options(section):
+                    d[option] = sip_conf.get(section, option)
+                d['sipname'] = section
+                d['secret'] = secret
+                d['mac'] = mac
+                d['template'] = template
+
+                try:
+                    versionless = self.config.get(template, 'versionless')
+                    d['template_version'] = False
+                except Exception:
+                    versionless = self.config.get('general', 'versionless')
+                if versionless != 'True':
+
+                    if section in self.config.sections():
+                        # getting version of the template for sip account
+                        d['template_version'] = self.config.get(section, 'version')
+                    else:
+                        # no version specified, using default one
+                        d['template_version'] = self.config.get('general', 'default_version')
+                        self.config.add_section(section)
+                        self.config.set(section, 'version', d['template_version'])
+                        config_fd = open(self.config_path, 'w')
+                        self.config.write(config_fd)
+                        config_fd.close()
+
+                vprint('We have found SIP login %s. Template: %s. MAC: %s. Password: %s' % (section, template, mac, secret), self.verbose)
+
+                sipname_mac.append(d)
+            except configparser.NoOptionError as e:
+                vprint('There is no MAC address for a SIP login %s. Verbose message is: %s' % (section, e), self.verbose)
+                continue
+
+            except configparser.NoSectionError as e:
+                vprint('SIP-login %s is not specified in sip.conf: %s' % (section, e), self.verbose)
+                continue
+
+        return sipname_mac
+
+
+    def gen_template(self, template, template_version, filename, subst, verbose):
+        """
+        Generates template
+        """
+
+        # template name
+        template_name = os.path.split(template)[1].split('.')[0]
+
+
+        template_settings = {}
+        # general settings
+        template_settings['delimiter'] = self.config.get('general', 'delimiter')
+        template_settings['versionless'] = self.config.get('general', 'versionless')
+        template_settings['default_version'] = self.config.get('general', 'default_version')
+        template_settings['filename_extension'] = self.config.get('general', 'filename_extension')
+        # template-specific settings
+        if self.config.has_section(template_name):
+            for key in ['default_version', 'delimiter', 'versionless', 'filename_extension']:
+                try:
+                    template_settings[key] = self.config.get(template_name, key)
+                except configparser.NoOptionError as e:
+                    print(e)
+                    continue
+
+        template_content = [] # template with keys
+        with open(template, 'r') as template_fd:
+            for line in template_fd.readlines():
+                if line.startswith(';'):
+                    continue
+                template_content.append(line)
+            template_fd.close()
+
+
+        out_filename = os.path.join(self.output_dir, filename)
+        out_filename += template_settings['filename_extension']
+
+        # load template with default values
+        key_values = {}
+        template_basename = os.path.basename(template)
+        template_basename = template_basename.split('.')[0]
+        default_template = '%s_default.template' % template_basename
+
+        default_values = open(os.path.join(self.templates_dir, default_template), 'r').readlines()
+        delim = template_settings['delimiter']
+        for line in default_values:
+            if line.startswith(';'):
+                continue
+            try:
+                key_values[line.split(delim)[0]] = line.split(delim)[1]
+            except IndexError:
+                continue
+
+        # fill missing values with default ones
+        for k in key_values.keys():
+            clean_key = k.lower()
+            clean_key = re.sub(r' +$', '', clean_key) # remove trailing spaces
+            clean_key = re.sub(r' ', '_', clean_key)
+            clean_key = re.sub(r'\.', '_', clean_key)
+            clean_key = re.sub(r'-', '_', clean_key)
+
+            try:
+                subst[clean_key]
+            except KeyError:
+                subst[clean_key] = u'%s' % key_values[k]
+                continue
+
+        # doing substitutions in the template
+        template_content = ''.join(template_content)
+        template_content_object = string.Template(template_content)
+
+        # here we check for pre-existing config for sip account
+        # and if there's no difference, than we're not going to increment version
+        # that's for loading configuration by timer
+        vprint('Comparing versions', self.verbose)
+
+        if template_settings['versionless'] == 'True': # template doesn't have info about version, overwriting unconditionally
+            vprint('Template %s does not use versions' % template, self.verbose)
+
+            cfg_next_version = template_content_object.substitute(subst)
+            cfg_next_version = re.sub(r'\n\n', '\n', cfg_next_version)
+            should_overwrite = True
+
+        else:
+            subst['version'] = template_version
+            cfg_curr_version = template_content_object.substitute(subst)
+            cfg_curr_version = re.sub(r'\n\n', '\n', cfg_curr_version)
+
+            # hash of a new config
+            curr_ver_hash = hashlib.md5()
+            curr_ver_hash.update(cfg_curr_version.encode())
+            curr_ver_hash = curr_ver_hash.hexdigest()
+            vprint('hash of a new config: %s' % curr_ver_hash, self.verbose)
+
+            subst['version'] = template_version+1
+            cfg_next_version = template_content_object.substitute(subst)
+            cfg_next_version = re.sub(r'\n\n', '\n', cfg_next_version)
+
+            if os.path.isfile(out_filename):
+                existing_conf_fd = open(out_filename, 'r')
+                existing_conf_hash = hashlib.md5()
+                existing_conf_hash.update(''.join(existing_conf_fd.readlines()).encode())
+                existing_conf_hash = existing_conf_hash.hexdigest()
+                vprint('Hash of an existing config: %s' % existing_conf_hash, self.verbose)
+            else:
+                # there is no existing config, writing current one
+                vprint('There is no existing config, writing this one', self.verbose)
+                out = open(out_filename, 'w')
+                out.write(cfg_curr_version)
+                out.close()
+
+                return out_filename
+
+            if curr_ver_hash != existing_conf_hash:
+                should_overwrite = True
+            else:
+                should_overwrite = False
+
+        if should_overwrite:
+
+            # config files differ
+            vprint('Overwriting config', self.verbose)
+            try:
+                self.config.set(subst['sipname'], 'version', str(template_version + 1))
+            except configparser.NoSectionError as e:
+                self.config.add_section(subst['sipname'])
+                self.config.set(subst['sipname'], 'version', str(template_version + 1))
+            config_fd = open(self.config_path, 'w')
+            self.config.write(config_fd)
+            config_fd.close()
+
+            out = open(out_filename, 'w')
+            out.write(cfg_next_version)
+            out.close()
+
+            return out_filename
+
+        else:
+
+            vprint('Config files are the same, not doing anything', self.verbose)
+
+            return out_filename
+if __name__ == '__main__':
+    main()
+
